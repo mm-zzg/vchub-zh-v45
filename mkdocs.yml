@@ -228,16 +228,16 @@ nav:
                                       - management-platform/devices/wago-protocol/index.md
                                       - management-platform/devices/wago-protocol/batch-operation.md
                             - management-platform/devices/usage-of-legacy-protocols.md
-                  - Assets and Tags:
+                  - 资产和变量:
                             - management-platform/assets-and-tags/index.md
                             - management-platform/assets-and-tags/aggregation-modes.md
-                            - Asset:
+                            - 资产:
                                       - management-platform/assets-and-tags/asset/index.md
-                                      - Models and Instances:
+                                      - 模型和实例:
                                                 - management-platform/assets-and-tags/asset/model-and-instance/index.md
                                                 - management-platform/assets-and-tags/asset/model-and-instance/batch-instantiate-models.md
                                                 - management-platform/assets-and-tags/asset/model-and-instance/referencing-and-override.md
-                                      - Asset Tree:
+                                      - 资产树:
                                                 - management-platform/assets-and-tags/asset/asset-tree/index.md
                                                 - Batch Operation:
                                                           - management-platform/assets-and-tags/asset/asset-tree/batch-operation/index.md
