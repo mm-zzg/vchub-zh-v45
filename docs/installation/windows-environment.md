@@ -71,7 +71,7 @@ WAGO VC Hub 提供Windows 64位操作系统安装包。
 
 2. 设置**服务安装目录**权限
 
-进入服务安装目录（例如 C:\Program Files\WAGO VC Hub），点击鼠标右键，选择“属性“ → “安全“
+   进入服务安装目录（例如 C:\Program Files\WAGO VC Hub），点击鼠标右键，选择“属性“ → “安全“
 
    - 根据实际安全需求选择保留的用户或组，删除不必要的用户或组（如 Users、Everyone）。
    - 添加 WagoVC HubSvc 用户，并为其赋予读取、写入、修改权限。
