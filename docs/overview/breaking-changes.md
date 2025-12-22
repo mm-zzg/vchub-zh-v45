@@ -471,13 +471,14 @@ INNER JOIN public."ScadaTagMapping" d ON c."TagId" = d."Id" AND c."ProviderId" =
 | RateChange | RateOfChange |
 
 | 原等级 | 现等级   |
-|：--------|：----------|
+|:--------|:----------|
 | Mid    | Medium   |
 | Urgent | Critical |
 
 | 原状态 | 现状态          |
-|：--------|：-----------------|
+|:--------|:-----------------|
 | UnAck  | Active,Unacked  |
 | Acked  | Active,Acked    |
 | Rtnun  | Cleared,Unacked |
 | Norm   | Cleared,Acked   |
+
