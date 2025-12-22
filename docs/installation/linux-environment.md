@@ -94,42 +94,42 @@ WAGO VC Hub提供Linux环境安装包，文件名wagoscada-x.x.x-linux-x64-insta
 
 3. 修改服务运行账号
 
-  指定服务以 wago_scada 身份运行：
+    指定服务以 wago_scada 身份运行：
 
-```Plain Text
-sudo systemctl edit wagoscada.service
-```
+    ```Plain Text 
+    sudo systemctl edit wagoscada.service
+    ```
  
-在 [Service] 部分添加：
+    在 [Service] 部分添加：
 
-```Plain Text
-User=wago_scada
-Group=wago_scada
-```
+    ```Plain Text
+    User=wago_scada
+    Group=wago_scada
+    ```
  
-保存后重新加载配置并重启服务：
+    保存后重新加载配置并重启服务：
 
-```Plain Text
-sudo systemctl daemon-reexec
-sudo systemctl restart wagoscada.service
-```
+    ```Plain Text
+    sudo systemctl daemon-reexec
+    sudo systemctl restart wagoscada.service
+    ```
  
 4. 设置应用程序数据目录权限
 
     将数据目录（如/usr/share/WAGOSCADA）的所有权交给wago_scada，确保其具有完整读写权限，同时限制其他用户的访问：
 
-```Plain Text
-sudo chown -R wago_scada:wago_scada /usr/share/WAGOSCADA
-sudo chmod -R 750 /usr/share/WAGOSCADA
-```
+    ```Plain Text
+    sudo chown -R wago_scada:wago_scada /usr/share/WAGOSCADA
+    sudo chmod -R 750 /usr/share/WAGOSCADA
+    ```
  
 5. 验证配置
 
     检查服务是否已成功以 wago_scada 账号运行，并确认站点正常访问：
 
-```Plain Text
-systemctl status wagoscada.service
-```
+    ```Plain Text
+    systemctl status wagoscada.service
+    ```
  
     在浏览器访问 WAGO VC Hub 站点（例如 http://localhost:8066），确认运行正常。
 
