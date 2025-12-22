@@ -66,7 +66,7 @@ WAGO VC Hub提供Linux环境安装包，文件名wagoscada-x.x.x-linux-x64-insta
 
 为进一步提升系统安全性，建议在配置完成后执行以下步骤，对**服务目录**及**应用程序数据目录**进行权限设置，只有特定的用户才能对其进行操作，以确保敏感数据受到有效保护并避免潜在风险。
 
-1. 创建专用服务账号
+1. 创建专用服务账号 
 
     在系统中创建专用账号（如 wago_scada），禁止交互式登录，仅用于运行服务进程：
 
@@ -97,13 +97,15 @@ WAGO VC Hub提供Linux环境安装包，文件名wagoscada-x.x.x-linux-x64-insta
 
     指定服务以 wago_scada 身份运行：
 
-    ```Plain Text 
+    ```
+    Plain Text 
     sudo systemctl edit wagoscada.service
     ```
  
     在 [Service] 部分添加：
 
-    ```Plain Text
+    ```
+    Plain Text
     User=wago_scada
     Group=wago_scada
     ```
