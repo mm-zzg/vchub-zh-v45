@@ -66,7 +66,7 @@ WAGO VC Hub提供Linux环境安装包，文件名wagovc_hub-x.x.x-linux-x64-inst
 
 为进一步提升系统安全性，建议在配置完成后执行以下步骤，对**服务目录**及**应用程序数据目录**进行权限设置，只有特定的用户才能对其进行操作，以确保敏感数据受到有效保护并避免潜在风险。
 
-1. 创建专用服务账号  2
+1. 创建专用服务账号  
 
     在系统中创建专用账号（如 wago_vc_hub），禁止交互式登录，仅用于运行服务进程：
 
@@ -76,7 +76,7 @@ WAGO VC Hub提供Linux环境安装包，文件名wagovc_hub-x.x.x-linux-x64-inst
  
     然后再通过 sudoers 文件设置免密码执行权限：
 
-    ```Plain Text
+    ```
     wago_vc_hub ALL=(ALL) NOPASSWD: ALL
     ```
  
@@ -84,9 +84,9 @@ WAGO VC Hub提供Linux环境安装包，文件名wagovc_hub-x.x.x-linux-x64-inst
 
     将服务安装目录（如 /usr/local/bin/wagovisualizationandcontrolhub-x.x.x-linux-x64）的所有权交给 wago_vc_hub，确保其可执行，同时限制其他用户的访问：
 
-    ```Plain Text
-    sudo chown -R wago_vc_hub:wago_vc_hub /usr/local/bin/wagovc_hub
-    sudo chmod -R 750 /usr/local/bin/wagovc_hub
+    ```
+    sudo chown -R wago_vc_hub:wago_vc_hub /usr/local/bin/wagovisualizationandcontrolhub-x.x.x-linux-x64
+    sudo chmod -R 750 /usr/local/bin/wagovisualizationandcontrolhub-x.x.x-linux-x64
     ```
  
      **注意**：必须在修改服务运行账号之前完成此步骤，否则服务可能缺少访问权限。
@@ -96,39 +96,38 @@ WAGO VC Hub提供Linux环境安装包，文件名wagovc_hub-x.x.x-linux-x64-inst
     指定服务以 wago_vc_hub 身份运行：
 
     ```
-    sudo systemctl edit wagovc_hub.service
+    sudo systemctl edit visualizationandcontrolhub.service
     ```
  
     在 [Service] 部分添加：
 
     ```
-    Plain Text
     User=wago_vc_hub
     Group=wago_vc_hub
     ```
  
     保存后重新加载配置并重启服务：
 
-    ```Plain Text
+    ```
     sudo systemctl daemon-reexec
-    sudo systemctl restart wagovc_hub.service
+    sudo systemctl restart visualizationandcontrolhub.service
     ```
  
 4. 设置应用程序数据目录权限
 
     将数据目录（如/usr/share/wagovisualizationandcontrolhub-x.x.x-linux-x64）的所有权交给wago_vc_hub，确保其具有完整读写权限，同时限制其他用户的访问：
 
-    ```Plain Text
-    sudo chown -R wago_vc_hub:wago_vc_hub /usr/share/WAGOvc_hub
-    sudo chmod -R 750 /usr/share/WAGOvc_hub
+    ```
+    sudo chown -R wago_vc_hub:wago_vc_hub /usr/share/wagovisualizationandcontrolhub
+    sudo chmod -R 750 /usr/share/wagovisualizationandcontrolhub
     ```
  
 5. 验证配置
 
     检查服务是否已成功以 wago_vc_hub 账号运行，并确认站点正常访问：
 
-    ```Plain Text
-    systemctl status wagovc_hub.service
+    ```
+    systemctl status visualizationandcontrolhub.service
     ```
  
     在浏览器访问 WAGO VC Hub 站点（例如 http://localhost:8066），确认运行正常。

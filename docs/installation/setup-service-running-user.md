@@ -49,42 +49,42 @@ WAGO VC Hub仅支持使用‘systemd’设置服务，大多数Linux发行版都
 
 1. **编辑服务单元文件**: 
 
-   通常，服务单元文件位于 `/etc/systemd/system/` 或 `/lib/systemd/system/` 目录下。
+      通常，服务单元文件位于 `/etc/systemd/system/` 或 `/lib/systemd/system/` 目录下。
 
-   ```bash
-   sudo nano /etc/systemd/system/wagoscada.service
-   ```
+      ```bash
+      sudo nano /etc/systemd/system/wagoscada.service
+      ```
  
 2. **在服务单元文件中指定用户**: 
 
-   添加或修改 `[Service]` 部分中的 `User` 和 `Group` 选项来指定运行服务的用户和组。
+      添加或修改 `[Service]` 部分中的 `User` 和 `Group` 选项来指定运行服务的用户和组。
 
-   ```plain
-   [Unit]
-   Description=WagoScada-Daemon
-   After=network.target
+         ```plain
+         [Unit]
+         Description=WagoScada-Daemon
+         After=network.target
 
-   [Service]
-   WorkingDirectory=/usr/local/bin/wagoscada-4.0.3-linux-x64
-   ExecStart=/usr/local/bin/wagoscada-4.0.3-linux-x64/start.sh
-   Restart=always
-   RestartSec=10
-   SyslogIdentifier=wagoscada-log
-   User=myuser
-   Group=mygroup
+         [Service]
+         WorkingDirectory=/usr/local/bin/wagoscada-4.0.3-linux-x64
+         ExecStart=/usr/local/bin/wagoscada-4.0.3-linux-x64/start.sh
+         Restart=always
+         RestartSec=10
+         SyslogIdentifier=wagoscada-log
+         User=myuser
+         Group=mygroup
 
-   [Install]
-   WantedBy=multi-user.target graphical.target
-   ```
+         [Install]
+         WantedBy=multi-user.target graphical.target
+         ```
  
 3. **重新加载systemd配置并启动服务**: 
 
-   在编辑完单元文件后，重新加载`systemd`配置并启动服务。
+         在编辑完单元文件后，重新加载`systemd`配置并启动服务。
 
-   ```bash
-   sudo systemctl daemon-reload
-   sudo systemctl start wagoscada
-   ```
+         ```bash
+         sudo systemctl daemon-reload
+         sudo systemctl start wagoscada
+         ```
  
 #### 注意事项
 
@@ -92,12 +92,12 @@ WAGO VC Hub仅支持使用‘systemd’设置服务，大多数Linux发行版都
    - 避免使用弱密码。
    - 确保账户具有最低权限原则，仅授予服务运行所需的权限，WAGO VC Hub服务需要**服务安装目录**，以及**服务数据目录**的读写权限。
    - 默认服务安装目录：
-      Windows：`"C:\Program Files\WAGO SCADA" `
+      Windows：`"C:\Program Files\WAGO Visualization And Control Hub" `
 
-      Linux：`"/usr/local/bin/wagoscada"`
+      Linux：`"/usr/local/bin/wagovisualizationandcontrolhub-x.x.x-linux-x64"`
 
    - 默认数据目录：
-      Windows：`"C:\ProgramData\WAGOSCADA"`
+      Windows：`"C:\ProgramData\WAGOVisualizationAndControlHub"`
 
-      Linux：`"/usr/share/WAGOSCADA"`
+      Linux：`"/usr/share/wagovisualizationandcontrolhub"`
 
