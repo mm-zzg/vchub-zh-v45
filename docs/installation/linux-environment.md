@@ -70,13 +70,15 @@ WAGO VC Hub提供Linux环境安装包，文件名wagoscada-x.x.x-linux-x64-insta
 
     在系统中创建专用账号（如 wago_scada），禁止交互式登录，仅用于运行服务进程：
 
-    ```Plain Text
+    ```
+    Plain Text
     sudo useradd -r -s /sbin/nologin wago_scada
     ```
  
     然后再通过 sudoers 文件设置免密码执行权限：
 
-    ```Plain Text
+    ```
+    Plain Text
     wago_scada ALL=(ALL) NOPASSWD: ALL
     ```
  
