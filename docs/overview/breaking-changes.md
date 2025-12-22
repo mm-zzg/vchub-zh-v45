@@ -2,7 +2,7 @@
 
 #### Breaking changes in 4.2
 
-##### **Breaking Change 1:    角色上不再进行权限设置。** 
+##### **Breaking Change 1: 角色上不再进行权限设置。** 
 
 - **影响范围** ：角色为非 Admin 的用户。这些用户登录后，可能会出现部分菜单不显示，或者部分功能无法使用的问题。
 - **变更说明** ：从 4.2 版本开始，角色上不再设置权限。改为在 AccessLevel 页面维护权限。之后在 Permission 页面，对各个模块进行权限配置。
@@ -16,7 +16,7 @@
  
  详见：[​Permission​](../management-platform/security/permission.md), [​Access Level​](../management-platform/security/access-level.md) 
 
-##### **Breaking Change 2:   创建项目，增加了权限控制。**
+###### **Breaking Change 2: 创建项目，增加了权限控制。**
 
 - **影响范围** ：角色为 Admin 和 Configurator 之外的用户。
 - **变更说明** ：从 4.2 版本开始，默认只有角色为 Admin 或 Configurator 的用户有权限进行项目的新增，复制和导入操作。其他用户无法执行这些操作。
@@ -25,7 +25,7 @@
 ![alt text](7.png)
  详见：[​Permission​](../management-platform/security/permission.md)
 
-##### **Breaking Change 3:   设计和删除项目，增加了权限控制。**
+###### **Breaking Change 3: 设计和删除项目，增加了权限控制。**
 
 - **影响范围** ：角色为 Admin ， Configurator 和 Operator 之外的用户。
 - **变更说明** ：从 4.2 版本开始，默认只有角色为 Admin,Configurator 或 Operator 的用户有权限设计和删除项目。其他用户无法执行这些操作。
