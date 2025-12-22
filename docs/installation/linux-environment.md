@@ -1,6 +1,6 @@
 # Linux环境
 
-WAGO VC Hub提供Linux环境安装包，文件名wagoscada-x.x.x-linux-x64-installer.run。
+WAGO VC Hub提供Linux环境安装包，文件名wagovc_hub-x.x.x-linux-x64-installer.run。
 
 #### 安装步骤
 
@@ -66,72 +66,69 @@ WAGO VC Hub提供Linux环境安装包，文件名wagoscada-x.x.x-linux-x64-insta
 
 为进一步提升系统安全性，建议在配置完成后执行以下步骤，对**服务目录**及**应用程序数据目录**进行权限设置，只有特定的用户才能对其进行操作，以确保敏感数据受到有效保护并避免潜在风险。
 
-1. 创建专用服务账号 
+1. 创建专用服务账号  2
 
-    在系统中创建专用账号（如 wago_scada），禁止交互式登录，仅用于运行服务进程：
+    在系统中创建专用账号（如 wago_vc_hub），禁止交互式登录，仅用于运行服务进程：
 
     ```
-    Plain Text
-    sudo useradd -r -s /sbin/nologin wago_scada
+    sudo useradd -r -s /sbin/nologin wago_vc_hub
     ```
  
     然后再通过 sudoers 文件设置免密码执行权限：
 
-    ```
-    Plain Text
-    wago_scada ALL=(ALL) NOPASSWD: ALL
+    ```Plain Text
+    wago_vc_hub ALL=(ALL) NOPASSWD: ALL
     ```
  
 2. 设置服务安装目录权限
 
-    将服务安装目录（如 /usr/local/bin/wagoscada）的所有权交给 wago_scada，确保其可执行，同时限制其他用户的访问：
+    将服务安装目录（如 /usr/local/bin/wagovisualizationandcontrolhub-x.x.x-linux-x64）的所有权交给 wago_vc_hub，确保其可执行，同时限制其他用户的访问：
 
     ```Plain Text
-    sudo chown -R wago_scada:wago_scada /usr/local/bin/wagoscada
-    sudo chmod -R 750 /usr/local/bin/wagoscada
+    sudo chown -R wago_vc_hub:wago_vc_hub /usr/local/bin/wagovc_hub
+    sudo chmod -R 750 /usr/local/bin/wagovc_hub
     ```
  
      **注意**：必须在修改服务运行账号之前完成此步骤，否则服务可能缺少访问权限。
 
 3. 修改服务运行账号
 
-    指定服务以 wago_scada 身份运行：
+    指定服务以 wago_vc_hub 身份运行：
 
     ```
-    Plain Text 
-    sudo systemctl edit wagoscada.service
+    sudo systemctl edit wagovc_hub.service
     ```
  
     在 [Service] 部分添加：
 
     ```
     Plain Text
-    User=wago_scada
-    Group=wago_scada
+    User=wago_vc_hub
+    Group=wago_vc_hub
     ```
  
     保存后重新加载配置并重启服务：
 
     ```Plain Text
     sudo systemctl daemon-reexec
-    sudo systemctl restart wagoscada.service
+    sudo systemctl restart wagovc_hub.service
     ```
  
 4. 设置应用程序数据目录权限
 
-    将数据目录（如/usr/share/WAGOSCADA）的所有权交给wago_scada，确保其具有完整读写权限，同时限制其他用户的访问：
+    将数据目录（如/usr/share/wagovisualizationandcontrolhub-x.x.x-linux-x64）的所有权交给wago_vc_hub，确保其具有完整读写权限，同时限制其他用户的访问：
 
     ```Plain Text
-    sudo chown -R wago_scada:wago_scada /usr/share/WAGOSCADA
-    sudo chmod -R 750 /usr/share/WAGOSCADA
+    sudo chown -R wago_vc_hub:wago_vc_hub /usr/share/WAGOvc_hub
+    sudo chmod -R 750 /usr/share/WAGOvc_hub
     ```
  
 5. 验证配置
 
-    检查服务是否已成功以 wago_scada 账号运行，并确认站点正常访问：
+    检查服务是否已成功以 wago_vc_hub 账号运行，并确认站点正常访问：
 
     ```Plain Text
-    systemctl status wagoscada.service
+    systemctl status wagovc_hub.service
     ```
  
     在浏览器访问 WAGO VC Hub 站点（例如 http://localhost:8066），确认运行正常。
@@ -139,11 +136,11 @@ WAGO VC Hub提供Linux环境安装包，文件名wagoscada-x.x.x-linux-x64-insta
 #### 卸载步骤
 
 1. 进入到安装目录的上级目录。
-2. 授予文件所有者执行卸载脚本“wagoscada-uninstall.sh”的权限 
+2. 授予文件所有者执行卸载脚本“wagovc_hub-uninstall.sh”的权限 
 
     ![alt text](28.png)
 
-3. 运行wagoscada-uninstall.sh脚本。
+3. 运行wagovc_hub-uninstall.sh脚本。
 
     ![alt text](29.png)
 
