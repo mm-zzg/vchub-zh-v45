@@ -79,7 +79,7 @@ WAGO VC Hub中可以有任意数量的资产，用户可以将变量创建到任
 
 注意，在对该**Json**文件中的内容不是特别理解的情况下，不建议对其进行修改。
 
-######## 导出*Json*示例
+###### 导出**Json**示例
 
 ![车间资产_20240123161724.json](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/6rrAGavR/resources/space%3ANGeB7iWY?token=W.4hJ-_BZS3NYfJCwVX36TdE5oYoNsqNvQ8Y9LM5_wM8mJjAMKKPXBefKUnqhIPGo)
 
