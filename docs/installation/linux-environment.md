@@ -7,33 +7,33 @@ WAGO VC Hub提供Linux环境安装包，文件名wagoscada-x.x.x-linux-x64-insta
 1. 拷贝安装包至Linux服务器某目录下。
 2. 授予文件所有者执行安装文件的权限 。
 
-![alt text](17.png)
+     ![alt text](17.png)
 
 3. 在目录下使用./+文件名的方式运行安装包。
 
-![alt text](18.png)
+    ![alt text](18.png)
 
 4. 选择安装语言。
 
-![alt text](19.png)
+    ![alt text](19.png)
 
 5. 自定义安装目录或使用默认安装目录。如果安装目录不存在，安装程序会主动创建。
 
-![alt text](20.png)
+    ![alt text](20.png)
 
-![alt text](21.png)
+    ![alt text](21.png)
 
 6. 自定义数据目录或使用默认数据目录。
 
-![alt text](22.png)
+    ![alt text](22.png)
 
 7. 等待安装，此过程需要一点时间，请耐心等待。
 
-![alt text](23.png)
+    ![alt text](23.png)
 
 8. 安装完成。
 
-![alt text](24.png)
+    ![alt text](24.png)
 
 9. 完成后默认访问WAGO VC Hub站点：“http://localhost:8066”，安装完成后，将进入配置引导界面。
 
@@ -46,15 +46,15 @@ WAGO VC Hub提供Linux环境安装包，文件名wagoscada-x.x.x-linux-x64-insta
 
 1. 阅读许可协议 
 
-![alt text](25.png)
+    ![alt text](25.png)
 
 2. 创建管理员用户，请牢记此用户名和密码，接下来将使用此用户名和密码进行首次登录。
 
-![alt text](26.png)
+    ![alt text](26.png)
 
 3. 端口配置，配置 HTTP, HTTPS 端口，请牢记访问端口。
 
-![alt text](27.png)
+    ![alt text](27.png)
 
 
 
@@ -71,24 +71,24 @@ WAGO VC Hub提供Linux环境安装包，文件名wagoscada-x.x.x-linux-x64-insta
 
     在系统中创建专用账号（如 wago_scada），禁止交互式登录，仅用于运行服务进程：
 
-```Plain Text
-sudo useradd -r -s /sbin/nologin wago_scada
-```
+    ```Plain Text
+    sudo useradd -r -s /sbin/nologin wago_scada
+    ```
  
     然后再通过 sudoers 文件设置免密码执行权限：
 
-```Plain Text
-wago_scada ALL=(ALL) NOPASSWD: ALL
-```
+    ```Plain Text
+    wago_scada ALL=(ALL) NOPASSWD: ALL
+    ```
  
 2. 设置服务安装目录权限
 
     将服务安装目录（如 /usr/local/bin/wagoscada）的所有权交给 wago_scada，确保其可执行，同时限制其他用户的访问：
 
-```Plain Text
-sudo chown -R wago_scada:wago_scada /usr/local/bin/wagoscada
-sudo chmod -R 750 /usr/local/bin/wagoscada
-```
+    ```Plain Text
+    sudo chown -R wago_scada:wago_scada /usr/local/bin/wagoscada
+    sudo chmod -R 750 /usr/local/bin/wagoscada
+    ```
  
    **注意**：必须在修改服务运行账号之前完成此步骤，否则服务可能缺少访问权限。
 
@@ -138,11 +138,11 @@ systemctl status wagoscada.service
 1. 进入到安装目录的上级目录。
 2. 授予文件所有者执行卸载脚本“wagoscada-uninstall.sh”的权限 
 
-![alt text](28.png)
+    ![alt text](28.png)
 
 3. 运行wagoscada-uninstall.sh脚本。
 
-![alt text](29.png)
+    ![alt text](29.png)
 
 4. 以上操作后程序相关文件会被全部移除，并且进程守护服务也一并被移除。
 
