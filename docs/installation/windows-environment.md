@@ -13,18 +13,18 @@ WAGO VC Hub 提供Windows 64位操作系统安装包。
 
 #### 安装步骤
 
-1. 以管理员方式运行安装包程序
+1. 以管理员方式运行安装包程序 2
 2. 选择安装语言
 
-   ![alt text](5.png)
+     ![alt text](5.png)
 
 3. 进行端口检查，如果端口被占用，将无法继续进行安装
 
-   ![alt text](6.png)
+     ![alt text](6.png)
 
 4. 阅读并同意许可协议
 
-   ![alt text](7.png)
+     ![alt text](7.png)
 
 5. 选择安装位置，默认路径：“C:\Program Files\WAGO VC Hub”
 
