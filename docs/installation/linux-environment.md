@@ -91,7 +91,7 @@ WAGO VC Hub提供Linux环境安装包，文件名wagoscada-x.x.x-linux-x64-insta
     sudo chmod -R 750 /usr/local/bin/wagoscada
     ```
  
-   **注意**：必须在修改服务运行账号之前完成此步骤，否则服务可能缺少访问权限。
+     **注意**：必须在修改服务运行账号之前完成此步骤，否则服务可能缺少访问权限。
 
 3. 修改服务运行账号
 
