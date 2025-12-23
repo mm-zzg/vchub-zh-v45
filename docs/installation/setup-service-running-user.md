@@ -55,32 +55,31 @@ WAGO VC Hub仅支持使用‘systemd’设置服务，大多数Linux发行版都
 
       添加或修改 `[Service]` 部分中的 `User` 和 `Group` 选项来指定运行服务的用户和组。
       
- ```
-             [Unit]
-            Description=WAGOVisualizationAndControlHub-Daemon
-            After=network.target
+      ```
+      [Unit]
+      Description=WAGOVisualizationAndControlHub-Daemon
+      After=network.target
 
-            [Service]
-            WorkingDirectory=INSTALL_DIR
-            ExecStart=INSTALL_DIR/start.sh
-            Restart=always
-            RestartSec=10
-            SyslogIdentifier=wagovisualizationandcontrolhub-log
-            User=myuser
-            Group=mygroup
+      [Service]
+      WorkingDirectory=INSTALL_DIR
+      ExecStart=INSTALL_DIR/start.sh
+      Restart=always
+      RestartSec=10
+      SyslogIdentifier=wagovisualizationandcontrolhub-log
+      User=myuser
+      Group=mygroup
 
-            [Install]
-            WantedBy=multi-user.target graphical.target
- ```
- 
+      [Install]
+      WantedBy=multi-user.target graphical.target
+      ```
 3. **重新加载systemd配置并启动服务**: 
 
       在编辑完单元文件后，重新加载`systemd`配置并启动服务。
 
-```bash
-            sudo systemctl daemon-reload
-            sudo systemctl start visualizationandcontrolhub
-```
+      ```bash
+      sudo systemctl daemon-reload
+      sudo systemctl start visualizationandcontrolhub
+      ```
  
 #### 注意事项
 
