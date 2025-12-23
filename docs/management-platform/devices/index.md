@@ -6,13 +6,13 @@ WAGO VC Hub支持多种通讯协议，对于不同的硬件设施，只需为其
 
 #### 支持的设备类型
 
-- [known-link] 
-- [known-link] 
-- [known-link] 
-- [known-link]
-- [known-link]
-- [known-link]
-- [known-link]
+- [Modbus TCP](modbus-tcp/index.md)
+- [Modbus RTU](modbus-rtu/index.md)
+- [OPC UA](opc-ua/index.md) 
+- [MQTT Native](mqtt-native/index.md)
+- [​MQTT SparkplugB​](mqtt-sparkplugb/index.md)
+- [​SIEMENS S7​](siemens-s7/index.md)
+- [​WAGO Protocol​](wago-protocol/index.md)
 - [known-link] 
 
 ![alt text](1.png)
