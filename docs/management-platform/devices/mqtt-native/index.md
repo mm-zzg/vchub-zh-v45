@@ -17,6 +17,7 @@ WAGO VC Hub中的MQTT Native驱动程序基于MQTT协议设计和开发，支持
 4. 在操作一栏中点击“**添加节点**”，输入节点名称，为当前组添加一个新的节点。**节点**：节点代表具体设备的实体，具有唯一标识符，用于区分各个设备。
 
     ![alt text](3.png)
+
 5. 点击**确定**按钮，数据将在当前分组的节点列表页面中显示。请注意，状态列仅标识当前节点的启停状态，而非连接状态。
 
     ![alt text](4.png)
@@ -47,10 +48,11 @@ WAGO VC Hub中的MQTT Native驱动程序基于MQTT协议设计和开发，支持
 1. 获取账户和密码：点击节点的**“查看”**按钮，可以看到系统提供的用户名和密码。
 2. 配置客户端：在您的应用程序或设备中，配置 MQTT 客户端以连接到系统的 MQTT Broker：
 
-   - Broker 地址：填写系统 MQTT Broker 的地址。
-   - Broker 端口：填写系统 MQTT Broker 的端口号。默认为 1884。
-   - 客户端 ID：填写一个唯一的客户端标识符，用于在 MQTT Broker 上标识您的连接。
-   - 用户名和密码：使用您获取到的账户和密码。
+    - Broker 地址：填写系统 MQTT Broker 的地址。
+    - Broker 端口：填写系统 MQTT Broker 的端口号。默认为 1884。
+    - 客户端 ID：填写一个唯一的客户端标识符，用于在 MQTT Broker 上标识您的连接。
+    - 用户名和密码：使用您获取到的账户和密码。
+
 3. 连接到 MQTT Broker：使用 MQTT 客户端，在应用程序或设备中连接到系统的 MQTT Broker。确认连接成功后，便可以开始使用配置的客户端与MQTT Native驱动程序进行设备数据的传输。
 
 #### 发布和订阅设备数据
@@ -71,14 +73,11 @@ MQTT Native驱动基于MQTT协议设计和开发，接入驱动的MQTT客户端�
 
 **message_type详细解释**
 
-1. **NBIRTH** –  传输设备配置信息**Topic**：
-    wsV1.0/group_name/**NBIRTH**/node_name当成功接入 VC Hub 后，客户端可以通过此 Topic 将当前 node_name 下的所有设备配置信息和测点配置信息推送给系统。
+1. **NBIRTH** –  传输设备配置信息**Topic**：<br>wsV1.0/group_name/**NBIRTH**/node_name当成功接入 VC Hub 后，客户端可以通过此 Topic 将当前 node_name 下的所有设备配置信息和测点配置信息推送给系统。
 
-2. **NDATA** –  传输测点数据**Topic**：
-    wsV1.0/group_name/**NDATA**/node_name/[device_name]当成功推送测点配置信息后，客户端可以通过此 Topic 将测点数据推送给系统。
+2. **NDATA** –  传输测点数据**Topic**：<br>wsV1.0/group_name/**NDATA**/node_name/[device_name]当成功推送测点配置信息后，客户端可以通过此 Topic 将测点数据推送给系统。
 
-3. **NCMD** –  回传测点数据**Topic**：
-    wsV1.0/group_name/**NCMD**/node_name/device_name当客户端需要并且允许某些测点可以接收来自系统下发的值时，客户端可通过订阅此 Topic 来接收数据。
+3. **NCMD** –  回传测点数据**Topic**：<br>wsV1.0/group_name/**NCMD**/node_name/device_name当客户端需要并且允许某些测点可以接收来自系统下发的值时，客户端可通过订阅此 Topic 来接收数据。
 
 **说明**：
 - 方括号 `[]` 表示括号内的路径段为可选内容。
