@@ -9,11 +9,11 @@ WAGO VC Hub中的WAGO Protocol驱动支持与WAGO PLC的基本连接。系统自
 1. 在”**设备**“->”**WAGO Protocol**“页面，点击“**新增**”按钮。
 2. 在新增页面中输入**设备名称**。
 
-   ![alt text](1.png)
+      ![alt text](1.png)
 
 3. 点击**“确认”**按钮。此时该条数据将显示在WAGO Protocol的设备列表页面。请注意状态一栏，仅表示驱动程序的启停状态，并不代表和设备的真正连接状态。
 
-   ![alt text](2.png)
+      ![alt text](2.png)
 
 #### 配置字段
 
@@ -49,11 +49,11 @@ WAGO VC Hub中的WAGO Protocol驱动支持与WAGO PLC的基本连接。系统自
       - 在**Data protocol**下拉列表中选择WAGO Protocol 1.5。
       - 点击**Submit**，并重启设备。
       - 稍等片刻后在WBM的**Cloud Connectivity**下检查连接状态，Cloud connection则会显示connected。
-   **注意**：请不要勾选**Use Compression**，因为这会导致WAGO Protocol驱动无法正常处理数据；另外对于上述列表中其他未提及的字段，虽然勾选这些项目不会影响WAGO VC Hub的功能使用，但WAGO VC Hub尚未实现相应的功能。
+**注意**：请不要勾选**Use Compression**，因为这会导致WAGO Protocol驱动无法正常处理数据；另外对于上述列表中其他未提及的字段，虽然勾选这些项目不会影响WAGO VC Hub的功能使用，但WAGO VC Hub尚未实现相应的功能。
 
 3. 连接到 MQTT Server：确认连接成功后，便可以开始使用配置的客户端与WAGO Protocol驱动进行设备数据的传输。
 
-   ![alt text](3.png)
+      ![alt text](3.png)
 
 #### 启用TLS安全连接
 
@@ -80,15 +80,15 @@ __*__ __将__ __[server IP]__ __替换成__ __WAGO VC Hub__ __所部署的服务
 
 1. 创建一个I/O变量。
 
-   ![alt text](5.png)
+      ![alt text](5.png)
 
 2. 在变量的编辑界面，点击数据源的**设置**按钮。
 
-   ![alt text](6.png)
+      ![alt text](6.png)
 
 3. 选择需要绑定的测点。
 
-   ![alt text](7.png)
+      ![alt text](7.png)
 
 4. 点击“**确认**”按钮，完成配置。
 
