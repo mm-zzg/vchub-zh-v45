@@ -64,16 +64,16 @@
 
    | **名称**                      | **描述**                                                                                                      |
    |:-------------------------------|:---------------------------------------------------------------------------------------------------------------|
-   | Life Time Count(s)            | 指定维持订阅处于活跃状态的时间，默认1200，单位秒。                                                               |
+   | Life Time Count(s)            | 指定维持订阅处于活跃状态的时间，默认1200，单位秒。|
    | Keep Alive Count(s)           | 指定订阅的发布响应之间的最长时间，如果没有可用的通知，返回一个空的Publish响应，以告知客户端订阅仍然有效，默认5秒。 |
-   | Max Notifications Per Publish | 指定客户端希望在单个Publish响应中接收的最大通知数，默认0，即表示没有限制。                                       |
-   | Priority                      | 指定订阅相对于客户端创建的其他订阅的优先级，默认0，即不需要特殊优先级设置。                                      |
-   | Sampling Interval(ms)         | 采样间隔，默认为1000毫秒。                                                                                      |
-   | Queue Size                    | 指定所请求的受监视项目队列大小，默认为1。                                                                       |
-   | Discard Oldest                | 指定队列已满且要排队新通知时的丢弃策略，默认是，即丢弃。                                                         |
-   | Data Change Trigger           | 指定报告数据更改通知的条件，默认STATUS_VALUE，即状态码或者值发生变化时发送通知。                                 |
-   | Deadband Type                 | 死区的类型，默认NONE。                                                                                          |
-   | Deadband Value                | 死区值，如果不满足范围条件则不会触发数据更改通知。                                                              |
+   | Max Notifications Per Publish | 指定客户端希望在单个Publish响应中接收的最大通知数，默认0，即表示没有限制。|
+   | Priority                      | 指定订阅相对于客户端创建的其他订阅的优先级，默认0，即不需要特殊优先级设置。|
+   | Sampling Interval(ms)         | 采样间隔，默认为1000毫秒。|
+   | Queue Size                    | 指定所请求的受监视项目队列大小，默认为1。|
+   | Discard Oldest                | 指定队列已满且要排队新通知时的丢弃策略，默认是，即丢弃。|
+   | Data Change Trigger           | 指定报告数据更改通知的条件，默认STATUS_VALUE，即状态码或者值发生变化时发送通知。|
+   | Deadband Type                 | 死区的类型，默认NONE。|
+   | Deadband Value                | 死区值，如果不满足范围条件则不会触发数据更改通知。|
    | Timestamp Origin              | 指定要为读取和历史读取中的受监视项或节点传输的时间戳属性，默认是Source。                                        |
 
    **高级属性更详细的内容，请您参考OPC UA协议官方文档，** [https://reference.opcfoundation.org/](https://reference.opcfoundation.org/) 
