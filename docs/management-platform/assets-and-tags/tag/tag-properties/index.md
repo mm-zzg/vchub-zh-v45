@@ -22,7 +22,7 @@ I/O变量包含如下属性：
 - 模拟
 - 自定义属性
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/AC1Pp3Ue/resources/O2h0SPgFfDcqqA5mQpWCcZjZFPeojG6mTmKRiN12KKc.png?token=W.YED3ITewg4G1L0-zZH4YrbtwcZUsC5uNDPAzo4mkNFU1woO7zYuTq_bZ_yzzNm4)
+![alt text](1.png)
 
 #### 内存变量
 
@@ -37,7 +37,7 @@ I/O变量包含如下属性：
 - 模拟
 - 自定义属性
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/AC1Pp3Ue/resources/hgS5eShWF84-7wHJdITHt0OEtVgrOY8eC7Jg5LiwOZQ.png?token=W.YED3ITewg4G1L0-zZH4YrbtwcZUsC5uNDPAzo4mkNFU1woO7zYuTq_bZ_yzzNm4)
+![alt text](2.png)
 
 #### 表达式变量
 
@@ -53,5 +53,5 @@ I/O变量包含如下属性：
 - 模拟
 - 自定义属性
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/AC1Pp3Ue/resources/PXz6_O2gmwmFOwhPJ5u1Jkg_wEdLpai1g4ey8gGFOM0.png?token=W.YED3ITewg4G1L0-zZH4YrbtwcZUsC5uNDPAzo4mkNFU1woO7zYuTq_bZ_yzzNm4)
+![alt text](3.png)
 
