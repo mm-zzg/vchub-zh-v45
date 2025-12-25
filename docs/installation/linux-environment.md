@@ -2,7 +2,7 @@
 
 WAGO VC Hub提供Linux环境安装包，文件名wagovc_hub-x.x.x-linux-x64-installer.run。
 
-#### 安装步骤
+### 安装步骤
 
 1. 拷贝安装包至Linux服务器某目录下。
 2. 授予文件所有者执行安装文件的权限 。
@@ -37,7 +37,7 @@ WAGO VC Hub提供Linux环境安装包，文件名wagovc_hub-x.x.x-linux-x64-inst
 
 9. 完成后默认访问WAGO VC Hub站点：“http://localhost:8066”，安装完成后，将进入配置引导界面。
 
-##### 注意事项:
+##### **注意事项**:
 
 1. 程序由Linux系统自带的systemd服务管理器监管和守护，请确保服务器的systemd运行正常。
 2. 安装脚本包含创建脚本等操作，请确保有足够的权限。
