@@ -37,10 +37,40 @@ WAGO VC Hub提供Linux环境安装包，文件名wagovc_hub-x.x.x-linux-x64-inst
 
 9. 完成后默认访问WAGO VC Hub站点：“http://localhost:8066”，安装完成后，将进入配置引导界面。
 
-###### 注意事项
+##### 注意事项:
 
 1. 程序由Linux系统自带的systemd服务管理器监管和守护，请确保服务器的systemd运行正常。
 2. 安装脚本包含创建脚本等操作，请确保有足够的权限。
+
+#### **如何解决 libice6 / libsm6 安装失败的问题**
+
+如果您在安装过程中看到提示：“**Failed to install libice6/libsm6. Please try installing it yourself.**”，可以按照以下步骤手动安装这些软件包：
+
+1. 打开终端。
+ 
+2. 更新软件包列表：
+
+    ```
+    sudo apt update
+    ```
+
+3. 安装所需的库：
+
+    ```
+    sudo apt install libice6 libsm6
+    ```
+    若安装成功，无需进行后续操作。<br>若遇到 “**Unmet dependencies**” 这类错误，或系统提示 “**try 'apt --fix-broken install'**”，则表示您的系统存在软件包依赖关系问题。。
+    
+    ```
+    sudo apt --fix-broken install
+    ```
+    该命令将尝试通过安装缺失的依赖项或完成中断的安装过程，来修复不一致的软件包状态。
+
+4. 修复成功后，请重试安装库文件：
+
+    ```
+    sudo apt install libice6 libsm6
+    ```
 
 #### 配置步骤
 
