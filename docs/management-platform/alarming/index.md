@@ -86,7 +86,7 @@ WAGO VC Hub内置了4个报警等级。通过报警等级可以对报警进行�
 
 #### 配置报警
 
-在变量上配置报警。详见[known-link]。
+在变量上配置报警。详见[报警](../assets-and-tags/tag/tag-properties/alarm.md)。
 
 变量开启了报警配置后，在变量树中会显示对应的图表，您可以快速辨别出哪些变量开启了报警配置。
 
@@ -94,7 +94,7 @@ WAGO VC Hub内置了4个报警等级。通过报警等级可以对报警进行�
 
 #### 查看实时报警数据
 
-可以使用[known-link]控件进行报警数据的查看。
+可以使用[实时报警](../../2d-visualization/controls/alarm/real-time-alarm/index.md)控件进行报警数据的查看。
 
 ![alt text](3.png)
 

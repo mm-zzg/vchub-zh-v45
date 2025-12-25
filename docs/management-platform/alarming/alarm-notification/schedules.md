@@ -1,72 +1,82 @@
-# Schedules
+# 通知排程
 
-Notification scheduling is used to manage and set the schedule for sending alarm notifications at specific times or dates. By configuring the notification schedule, users can flexibly control when the VC Hub system sends notifications, ensuring that alarms are communicated at appropriate times. This is crucial for avoiding unnecessary disturbances or missing critical notifications. For example, you can configure the system to send alarm notifications from Monday to Friday, between 09:00 and 18:00 each day.
+通知排程用于管理和设置在特定时间或日期发送报警通知的计划。通过配置通知排程，用户可以灵活地控制WAGO VC Hub系统在不同时间点或日期发送通知。这对于确保在适当的时间向用户发送报警信息非常重要，避免不必要的干扰或错过关键的通知。例如您可以设置周一至周五，每天的09:00~18:00之间发送报警通知。
 
-## Standard Schedule
+#### 常规排程
 
-1. Click "**Alarming** "->" **Alarm Notifications** "->"**Schedules**" to enter the notification schedule list page.
-    ![alt text](1.png)
-2. Click the "**Add**" button. In the new pop-up window, select "Standard".
-    ![alt text](2.png)
-3. Click "Next" to enter the detailed configuration window. 
-    ![alt text](3.png)
+1. 在“**报警**”->"**报警通知**"->"**通知排程**"页面，进入通知排程列表页面。。
 
-**Properties**
+![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/QBXbrafL/resources/H82R5gZKR-rt4bzG3sTYdIytRL5S0NYs7HzzhWQrY_4.png?token=W.Nka4opMDDe-Iw5-g6m_qpgbI27bH_tiadIkytd_nSCpjtr9M7mGJib-FNcigfiU)
 
-| **Name**       | **Description**                                                                                                                                                                                                                                                                        |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name           | Schedule Name, required and must be unique.                                                                                                                                                                                                                                            |
-| Description    | Description of the schedule, optional.                                                                                                                                                                                                                                                 |
-| Timezone       | Time zone for the schedule to run.                                                                                                                                                                                                                                                     |
-| Ignore Holiday | Whether to pause notifications during holidays.                                                                                                                                                                                                                                        |
-| Schedule       | Users can set specific time periods within regular days (such as weekdays) for sending notifications. Multiple time periods can be selected, with precise settings down to the exact hours, minutes, and seconds.                                                                      |
-| Start          | Set the start time for the schedule to take effect.                                                                                                                                                                                                                                    |
-| End            | - No end time:The schedule will continue to execute until manually disabled or modified. <br>- End:Set the end time for the schedule to expire.  |
+2. 点击“**新增**”按钮。在新增弹窗中选择**常规**。
 
-4.Once the setup is complete, click the "OK" button to finish adding the new configuration.
+![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/QBXbrafL/resources/m2wfL398kFinC8xyY_XjgRNbEAF3n2ixRgBIlZdEJMI.png?token=W.Nka4opMDDe-Iw5-g6m_qpgbI27bH_tiadIkytd_nSCpjtr9M7mGJib-FNcigfiU)
 
-## Holiday Schedule
+3. 点击下一步，进入详细配置界面。
 
-1. Click "**Alarming** "->" **Alarm Notifications** "->"**Schedules**" to enter the notification schedule list page.
-    ![alt text](1.png)
-2. Click the "**Add**" button. In the new pop-up window, select "Holiday".
-    ![alt text](4.png)
-3. Click "Next" to enter the detailed configuration window. 
-    ![alt text](5.png)
+![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/QBXbrafL/resources/64AHdgCz64ZGkraQjtETOhWGIa3JVXpgSfPBAAis3gs.png?token=W.Nka4opMDDe-Iw5-g6m_qpgbI27bH_tiadIkytd_nSCpjtr9M7mGJib-FNcigfiU)
 
-**Properties**
+**属性**
 
-| **Name**    | **Description**                                                                                             |
-|-------------|-------------------------------------------------------------------------------------------------------------|
-| Name        | Schedule Name, required and must be unique.                                                                 |
-| Description | Description of the schedule, optional.                                                                      |
-| Timezone    | Time zone for the schedule to run.                                                                          |
-| Date Range  | - Satrt Date: Holiday Start Time <br>- End Date: Holiday End Time   | 
+| 名称       | **描述**                                                                                                                                                    |
+|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 名称       | 排程名称，必填且不可重复。                                                                                                                                    |
+| 描述       | 排程的描述信息，选填。                                                                                                                                        |
+| 时区       | 排程运行所依据的时区。                                                                                                                                       |
+| 忽略节假日 | 是否在节假日期间暂停通知发送。如果勾选，则节假日正常发送报警通知。                                                                                             |
+| 发送时间   | 用户可以设置在平时（如工作日）的特定时间段内发送通知。可选多个时间段，并细化到具体的时分秒。                                                                     |
+| 开始时间   | 设置排程生效的起始时间。                                                                                                                                     |
+| 结束时间   | | 无结束时间 | 排程将持续执行，直到手动停用或修改。 | |------------|------------------------------------| | 结束时间   | 设置排程失效的结束时间。            | |
 
-4.Once the settings are complete, click the '**OK**' button to finish adding.
+4. 设置完成，点击“确认”按钮完成新增。
 
-## View Schedule
+#### 节假日排程
 
-Click '**View Schedule**' in 'Regular Schedule' to see the current schedule dates in the pop-up schedule table.
+1. 在“**报警**”->"**报警通知**"->"**通知排程**"页面，进入通知排程列表页面。
 
-![alt text](6.png)
+![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/QBXbrafL/resources/H82R5gZKR-rt4bzG3sTYdIytRL5S0NYs7HzzhWQrY_4.png?token=W.Nka4opMDDe-Iw5-g6m_qpgbI27bH_tiadIkytd_nSCpjtr9M7mGJib-FNcigfiU)
 
-Click 'View Schedule' in 'Holiday Schedule', and the pop-up schedule table will display all holiday dates.
+2. 点击“**新增**”按钮。在新增弹窗中选择**常规**。
 
-![alt text](7.png)
+![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/QBXbrafL/resources/oIdN_q5ot9Xn0fqEmcMVrhsYu9vP0PI7Tbiv_1MIEOQ.png?token=W.Nka4opMDDe-Iw5-g6m_qpgbI27bH_tiadIkytd_nSCpjtr9M7mGJib-FNcigfiU)
 
-The core purpose of notification scheduling is to ensure that notifications are sent according to the expected time and date requirements, avoiding unnecessary notifications at inappropriate times while ensuring that critical notifications are delivered promptly.
+3. 点击下一步，进入详细配置界面。
 
-## How to use the Schedules
+![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/QBXbrafL/resources/JuvdRq0FplTeV9__0MbRNWiiFoUxSVbMFLVtpRy8Jf8.png?token=W.Nka4opMDDe-Iw5-g6m_qpgbI27bH_tiadIkytd_nSCpjtr9M7mGJib-FNcigfiU)
 
-In the alarm notification rules, you will select the notification service.
+**属性**
 
-1. Click on **"Alarming" -> "Alarm Notifications" ->  Rules"** to enter the notification rules list page.
-2. Click the **"New"** button in the upper right corner of the list.
-3. In the pop-up window, click the **'+Email'**  or '**+SMS**'  button to add a new notification rule.In the schedule dropdown, select the previously created schedule.
-    ![alt text](8.png)
+| **名称** | **描述**                                                                                  |
+|----------|-------------------------------------------------------------------------------------------|
+| 名称     | 排程的名称，名称不可重复，必填项。                                                           |
+| 描述     | 排程描述信息，可选填。                                                                      |
+| 时区     | 排程按照那个时区运行                                                                      |
+| 日期     | | 开始日期 | 节假日开始时间 | |----------|----------------| | 结束日期 | 节假日结束时间 | |
 
-**Note:** Notification schedules can only select regular schedules. The purpose of holiday schedules is to determine whether regular schedules should ignore these holidays when sending notifications. 
+4. 设置完成，点击“确认”按钮完成新增。
 
+#### **查看排程**
 
+点击“常规排程”中的“查看排程”，即可在弹出的排程表中查看当前的排程日期。
+
+![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/QBXbrafL/resources/_8dhAGPZfqh4J3FDpMM1wmW9JfqZSNE1quVFtVCWmJU.png?token=W.Nka4opMDDe-Iw5-g6m_qpgbI27bH_tiadIkytd_nSCpjtr9M7mGJib-FNcigfiU)
+
+点击“节假日排程”中的“查看排程”，弹出的排程表将显示所有节假日的日期。
+
+![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/QBXbrafL/resources/soS3OrY4R4hvVQAYg3hvZnnErYcaH79mJ0ges4iz1ko.png?token=W.Nka4opMDDe-Iw5-g6m_qpgbI27bH_tiadIkytd_nSCpjtr9M7mGJib-FNcigfiU)
+
+通知排程的核心目的是确保通知的发送符合预期的时间和日期要求，避免在不合适的时间发送不必要的通知，同时确保关键时刻的通知能够及时送达。
+
+#### 应用
+
+在报警的**通知规则**中将选择通知内容。
+
+1. 点击“**报警**”->"**报警通知**"->"**通知规则**"，进入通知规则列表页面。
+2. 点击列表右上角的“新增“按钮。
+3. 在新增弹窗中点击通知的'**+Email**'或“**+SMS**”按钮，新增一个通知规则，可以在通知排程中选择刚刚创建的通知排程。
+
+| 说明：通知排程只能选择常规排程。节假日排程的目的是决定常规排程在发送时是否忽略这些节假日。 |
+|-----------------------------------------------------------------------------------------|
+
+![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/QBXbrafL/resources/G_tq2EZ4KVXYiosHf9hwhEC6MY0dQ9rrMXAuQ64VTJ4.png?token=W.Nka4opMDDe-Iw5-g6m_qpgbI27bH_tiadIkytd_nSCpjtr9M7mGJib-FNcigfiU)
 
