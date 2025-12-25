@@ -2,11 +2,11 @@
 
 WAGO VC Hub支持5种报警通知服务：
 
-1. [Email(SMTP)](email.md) 
-2. [SMS(Ali Cloud)](sms-alicloud.md)
-3. [SMS(Twilio)](sms-twilio.md)
-4. [企业微信](wecom.md)
-5. [钉钉](dingtalk.md) 
+- [Email(SMTP)](email.md) 
+- [SMS(Ali Cloud)](sms-alicloud.md)
+- [SMS(Twilio)](sms-twilio.md)
+- [企业微信](wecom.md)
+- [钉钉](dingtalk.md) 
 
 ![alt text](1.png)
 
