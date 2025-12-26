@@ -1,5 +1,25 @@
 # Breaking Changes
 
+#### Breaking changes in 4.5
+
+###### **Breaking Change 1:   许可证验证方式变更** 
+
+- **影响范围** ：升级到 4.5 版本后，现有许可证将失效。
+- **变更说明** ：许可证认证机制发生变更。
+- **解决方案** ：需购买新许可证。请联系我们的销售团队获取 4.5 版本的许可证。
+
+###### **Breaking Change 2:   设备列表中移除 “摄像头”** 
+
+- **影响范围** ：所有摄像头设备。
+- **变更说明** ：从 4.5 版本起，设备列表中移除摄像头。
+- **解决方案** ：摄像头管理功能已停止支持。若需使用视频相关功能，请相应调整您的工作流程。
+
+###### **Breaking Change 3:   移除摄像头控制功能** 
+
+- **影响范围** ：使用摄像头控制的页面。
+- **变更说明** ：从 4.5 版本起，工具中移除摄像头控制功能。
+- **解决方案** ：摄像头管理功能已停止支持。若需使用视频相关功能，请相应调整您的工作流程。
+
 #### Breaking changes in 4.2
 
 ###### **Breaking Change 1:   角色上不再进行权限设置** 
@@ -70,7 +90,7 @@
 ###### **Breaking Change 9: OPC UA设备添加了发现服务功能；组添加了高级配置。**  
 
 - **影响范围：** OPC UA 设备。
-- **变更说明：** 从4.2版本开始，OPC UA添加设备逻辑变化并且设备和组的数据结构也发生变化，导致之前的设备无法正常使用。
+- **变更说明：** 从4.2版本开始，添加了发现服务和高级组设置功能，这可能导致之前已连接的设备无法正常运行。
 - **解决方案：** 删除旧设备，重新创建同名的设备和组。
 
      详见：[​OPC UA​ ](../management-platform/devices/opc-ua/index.md)
@@ -81,7 +101,7 @@
 - **变更说明：** 在 4.2 版本上，重新设计了报警历史表，旧版本升级到 4.2 版本后，历史报警控件无法查询升级之前的历史报警数据。
 - **解决方案：** 使用数据库管理工具打开对应数据库，依据数据库类型执行如下对应脚本即可。
 
- 需要**说明** 的是，由于 4.2 之前的版本，报警的确认方式不是存储在数据库中的，所以通过以下脚本同步数据后，会将报警的确认方式全部设置为 “ 自动 ” 。
+ **说明**：由于 4.2 之前的版本，报警的确认方式不是存储在数据库中的，所以通过以下脚本同步数据后，会将报警的确认方式全部设置为 “ 自动 ” 。
 
 **SQLite**
 
@@ -330,21 +350,33 @@ INNER JOIN public."ScadaAlarmMapping" c ON a."AlarmId" = c."Id" AND a."ProviderI
 INNER JOIN public."ScadaTagMapping" d ON c."TagId" = d."Id" AND c."ProviderId" = d."ProviderId" AND c."Type" = d."Type";
 ```
 
-###### **Breaking Change 11: System.Tag.readHistory函数，添加了新的参数**
+###### **Breaking Change 11: 摄像头设备需要 WebRTC Streamer**
 
-- **影响范围** ：使用了 System.Tag.readHistory 函数的所有地方
-- **变更说明** ：从 4.2 版本开始，在 System.Tag.readHistory 函数的参数中，添加了新的聚合模式查询，支持按固定点数返回查询结果。
-- **解决方案** ：  4.2 之前版本上的 System.Tag.readHistory 函数可以正常运行。但是在重新编辑使用了该函数的脚本时，会提示 System.Tag.readHistory 函数不正确。需要用户按照新的参数格式，对原有格式进行手动调整。
+- **影响范围** ：摄像头设备。
+- **变更说明** ：从 4.2 版本起，摄像头必须添加到 WebRTC Streamer 下。
+- **解决方案** ：部署 WebRTC Streamer，然后在其下创建和配置摄像头。
 
- 详见：[​System.Tag.readHistory​ ](../appendix/system-function/system-tag/system-tag-readhistory.md)
+###### **Breaking Change 12: 摄像头控制需要重新选择**
 
-###### **Breaking Change 12: 设备列表中移除了倍福**
+- **影响范围** ：页面上的摄像头控制。
+- **变更说明** ：由于 4.2 版本起添加摄像头设备的方式已变更，您需要在摄像头控制中重新选择要播放的设备。并且运行时不再支持切换设备，也不再支持历史视频的播放。
+- **解决方案** ：  在编辑器中重新选择摄像头设备。
 
-- **影响范围** ：使用倍福驱动进行数采的设备
-- **变更说明** ：从 4.2 版本开始，设备列表中移除了倍福驱动。
-- **解决方案：** 使用其他驱动，进行数据采集。
+###### **Breaking Change 13: 系统函数 System.Tag.readHistory 参数更新**
 
-###### **Breaking Change 13: 系统函数 System.UI.currentPage 调整为 System.Page**
+- **影响范围** ：所有使用此函数的脚本。
+- **变更说明** ：从 4.2 版本起，**System.Tag.readHistory** 函数的参数中新增了聚合模式查询功能，支持按固定点数返回查询结果。
+- **解决方案** ： 现有代码可正常运行，但编辑时会提示错误。请相应更新参数格式。
+
+详见：[​System.Tag.readHistory​ ](../appendix/system-function/system-tag/system-tag-readhistory.md)
+
+###### **Breaking Change 14: 移除Beckhoff驱动**
+
+- **影响范围** ：所有使用 Beckhoff 驱动的设备。
+- **变更说明** ：从 4.2 版本开始，Beckhoff 已从设备列表中移除。
+- **解决方案** ：使用其他驱动程序进行数据采集。
+
+###### **Breaking Change 15: 系统函数 System.UI.currentPage 调整为 System.Page**
 
 - **影响范围** ：画面中使用到 System.UI.currentPage.* 相关函数的脚本
 - **变更说明** ： System.UI.currentPage.* 函数相对其他函数多一个层级。从 4.2 版本开始， System.UI.currentPage 调整为 System.Page
@@ -352,7 +384,7 @@ INNER JOIN public."ScadaTagMapping" d ON c."TagId" = d."Id" AND c."ProviderId" =
 
  详见：[​System.Page.setPropertyValue​](../appendix/system-function/system-page/system-page-setpropertyvalue.md) ,[​System.Page.getPropertyValue​](../appendix/system-function/system-page/system-page-getpropertyvalue.md) 
 
-###### **Breaking Change 14: 系统函数System.UI.openPopup参数修改**
+###### **Breaking Change 16: 系统函数System.UI.openPopup参数修改**
 
 - **影响范围：** 画面中使用到 System.UI.openPopup 相关函数的脚本
 - **变更说明：** 从 4.2 版本开始 System.UI.openPopup 函数的参数结构进行了调整：
@@ -363,30 +395,30 @@ INNER JOIN public."ScadaTagMapping" d ON c."TagId" = d."Id" AND c."ProviderId" =
 
  详见：[​System.UI.openPopup​ ](../appendix/system-function/system-ui/system-ui-openpopup.md)
 
-###### **Breaking Change 15: 脚本中，实时趋势的 yAxis 下的 series  修改为  axes**
+###### **Breaking Change 17: 脚本中，实时趋势的 yAxis 下的 series  修改为  axes**
 
 - **影响范围** ：画面中通过脚本对到实时趋势的 y 轴进行修改的地方。
 - **变更说明** ：从 4.2 版本开始 ,yAxis 下的 series  修改为  axes 
 - **解决方案** ：脚本执行不会出错，但在脚本编辑器中会提示错误，需要手动将属性名称由  series  修改为 axes 。
 
-###### **Breaking Change 16: 脚本中，柱状图的 refreshRate 参数修改为 refreshFrequency**
+###### **Breaking Change 18: 脚本中，柱状图的 refreshRate 参数修改为 refreshFrequency**
 - **影响范围** ：画面中通过脚本修改柱状图刷新频率的地方。
 - **变更说明** ：从 4.2 版本开始 ,refreshRate 修改为 refreshFrequency
 - **解决方案** ：脚本执行不会出错，但在脚本编辑器中会提示错误，需要手动将属性名称由  refreshRate  修改为 refreshFrequency 。
 
-###### **Breaking Change 17: 脚本中，柱状图 series 下的  barSpacing  调整为  barGap**
+###### **Breaking Change 19: 脚本中，柱状图 series 下的  barSpacing  调整为  barGap**
 
 - **影响范围** ：画面中通过脚本对柱状图的系列进行修改的地方。
 - **变更说明** ： 从 4.2 版本开始 ,series 下的  barSpacing  调整为  barGap
 - **解决方案** ：脚本执行不会出错，但在脚本编辑器中会提示错误，需要手动将属性名称由 barSpacing  修改为  barGap 。
 
-###### **Breaking Change 18: 脚本中，日历控件的 calendarBackgroundColor 参数调整为pickerBackgroundColor**
+###### **Breaking Change 20: 脚本中，日历控件的 calendarBackgroundColor 参数调整为pickerBackgroundColor**
 
 - **影响范围** ：画面中通过脚本修改日历控件的背景色的地方。   
 - **变更说明** ：从 4.2 版本开始 ,calendarBackgroundColor 调整为 pickerBackgroundColor
 - **解决方案** ：脚本执行不会出错，但在脚本编辑器中会提示错误，需要手动将属性名称由  calendarBackgroundColor  修改为  pickerBackgroundColor 。
 
-###### **Breaking Change 19: 通过脚本操作历史趋势图时，部分参数做了调整。**
+###### **Breaking Change 21: 通过脚本操作历史趋势图时，部分参数做了调整。**
 
 - **影响范围** ：画面中通过脚本修改历史趋势图属性的地方。
 - **变更说明** ：从 4.2 版本开始 , 对如下参数进行了调整。
@@ -399,13 +431,13 @@ INNER JOIN public."ScadaTagMapping" d ON c."TagId" = d."Id" AND c."ProviderId" =
    -  yAxis 中的 series 替换为 axes
 - **解决方案** ：原写法在执行时仍然会按照预期结果执行成功，但在脚本编辑器中会提示错误，需要按照新格式进行修改。
 
-###### **Breaking Change 20: 通过脚本操作饼图时，部分参数做了调整。**
+###### **Breaking Change 22: 通过脚本操作饼图时，部分参数做了调整。**
 
 - **影响范围：** 画面中通过脚本修改饼图属性的地方。
 - **变更说明：** 从 4.2 版本开始， type 改为 style ； refreshRate 改为 refreshFrequency
 - **解决方案** ：原写法在执行时仍然会按照预期结果执行成功，但在脚本编辑器中会提示错误，需要按新格式修改。
 
-###### **Breaking Change 21: 通过脚本操作历史检索控件时，部分参数做了调整。**
+###### **Breaking Change 23: 通过脚本操作历史检索控件时，部分参数做了调整。**
 
 - **影响范围：** 画面中通过脚本修改历史检索控件属性的地方。
 - **变更说明** ：从 4.2 版本开始，对参数进行了如下调整：
@@ -417,25 +449,25 @@ INNER JOIN public."ScadaTagMapping" d ON c."TagId" = d."Id" AND c."ProviderId" =
    -  新增 queryMode
 - **解决方案** ：原写法在执行时仍然会按照预期结果执行成功，但在脚本编辑器中会提示错误，需要按新格式修改。
 
-###### **Breaking Change 22: 通过脚本操作仪表盘控件时，部分参数做了调整。**
+###### **Breaking Change 24: 通过脚本操作仪表盘控件时，部分参数做了调整。**
 
 - **影响范围** ：画面中通过脚本修改仪表盘控件属性的地方。
 - **变更说明** ： 从 4.2 版本开始， rangeColor 调整为 intervalColor 。
 - **解决方案** ：原写法在执行时仍然会按照预期结果执行成功，但在脚本编辑器中会提示错误，需要按新格式修改。
 
-###### **Breaking Change 23: 通过脚本操作下拉框控件时，部分参数做了调整。**
+###### **Breaking Change 25: 通过脚本操作下拉框控件时，部分参数做了调整。**
 
 - **影响范围** ：画面中通过脚本修改下拉框控件属性的地方。
 - **变更说明** ：从 4.2 版本开始， datasource 下的 name 调整为 text
 - **解决方案** ：原写法在执行时仍然会按照预期结果执行成功，但在脚本编辑器中会提示错误，需要按新格式修改。
 
-###### **Breaking Change 24: 通过脚本操作单选按钮时，部分参数做了调整。**
+###### **Breaking Change 26: 通过脚本操作单选按钮时，部分参数做了调整。**
 
 - **影响范围：** 画面中通过脚本修改单选按钮控件属性的地方。
 - **变更说明：** 从 4.2 版本开始， datasource 下的 name 调整为 text
 - **解决方案：** 原写法在执行时仍然会按照预期结果执行成功，但在脚本编辑器中会提示错误，需要按新格式修改。
 
-###### **Breaking Change 25: OpenAPI历史报警接口返回值做了调整。**
+###### **Breaking Change 27: OpenAPI历史报警接口返回值做了调整。**
 
 - **影响范围** : 集成OpenAPI的历史报警接口的第三方应用程序
 - **变更说明** : 从4.2版本开始，报警类型、等级、状态做了调整
