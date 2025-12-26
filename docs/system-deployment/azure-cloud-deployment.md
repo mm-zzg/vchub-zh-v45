@@ -10,9 +10,7 @@
 
 ###### 硬件（虚拟机配置）
 
--  CPU:   x86 64位架构，4核心
--  内存：4GB
--  硬盘：SSD硬盘或以上性能硬盘，10G以上可用硬盘空间
+[所需硬件](../overview/system-requirements.md)
 
 #### 部署方式
 
@@ -32,17 +30,15 @@
 
 我们推荐用户直接订阅Azure Database服务来存储VC Hub的历史数据（VC Hub服务同样支持本地数据库连接，但需要用户自己保证数据库可用性与备份等稳定性功能），在成功订阅了Azure Database后，通过WAGO VC Hub的数据库连接功能与之建立联系。
 
-云端的WAGO VC Hub节点，支持通过MQTT协议与设备站点进行数据通讯，如图中**Station2**，建立MQTT通讯的前提，需要用户开启Azure Virtual Machine的**1883**端口，云端VC Hub将通过**1883**端口与设备站点进行通讯，该端口目前暂不支持自定义。
+云端的WAGO VC Hub节点，支持通过MQTT协议与设备站点进行数据通讯，如图中Station2，建立MQTT通讯的前提，需要用户开启Azure Virtual Machine的1883端口，云端VC Hub将通过1883端口与设备站点进行通讯，该端口目前暂不支持自定义。
 
-用户可以通过WAGO VC Hub内置的[组网](../management-platform/networking.md)功能，使云端的WAGO VC Hub节点与其它WAGO VC Hub节点建立通讯，如图中的**Station2**，**Station2**可以部署在云端或本地，用户需要开启Azure Virtual Machine的**8060**端口，该端口可在VC Hub网站中自定义修改。
+用户可以通过WAGO VC Hub内置的[组网](../management-platform/networking.md)功能，使云端的WAGO VC Hub节点与其它WAGO VC Hub节点建立通讯，如图中的Station2，Station2可以部署在云端或本地，用户需要开启Azure Virtual Machine的8060端口，该端口可在VC Hub网站中自定义修改。
 
 ![alt text](10.png)
 
 ###### Service Level Agreements分析
 
 截至2024-04-01，Azure官方提供了在单实例虚拟机场景中可供参考的Uptime Calculation如下：
-
- [Service Level Agreement for Microsoft Online Services (WW)](https://wwlpdocumentsearch.blob.core.windows.net/prodv2/OnlineSvcsConsolidatedSLA(WW)(English)(April2024)(CR).docx)
 
 | Azure Virtual Machine | Standard SSD | Standard HDD | Database |
 |-----------------------|--------------|--------------|----------|
@@ -64,7 +60,7 @@
 
 ##### Service Level Agreements分析
 
-根据单台Azure VM提供的可用性描述，在双虚拟机部署配置主备理想状态下的Uptime Calculation如下：
+系统稳定性得到提升。即使某个虚拟机发生故障，另一台虚拟机上的 VC Hub 服务仍会继续监控设备数据，从而为故障处理提供充足的时间。
 
 | 同一 Azure 区域中跨两个或更多可用性区域 | 同一可用性集或同一专用主机组中 |
 |-----------------------------------------|--------------------------------|
@@ -72,10 +68,8 @@
 
 #### 端口配置
 
-用户需要手动开启Azure Virtual Machine的端口，赋予WAGO VC Hub通讯权限。
-
 | 端口号 | 功能       | 描述                                                                          |
-|--------|------------|-------------------------------------------------------------------------------|
+|:--------|:------------|:-------------------------------------------------------------------------------|
 | 8066   | HTTP服务   | 提供了WAGO VC Hub HTTP服务，用户可在安装过程自定义修改，也支持在管理平台中修改  |
 | 8043   | HTTPS服务  | 提供了WAGO VC Hub HTTPS服务，用户可在安装过程自定义修改，也支持在管理平台中修改 |
 | 8060   | 组网与冗余 | 在组网和冗余功能通讯时使用，默认为8060，用户可在管理平台中修改                  |
