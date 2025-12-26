@@ -329,24 +329,8 @@ INNER JOIN public."ScadaProviderMapping" b ON a."ProviderId" = b."Id"
 INNER JOIN public."ScadaAlarmMapping" c ON a."AlarmId" = c."Id" AND a."ProviderId" = c."ProviderId"
 INNER JOIN public."ScadaTagMapping" d ON c."TagId" = d."Id" AND c."ProviderId" = d."ProviderId" AND c."Type" = d."Type";
 ```
- 
-###### **Breaking Change 11: 通过 WebRTC Streamer 配置摄像头**
 
-- **影响范围** ： Camera 设备
-- **变更说明** ：从 4.2 版本开始，不再支持直接添加 Camera 设备，需先创建 WebRtc-Streamer ，之后在 WebRtc-Streamer 下创建 camera 设备。
-- **解决方案** ：先部署 WebRtc-Streamer 服务，在 Camera 列表中创建 WebRtc-Streamer 。将原来的 camera 设备的 Rtsp 地址填写到对应的 WebRtc-Streamer 下，之后在 WebRtc-Streamer 下创建 camera 。
-
- 详见：[Camera](../management-platform/devices/camera/index.md) 
- 
-###### **Breaking Change 12: 由于创建 camera 的方式发生了变更， Camera 控件需重新选择 camera 设备后才能正常播放监控画面**
-
-- **影响范围** ：画面上的 Camera 控件
-- **变更说明** ：因为从 4.2 版本开始， Camera 设备的添加方式发生了变化，所以需要在 camera 控件上重新选择需要播放的设备。且运行时不再支持切换设备，不再支持历史视频的播放。
-- **解决方案** ：在编辑画面上，为  camera 控件上重新选择 camera 设备。
-
- 详见：[Camera](../management-platform/devices/camera/index.md) 
-
-###### **Breaking Change 13: System.Tag.readHistory函数，添加了新的参数**
+###### **Breaking Change 11: System.Tag.readHistory函数，添加了新的参数**
 
 - **影响范围** ：使用了 System.Tag.readHistory 函数的所有地方
 - **变更说明** ：从 4.2 版本开始，在 System.Tag.readHistory 函数的参数中，添加了新的聚合模式查询，支持按固定点数返回查询结果。
@@ -354,13 +338,13 @@ INNER JOIN public."ScadaTagMapping" d ON c."TagId" = d."Id" AND c."ProviderId" =
 
  详见：[​System.Tag.readHistory​ ](../appendix/system-function/system-tag/system-tag-readhistory.md)
 
-###### **Breaking Change 14: 设备列表中移除了倍福**
+###### **Breaking Change 12: 设备列表中移除了倍福**
 
 - **影响范围** ：使用倍福驱动进行数采的设备
 - **变更说明** ：从 4.2 版本开始，设备列表中移除了倍福驱动。
 - **解决方案：** 使用其他驱动，进行数据采集。
 
-###### **Breaking Change 15: 系统函数 System.UI.currentPage 调整为 System.Page**
+###### **Breaking Change 13: 系统函数 System.UI.currentPage 调整为 System.Page**
 
 - **影响范围** ：画面中使用到 System.UI.currentPage.* 相关函数的脚本
 - **变更说明** ： System.UI.currentPage.* 函数相对其他函数多一个层级。从 4.2 版本开始， System.UI.currentPage 调整为 System.Page
@@ -368,7 +352,7 @@ INNER JOIN public."ScadaTagMapping" d ON c."TagId" = d."Id" AND c."ProviderId" =
 
  详见：[​System.Page.setPropertyValue​](../appendix/system-function/system-page/system-page-setpropertyvalue.md) ,[​System.Page.getPropertyValue​](../appendix/system-function/system-page/system-page-getpropertyvalue.md) 
 
-###### **Breaking Change 16: 系统函数System.UI.openPopup参数修改**
+###### **Breaking Change 14: 系统函数System.UI.openPopup参数修改**
 
 - **影响范围：** 画面中使用到 System.UI.openPopup 相关函数的脚本
 - **变更说明：** 从 4.2 版本开始 System.UI.openPopup 函数的参数结构进行了调整：
@@ -379,30 +363,30 @@ INNER JOIN public."ScadaTagMapping" d ON c."TagId" = d."Id" AND c."ProviderId" =
 
  详见：[​System.UI.openPopup​ ](../appendix/system-function/system-ui/system-ui-openpopup.md)
 
-###### **Breaking Change 17: 脚本中，实时趋势的 yAxis 下的 series  修改为  axes**
+###### **Breaking Change 15: 脚本中，实时趋势的 yAxis 下的 series  修改为  axes**
 
 - **影响范围** ：画面中通过脚本对到实时趋势的 y 轴进行修改的地方。
 - **变更说明** ：从 4.2 版本开始 ,yAxis 下的 series  修改为  axes 
 - **解决方案** ：脚本执行不会出错，但在脚本编辑器中会提示错误，需要手动将属性名称由  series  修改为 axes 。
 
-###### **Breaking Change 18: 脚本中，柱状图的 refreshRate 参数修改为 refreshFrequency**
+###### **Breaking Change 16: 脚本中，柱状图的 refreshRate 参数修改为 refreshFrequency**
 - **影响范围** ：画面中通过脚本修改柱状图刷新频率的地方。
 - **变更说明** ：从 4.2 版本开始 ,refreshRate 修改为 refreshFrequency
 - **解决方案** ：脚本执行不会出错，但在脚本编辑器中会提示错误，需要手动将属性名称由  refreshRate  修改为 refreshFrequency 。
 
-###### **Breaking Change 19: 脚本中，柱状图 series 下的  barSpacing  调整为  barGap**
+###### **Breaking Change 17: 脚本中，柱状图 series 下的  barSpacing  调整为  barGap**
 
 - **影响范围** ：画面中通过脚本对柱状图的系列进行修改的地方。
 - **变更说明** ： 从 4.2 版本开始 ,series 下的  barSpacing  调整为  barGap
 - **解决方案** ：脚本执行不会出错，但在脚本编辑器中会提示错误，需要手动将属性名称由 barSpacing  修改为  barGap 。
 
-###### **Breaking Change 20: 脚本中，日历控件的 calendarBackgroundColor 参数调整为pickerBackgroundColor**
+###### **Breaking Change 18: 脚本中，日历控件的 calendarBackgroundColor 参数调整为pickerBackgroundColor**
 
 - **影响范围** ：画面中通过脚本修改日历控件的背景色的地方。   
 - **变更说明** ：从 4.2 版本开始 ,calendarBackgroundColor 调整为 pickerBackgroundColor
 - **解决方案** ：脚本执行不会出错，但在脚本编辑器中会提示错误，需要手动将属性名称由  calendarBackgroundColor  修改为  pickerBackgroundColor 。
 
-###### **Breaking Change 21: 通过脚本操作历史趋势图时，部分参数做了调整。**
+###### **Breaking Change 19: 通过脚本操作历史趋势图时，部分参数做了调整。**
 
 - **影响范围** ：画面中通过脚本修改历史趋势图属性的地方。
 - **变更说明** ：从 4.2 版本开始 , 对如下参数进行了调整。
@@ -415,13 +399,13 @@ INNER JOIN public."ScadaTagMapping" d ON c."TagId" = d."Id" AND c."ProviderId" =
    -  yAxis 中的 series 替换为 axes
 - **解决方案** ：原写法在执行时仍然会按照预期结果执行成功，但在脚本编辑器中会提示错误，需要按照新格式进行修改。
 
-###### **Breaking Change 22: 通过脚本操作饼图时，部分参数做了调整。**
+###### **Breaking Change 20: 通过脚本操作饼图时，部分参数做了调整。**
 
 - **影响范围：** 画面中通过脚本修改饼图属性的地方。
 - **变更说明：** 从 4.2 版本开始， type 改为 style ； refreshRate 改为 refreshFrequency
 - **解决方案** ：原写法在执行时仍然会按照预期结果执行成功，但在脚本编辑器中会提示错误，需要按新格式修改。
 
-###### **Breaking Change 23: 通过脚本操作历史检索控件时，部分参数做了调整。**
+###### **Breaking Change 21: 通过脚本操作历史检索控件时，部分参数做了调整。**
 
 - **影响范围：** 画面中通过脚本修改历史检索控件属性的地方。
 - **变更说明** ：从 4.2 版本开始，对参数进行了如下调整：
@@ -433,25 +417,25 @@ INNER JOIN public."ScadaTagMapping" d ON c."TagId" = d."Id" AND c."ProviderId" =
    -  新增 queryMode
 - **解决方案** ：原写法在执行时仍然会按照预期结果执行成功，但在脚本编辑器中会提示错误，需要按新格式修改。
 
-###### **Breaking Change 24: 通过脚本操作仪表盘控件时，部分参数做了调整。**
+###### **Breaking Change 22: 通过脚本操作仪表盘控件时，部分参数做了调整。**
 
 - **影响范围** ：画面中通过脚本修改仪表盘控件属性的地方。
 - **变更说明** ： 从 4.2 版本开始， rangeColor 调整为 intervalColor 。
 - **解决方案** ：原写法在执行时仍然会按照预期结果执行成功，但在脚本编辑器中会提示错误，需要按新格式修改。
 
-###### **Breaking Change 25: 通过脚本操作下拉框控件时，部分参数做了调整。**
+###### **Breaking Change 23: 通过脚本操作下拉框控件时，部分参数做了调整。**
 
 - **影响范围** ：画面中通过脚本修改下拉框控件属性的地方。
 - **变更说明** ：从 4.2 版本开始， datasource 下的 name 调整为 text
 - **解决方案** ：原写法在执行时仍然会按照预期结果执行成功，但在脚本编辑器中会提示错误，需要按新格式修改。
 
-###### **Breaking Change 26: 通过脚本操作单选按钮时，部分参数做了调整。**
+###### **Breaking Change 24: 通过脚本操作单选按钮时，部分参数做了调整。**
 
 - **影响范围：** 画面中通过脚本修改单选按钮控件属性的地方。
 - **变更说明：** 从 4.2 版本开始， datasource 下的 name 调整为 text
 - **解决方案：** 原写法在执行时仍然会按照预期结果执行成功，但在脚本编辑器中会提示错误，需要按新格式修改。
 
-###### **Breaking Change 27: OpenAPI历史报警接口返回值做了调整。**
+###### **Breaking Change 25: OpenAPI历史报警接口返回值做了调整。**
 
 - **影响范围** : 集成OpenAPI的历史报警接口的第三方应用程序
 - **变更说明** : 从4.2版本开始，报警类型、等级、状态做了调整
