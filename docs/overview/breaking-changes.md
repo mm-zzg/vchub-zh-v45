@@ -43,6 +43,7 @@
 - **解决方案** ：如果用户需要创建项目的权限，请使用角色为 Admin 的用户账号登录，在 Accesslevel 页面创建对应的角色，之后在 Permission 页面的 CreateProject Permission 配置项中，添加对应的角色。
 
 ![alt text](7.png)
+
  详见：[​Permission​](../management-platform/security/permission.md)
 
 ###### **Breaking Change 3:   设计和删除项目，增加了权限控制。**
