@@ -1,8 +1,8 @@
 # Breaking Changes
 
-#### Breaking changes in 4.5
+## Breaking changes in 4.5
 
-###### **Breaking Change 1:   许可证验证方式变更** 
+#### **Breaking Change 1:   许可证验证方式变更** 
 
 - **影响范围** ：升级到 4.5 版本后，现有许可证将失效。
 - **变更说明** ：许可证认证机制发生变更。
