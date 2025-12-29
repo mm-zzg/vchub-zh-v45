@@ -10,7 +10,7 @@
 
 #### 2.添加数据库
 
-WAGO VC Hub安装后会自动创建一个SQLite数据库，您可以使用该数据库进行入门测试。您也可以点击”数据库“->"数据库连接"页面的“新增“按钮来创建新的数据库连接。详见[数据库连接](../management-platform/databases/database-connection/index.md)。
+WAGO VC Hub安装后会自动创建一个SQLite数据库，您可以使用该数据库进行入门测试。您也可以点击"[数据库](../management-platform/databases/index.md)"->"[数据库连接](../management-platform/databases/database-connection/index.md)。"页面的“新增“按钮来创建新的数据库连接。
 
 #### 3.添加资产
 
