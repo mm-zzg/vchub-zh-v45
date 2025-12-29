@@ -32,8 +32,8 @@ WAGO VC Hub 服务在Windows中默认登录身份为**本地系统账户**，在
 #### 方法 2: 使用命令行工具（sc）
 
 你可以使用 `sc config` 命令来配置服务的登录信息。
-      ```bash
-      sc config "WAGO_SCADA" obj= "Domain\Username" password= "Password"
+      ```
+      sc config "WAGO_S_Visualization_And_Control_Hub" obj= "Domain\Username" password= "Password"
       ```
  
 - **Domain\Username**: 账户名，可以是 `.\Username`（表示本地账户）或者 `Domain\Username`（表示域账户）。如果服务需要访问网络资源或其他计算机上的资源，使用域账户可能会更合适。
