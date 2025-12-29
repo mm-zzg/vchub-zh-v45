@@ -96,7 +96,7 @@
 
      详见：[​OPC UA​ ](../management-platform/devices/opc-ua/index.md)
 
-##### **Breaking Change 10: 报警表重构** 
+#### **Breaking Change 10: 报警表重构** 
 
 - **影响范围：** 报警历史数据查询
 - **变更说明：** 在 4.2 版本上，重新设计了报警历史表，旧版本升级到 4.2 版本后，历史报警控件无法查询升级之前的历史报警数据。
