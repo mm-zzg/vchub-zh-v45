@@ -24,155 +24,99 @@ VC Hub 使用许可证来激活 VC Hub 服务器上的功能。目前仅支持�
 
 ![alt text](36.png)
 
-#### 试用过期
+### 试用过期
 
 试用期结束后，预览页面和运行页面将强制跳转到“试用期已过期”界面。
 
 ![alt text](37.png)
 
-#### 试用期延长
+### 试用期延长
 
-如果用户未购买任何模块，试用到期后，在管理平台和设计器页面上会弹出试用到期提示，点击弹窗中的”**重置试用**“按钮或者账号下的“**重置试用**“按钮，可以再次试用。
+试用期结束后，您可以申请另一个试用许可证（请联系销售部门获取），将试用期延长 30 天。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/chnTgjSMmCbej9gVOjS-wNRpbnI6PGxzOJfuzC5Z4eI.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
+您也可以在当前试用期结束前申请新的试用许可证。无论剩余天数多少，一旦申请新的试用许可证，试用期倒计时将自动重置为 30 天。
 
-试用到期后，账号右上角会显示红点。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/-JVg0WZZs_0PlAzuO7ntfcZvVdZeK57JJDHXMsY6QNM.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
+### 激活
 
-点击“**重置试用**“后会弹出重置试用窗口，点击”确认“按钮，完成重置。
+激活后，许可证密钥将绑定到安装服务器，且同一密钥不能在多台服务器上激活。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/LV7AriRidKUGlO4lJDmFupTdVNF75AZ92rfn4NNUZ9E.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
+有关 “许可证” 的详细介绍，请参阅[许可证](../installation/product-license.md)。
 
-如果用户已购买了部分模块，试用到期后，不会在管理平台和设计器页面上弹出试用到期提示，可以在账号下点击“**重置试用**“按钮，再次试用。
-
-试用到期后，账号右上角会显示红点。
-
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/pEQ1lkZs_yihQevxWAR0fN_oIzsK4W-Bn4rpIYmdbYI.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
-
-点击“**重置试用**“后会弹出重置试用窗口，点击”确认“按钮，完成重置。
-
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/811athfjqOa0Eiybs6yER0AgXJItz2eXxob-vIAiXkU.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
-
-#### 激活
-
-###### 在线激活示例
-
-如果您的安装服务器接入外网，能够访问WAGO VC Hub许可服务站点, 可以选择在线激活。激活后密钥将和安装服务器进行绑定，同一密钥不可在多台服务器进行激活。
-
-激活步骤：
+**激活步骤**：
 
 1. 在”节点“->"许可证"页面，点击“激活License”按钮。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/34Po0Xda6OyggruMlRopXmu2Z9Xg6lTpcuKVenM26EE.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
+    ![alt text](38.png)
 
 2. 填写密钥，阅读协议，点击“在线激活”按钮。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/LPdj6xPCAOaMZgLVB8LR71zpzmxBCfkAu0vXm1Vvk9k.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
+    ![alt text](39.png)
 
 3. 激活成功后许可证列表将显示授权信息，对于已激活的密钥可以进行反激活和刷新操作。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/dB9UhCWuSrR_o32j9jugOpesfY0i1s2YTMCHCImM-0U.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
+    ![alt text](40.png)
 
-###### 离线激活示例
+**注意事项**：
 
-如果您的安装服务器没有接入外网，可以按以下步骤进行离线激活。
+1. 在许可证列表中，许可证类型必须相同。
 
-激活步骤：
+2. 对于同一许可证项，只允许激活一个许可证。
 
-1. 点击“离线激活”按钮。
+3. 当许可证列表中的任何许可证剩余有效期不足 30 天时，管理控制台和设计器页面右上角将显示许可证到期提醒。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/D6pq4sDQEBlK-1ysVN9bTwD01KbWK9DmTO8CC0BJAJk.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
+    ![alt text](41.png)
 
-2. 点击“生成激活请求”按钮，将自动生成并显示激活请求内容。请保存好激活请求内容。
+### 停用
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/F5uhqo9oTAOYpckNdsZScFap4FPC0j_WXwB_pg-eNVM.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
+已激活状态的许可证可以停用。
 
-3. 将生成的激活请求内容传输到具有网络访问权限的机器上。访问以下地址并输入请求内容，确认后会自动生成许可证。
+![alt text](42.png)
+如果您想将许可证从当前计算机移除并在另一台计算机上使用，必须先执行停用操作。停用后，相应的许可证将从当前计算机中移除。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/hPae0oLFBM6dE5d6IMcWUI2pvLr2-O7Q53oo0apca8k.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
+您可以将其重新激活到另一台计算机或当前计算机上。
 
-4. 返回离线激活页面，粘贴输入许可证，点击“激活按钮”，至此完成离线激活操作。
+重新激活后，此许可证的有效期保持不变，与停用前相同。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/Jnj6X18nNJdTh_R9r64QhL7L7J6oxEavB8Q_386Zf2c.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
+除非必要，请避免频繁使用停用功能。
 
-#### 反激活
+### 删除
+已过期的许可证可以删除。
 
-当需要更换服务器时，需要把先进行反激活操作，同一个密钥只有三次反激活机会，次数用完之后将不支持反激活，非必要请不要随意使用反激活功能。
+![alt text](43.png)
 
-###### 在线反激活示例
+点击“删除”按钮后，该许可证将从列表中移除。
 
-如果您的安装服务器接入外网，能够访问WAGO VC Hub许可服务站点, 可以选择在线反激活。
+### 刷新
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/_Odio-KaseFeOz0FBC2QGLUTfx5rQqqOcieJcqnS5_Y.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
+您可以随时刷新许可证信息。刷新后，系统将获取许可证的最新状态。
 
-###### 离线反激活示例
+![alt text](44.png)
 
-如果您的安装服务器没有接入外网，可以按以下步骤进行离线反激活。
+### 续订
 
-请注意，离线反激活时本机不会检测剩余反激活次数，只有在向服务器提交离线反激活请求内容时才会做校验。所以可能出现生成离线请求成功，但是因为离线请求次数用尽，提交离线请求内容时失败的情况。发生此种情况不用担心，可以在原服务器使用相同的密钥进行激活，恢复正常使用。
+如果您希望在许可证到期前继续使用，请联系销售支持进行续订。您只需刷新许可证信息即可获取更新后的有效期。
+请在许可证到期前完成续订。许可证到期后，相应功能将无法使用，这可能会影响您的生产环境。
 
-1. 点击“离线反激活”按钮
+### 更新
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/Q4X7zrpcaKz1ymNTjO0sbvsW8JZ1XrchCKk3tOC6tDg.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
+当您需要更改 I/O 标签数量或并发在线用户数时，可以使用更新操作。
 
-2. 点击“生成反激活请求”按钮，将自动生成并显示反激活请求内容。 点击后许可证将从当前机器上删除。请保存好反激活请求内容。
+![alt text](45.png)
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/9_zFqY3Z0nIkdX-cB_-OX2fhsvYrTo0bQU3AZiyRZUQ.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
+每个许可证项一次只能激活一个许可证。通常情况下，要更改许可证，您需要先停用现有许可证，然后再激活新许可证。对于 I/O 标签许可证，停用操作会停止数据采集，这可能会导致生产环境中出现暂时性数据丢失。
 
+使用更新操作可以避免此问题，并在不中断数据采集的情况下修改许可证。
 
+但是，请注意，如果您尝试使用无效许可证（例如，已激活或已过期的许可证）进行更新，则更新将失败，并且可能会导致该模块的许可证丢失。
 
- 3.  将生成的反激活请求内容传输到具有网络访问权限的机器上。访问WAGO VC Hub许可服务站点，输入反激活请求内容到反激活输入框，点击确认按钮后，会自动进行反激活。
+因此，请谨慎执行此操作。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/cupdz758o4OUwSWf5w-gfT8hnM6brucophU291WEJjo.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
+### 许可证过期
 
-#### 刷新
+许可证过期后：
+- 管理控制台和设计器页面仍可访问。
+- 驱动程序数据采集将停止。
+- 如果在预览和运行时页面上使用了未经授权的控件，则会显示一条消息，指示许可证已过期。例如，3D 和报表功能的许可证已过期。
 
-如果您进行了维保续费操作，或者购买了新模块，可以对许可证进行刷新操作, 以获取并更新最新授权信息。
-
-###### 在线刷新示例
-
-如果您的安装服务器接入外网，能够访问WAGO VC Hub许可服务站点, 可以选择在线刷新。 
-
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/l0jehn5WNf43Uv8m8fmq-_iAIkeOfGwTFg0_5rBZz7U.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
-
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/34ZAThUd-tGpReFFGr09kq00sCDDX8FX-1VUQwng0kg.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
-
-###### 离线刷新示例
-
-如果您的安装服务器没有接入外网，可以按以下步骤进行离线刷新。
-
-1. 点击“离线刷新”按钮。
-
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/99-9kbfgmgtHGO5CK9_DfGKt_gjb7vSpMhxeyl94ntE.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
-
- 2. 点击“生成刷新请求”按钮，将自动生成并显示刷新请求内容。请保存好刷新请求内容。
-
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/6zYOfZggJBJX3rlVj_D-6Z1liX0fe0VnrkXLj1C-Gds.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
-
-3. 将生成的刷新请求内容传输到具有网络访问权限的机器上。访问WAGO VC Hub许可服务站点并输入请求内容，确认后会自动生成新许可证。将许可证拷贝并传输到待刷新服务器上。
-
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/aPXz7-RZwsWIUNizgRhzSlzDuZPNSdHUPSIRR0SmxfI.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
-
-4. 返回离线刷新页面，粘贴输入新许可证，点击“刷新”按钮，至此完成离线刷新操作。
-
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/Xmmbttk6zYmp-i9yDGudlYRzs8Ly2nozfye_KEu_cAU.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
-
-#### 紧急激活
-
-如果安装WAGO VC Hub的服务器硬件损坏或者系统环境异常导致无法正常使用，也无法进行授权码反激活，可以在一台新机器上使用相同的激活码进行紧急激活，紧急激活操作方法和上述在线或者离线激活方法一致。紧急激活的License只有7天有效期，7天后进入试用模式。在这7天内可尝试修复损坏的服务器，如确实无法修复可联系售后人员反应情况进一步处理。
-
-建议平时做好工程配置数据备份，这样在需要紧急激活使用时无需重新配置，导入备份的工程数据即可。
-
-每一个授权码有且仅有一次使用紧急激活的机会。如果没有特殊情况，请不要尝试在多台机器上激活同一授权码，防止浪费一次紧急激活的机会。
-
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/Npmv3SAV/resources/_VpZNiBLpajLoXjfohR7fedtwAo08PxVYMWeDForWR0.png?token=W.TARTaPBUE_cZ_vFGNdYcDkIUWjaR6Ae21Zwl_Z4n6PyLFXoU2EiXyazPH1ekY0Y)
-
-#### 续费
-
-如果您需要对一个授权码进行续费操作，在完成续费订单之后，相关售后人员会对原有授权码进行续费操作，您只需对许可证进行刷新操作即可。
-
-#### 增加模块
-
-如果您需要购买新模块，在完成增加模块订单之后，相关售后人员会对原有授权码进行增加模块操作，您只需对许可证进行刷新操作即可。
-
+![alt text](46.png)
