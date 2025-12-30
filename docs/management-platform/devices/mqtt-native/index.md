@@ -59,7 +59,7 @@ WAGO VC Hub中的MQTT Native驱动程序基于MQTT协议设计和开发，支持
 
 MQTT Native驱动基于MQTT协议设计和开发，接入驱动的MQTT客户端发送的报文Topic需要遵循如下结构：
 
-**主题：Topic**
+主题：Topic
 
 **wsV1.0/group_name/message_type/node_name/[device_name]**
 
