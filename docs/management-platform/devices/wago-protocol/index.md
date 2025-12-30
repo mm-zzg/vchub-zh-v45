@@ -4,9 +4,9 @@ WAGO VC Hub中的WAGO Protocol驱动支持与WAGO PLC的基本连接。系统自
 
 支持WAGO Protocol 1.5.0版本。
 
-#### 驱动连接到WAGO Protocol
+## 驱动连接到WAGO Protocol
 
-1. 在”**设备**“->”**WAGO Protocol**“页面，点击“**新增**”按钮。
+1. 在“**设备**”->“**WAGO Protocol**”页面，点击“**新增**”按钮。
 2. 在新增页面中输入**设备名称**。
 
       ![alt text](1.png)
@@ -23,12 +23,12 @@ WAGO VC Hub中的WAGO Protocol驱动支持与WAGO PLC的基本连接。系统自
 | 用户名   | 用于与某设备连接的账号，系统自动生成，不可修改。 |
 | 密码     | 用于与某设备连接的密码，系统自动生成，支持重置。 |
 
-#### 注意事项
+**注意事项**：
 
 1. 请妥善保管用户名和密码信息，避免泄露给未授权人员，如果发生泄露，请及时重置密码。
 2. **全部启用**和**全部禁用**，是对列表中的所有数据进行启用或禁用。
 
-#### 连接到系统MQTT Broker
+## 连接到系统MQTT Broker
 
 在使用WAGO Protocol驱动之前，您需要先连接上MQTT Borker。请按照以下步骤进行连接：
 
@@ -56,7 +56,7 @@ WAGO VC Hub中的WAGO Protocol驱动支持与WAGO PLC的基本连接。系统自
 
       ![alt text](3.png)
 
-#### 启用TLS安全连接
+## 启用TLS安全连接
 
 WAGO VC Hub程序支持与WAGO PLC设备通过TLS协议建立安全连接。
 
@@ -66,16 +66,16 @@ WAGO VC Hub程序支持与WAGO PLC设备通过TLS协议建立安全连接。
    - **TLS**：选择开启。
    - **CA File**：填写路径，/etc/ssl/certs/ server-cert.pem。
    -  获取服务器证书：登录到 PLC 系统并执行命令  openssl s_client -connect **[server IP]** :3883 -showcerts </dev/null 2>/dev/null |openssl x509 -outform PEM > /etc/ssl/certs/server-cert.pem
-__*__ __将__ __[server IP]__ __替换成__ __WAGO VC Hub__ __所部署的服务器__ __IP__
+ 
+**说明**：将 [server IP] 替换为 VC Hub 所部署的服务器 IP 地址。
 ![alt text](4.png)
 
 
-
-#### 发布和订阅设备数据
+## 发布和订阅设备数据
 
 参考**WAGO Messaging Protocol**协议,官方文档 [https://www.wago.com.cn/cn/d/15719](https://www.wago.com.cn/cn/d/15719)。
 
-#### 与变量绑定
+## 与变量绑定
 
 将变量与客户端测点进行绑定。
 
@@ -93,7 +93,7 @@ __*__ __将__ __[server IP]__ __替换成__ __WAGO VC Hub__ __所部署的服务
 
 4. 点击“**确认**”按钮，完成配置。
 
-#### WAGO Protocal PLC程序Command请求及响应处理
+## WAGO Protocal PLC程序Command请求及响应处理
 
 配置PLC Command:
 
