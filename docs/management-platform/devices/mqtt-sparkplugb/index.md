@@ -8,23 +8,23 @@ WAGO VC Hub中的MQTT SparkplugB驱动程序基于MQTT协议设计和开发，�
 
 2. 在新增页面中输入**组名称**。
 
-   ![alt text](1.png)
+      ![alt text](1.png)
 
 3. 点击**“确认”**按钮。此时该条数据将显示在MQTT SparkplugB的设备列表页面。
 
-   ![alt text](2.png)
+      ![alt text](2.png)
 
 4. 在操作一栏中点击“**添加节点**”，输入节点名称，为当前组添加一个新的节点。**节点**：节点代表具体设备的实体，具有唯一标识符，用于区分各个设备。
 
-   ![alt text](3.png)
+      ![alt text](3.png)
 
 5. 点击**“确认”**按钮。此时该条数据将显示在当前组的节点列表页面。
 
-   ![alt text](4.png)
+      ![alt text](4.png)
 
 6. 在启用状态一栏点击启用按钮，启用该节点。
 
-   ![alt text](5.png)
+      ![alt text](5.png)
 
 #### 配置字段
 
