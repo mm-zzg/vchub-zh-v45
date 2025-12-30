@@ -64,15 +64,15 @@ WAGO VC Hub中的MQTT SparkplugB驱动程序基于MQTT协议设计和开发，�
 
 在使用 MQTT SparkplugB 驱动程序之前，您需要先连接到系统的 Sparkplug Application。请按照以下步骤进行连接：
 
-1. 获取账户和密码：点击节点的**“查看”**按钮，可以看到系统提供的用户名和密码。
+1. 获取账户和密码：点击节点的“查看”按钮，可以看到系统提供的用户名和密码。
 2. 配置客户端：在您的应用程序或设备中，配置边缘节点(SparkplugB Node)以连接到系统的Sparkplug Application：
-   - Broker 地址：填写系统 MQTT Broker 的地址。
-   - Broker 端口：填写系统 MQTT Broker 的端口号。默认为 1884。
-   - 客户端 ID：填写一个唯一的客户端标识符，用于在系统 MQTT Broker 上标识您的连接。
-   - 用户名和密码：使用您在系统中获取到的账户和密码。
-   - VC HubHostIdentifier：WagoVC Hub
-   - GroupName：对应驱动列表中的组名称
-   - NodeName：对应驱动列表组中的节点名称
+      - Broker 地址：填写系统 MQTT Broker 的地址。
+      - Broker 端口：填写系统 MQTT Broker 的端口号。默认为 1884。
+      - 客户端 ID：填写一个唯一的客户端标识符，用于在系统 MQTT Broker 上标识您的连接。
+      - 用户名和密码：使用您在系统中获取到的账户和密码。
+      - VC HubHostIdentifier：WagoVC Hub
+      - GroupName：对应驱动列表中的组名称
+      - NodeName：对应驱动列表组中的节点名称
 3. 连接到 MQTT Broker：使用支持SparkplguB协议的MQTT客户端，在应用程序或设备中连接到系统的 MQTT Broker。确认连接成功后，便可以开始使用客户端与MQTT SparkplugB驱动程序进行设备数据的传输。
 4. 消息传输遵循SparkplugB协议，更多信息请参考官方文档 [https://www.eclipse.org/tahu/spec/sparkplug_spec.pdf](https://www.eclipse.org/tahu/spec/sparkplug_spec.pdf)。 
 
@@ -82,15 +82,15 @@ WAGO VC Hub中的MQTT SparkplugB驱动程序基于MQTT协议设计和开发，�
 
 1. 创建一个I/O变量。
 
-   ![alt text](6.png)
+      ![alt text](6.png)
 
 2. 在变量的编辑界面，点击数据源的**设置**按钮。
 
-   ![alt text](7.png)
+      ![alt text](7.png)
 
 3. 选择需要绑定的组、节点、设备和目录，并勾选数据类型匹配的测点。
 
-   ![alt text](8.png)
+      ![alt text](8.png)
 
 4. 点击“**确认**”按钮，完成配置。
 
