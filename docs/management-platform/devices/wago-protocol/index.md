@@ -50,7 +50,7 @@ WAGO VC Hub中的WAGO Protocol驱动支持与WAGO PLC的基本连接。系统自
       - 点击**Submit**，并重启设备。
       - 稍等片刻后在WBM的**Cloud Connectivity**下检查连接状态，Cloud connection则会显示connected。
       
-<br>**注意**：请不要勾选**Use Compression**，因为这会导致WAGO Protocol驱动无法正常处理数据；另外对于上述列表中其他未提及的字段，虽然勾选这些项目不会影响WAGO VC Hub的功能使用，但WAGO VC Hub尚未实现相应的功能。
+**注意**：请不要勾选**Use Compression**，因为这会导致WAGO Protocol驱动无法正常处理数据；另外对于上述列表中其他未提及的字段，虽然勾选这些项目不会影响WAGO VC Hub的功能使用，但WAGO VC Hub尚未实现相应的功能。
 
 3. 连接到 MQTT Server：确认连接成功后，便可以开始使用配置的客户端与WAGO Protocol驱动进行设备数据的传输。
 
@@ -73,7 +73,7 @@ WAGO VC Hub程序支持与WAGO PLC设备通过TLS协议建立安全连接。
 
 ## 发布和订阅设备数据
 
-参考**WAGO Messaging Protocol**协议,官方文档 [https://www.wago.com.cn/cn/d/15719](https://www.wago.com.cn/cn/d/15719)。
+参考WAGO Messaging Protocol协议,官方文档 [https://www.wago.com.cn/cn/d/15719](https://www.wago.com.cn/cn/d/15719)。
 
 ## 与变量绑定
 
