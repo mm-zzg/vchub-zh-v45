@@ -2,46 +2,57 @@
 
 I/O变量可以绑定数据源，可以直接绑定一个固定的数据源路径，也可以使用参数化的方式绑定一个动态路径。
 
-#### 直接绑定
+## 直接绑定
 
-在I/O变量的新增和修改界面，点击数据源的绑定按钮, 弹出数据源绑定弹窗。
+1. 在I/O变量的新增和修改界面，点击数据源的绑定按钮, 弹出数据源绑定弹窗。
 
-![alt text](11.png)
+    ![alt text](11.png)
 
-在弹窗中，选择一个设备，配置参数后，点击确认按钮，完成绑定。例如下图所示。
+2. 在弹窗中，选择一个设备，配置参数后，点击确认按钮，完成绑定。例如下图所示。
 
-![alt text](12.png)
+    ![alt text](12.png)
 
-完成绑定后，在变量的新增和编辑窗口，可以看到具体的数据源路径信息，如下图红框所示：
+3. 完成绑定后，在变量的新增和编辑窗口，可以看到具体的数据源路径信息，如下图红框所示。
 
-![alt text](13.png)
+    ![alt text](13.png)
 
-**说明**：  
-    1. 绑定到不同的数据源，会显示不同的数据源路径参数。 <br>2. 数据源文本框中，=左侧表示参数名，=右侧表示参数值。可以修改参数值，不建议修改参数名，修改参数名将导致绑定路径失效。 <br>3. 请确保数据源输入框中，=左右两侧的内容，与配置页面字段的大小写需一致，否则可能导致数据源绑定失败。建议不要修改=左侧的参数名。  示例如下：  数据源参数字段：  ![alt text](14.png)  配置页面字段：  ![alt text](15.png) 
 
-###### 数据源绑定路径参数
+**说明**：
+
+1. 绑定到不同的数据源，会显示不同的数据源路径参数。 
+2. 数据源文本框中，=左侧表示参数名，=右侧表示参数值。可以修改参数值，不建议修改参数名，修改参数名将导致绑定路径失效。 
+3. 请确保数据源输入框中，=左右两侧的内容，与配置页面字段的大小写需一致，否则可能导致数据源绑定失败。建议不要修改=左侧的参数名。  
+示例：  数据源参数字段：  
+
+    ![alt text](14.png)  
+
+    配置页面字段：  
+
+    ![alt text](15.png) 
+
+#### 数据源绑定路径参数
 
 | **数据源类型**      | **参数** |
 |:---------------------|:--------------------------------------------------------------------------------------------------------------|
-| **OPC UA**          | - DataSourceType - Path - NodeId - DisplayName - DeviceName - GroupName - DataType - IndexOfArrayStr         |
-| **Modbus TCP**      | - DataSourceType - DeviceName - FrameName - DataType - Address - Bit (Only Bool tag displays this parameter) |
-| **Modbus RTU**      | - DataSourceType - DeviceName - FrameName - DataType - Address - Bit (Only Bool tag displays this parameter) |
-| **MQTT Native**     | - DataSourceType - Tag - Address - DataType - DeviceName - GroupName - NodeName                              |
-| **MQTT SparkplugB** | - DataSourceType - Tag - Address - DataType - DeviceName - GroupName - NodeName                              |
-| **SIEMENS S7**      | - DataSourceType - DeviceName - Area - DbNumber - DataType - BitOffset - CharLength - AddressOffset          |
-| **WAGO Protocol**   | - DataSourceType - Path - Tag - DataType - DeviceName                                                        |
+| **OPC UA**          | - DataSourceType <br>- Path <br>- NodeId <br>- DisplayName <br>- DeviceName <br>- GroupName <br>- DataType <br>- IndexOfArrayStr         |
+| **Modbus TCP**      | - DataSourceType <br>- DeviceName <br>- FrameName <br>- DataType <br>- Address <br>- Bit (Only Bool tag displays this parameter) |
+| **Modbus RTU**      | - DataSourceType <br>- DeviceName <br>- FrameName <br>- DataType <br>- Address <br>- Bit (Only Bool tag displays this parameter) |
+| **MQTT Native**     | - DataSourceType <br>- Tag <br>- Address <br>- DataType <br>- DeviceName <br>- GroupName <br>- NodeName                              |
+| **MQTT SparkplugB** | - DataSourceType <br>- Tag <br>- Address <br>- DataType <br>- DeviceName <br>- GroupName <br>- NodeName                              |
+| **SIEMENS S7**      | - DataSourceType <br>- DeviceName <br>- Area <br>- DbNumber <br>- DataType <br>- BitOffset <br>- CharLength <br>- AddressOffset          |
+| **WAGO Protocol**   | - DataSourceType <br>- Path <br>- Tag <br>- DataType <br>- DeviceName                                                        |
 
-#### 参数化绑定
+## 参数化绑定
 
 在**模型**或者**实例**下创建的I/O变量才支持参数化绑定。在数据源文本框后面会显示设置按钮，从设置弹窗中选择需要替换的参数。
 
 ![alt text](16.png)
 
-###### 示例：
+#### 示例：
 
-**工厂有 10个电机，电机下具有相同的变量，唯一的区别是电机连接到不同的数据源。我们希望电机1连接到Device1, 电机2连接到Device2,...电机10连接到Device10。**
+工厂有 10个电机，电机下具有相同的变量，唯一的区别是电机连接到不同的数据源。我们希望电机1连接到Device1, 电机2连接到Device2,...电机10连接到Device10。
 
-**批量创建设备请参考如下章节。**<br>
+批量创建设备请参考如下章节。<br>
         - [批量操作Modbus TCP设备](../../../devices/modbus-tcp/batch-operation.md)<br> 
         - [批量操作Modbus RTU设备](../../../devices/modbus-rtu/batch-operation.md)<br> 
         - [批量操作OPC UA设备](../../../devices/opc-ua/batch-operation.md)<br>
