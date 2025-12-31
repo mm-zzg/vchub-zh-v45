@@ -249,6 +249,7 @@ nav:
                                       - 变量类型:
                                                 - management-platform/assets-and-tags/tag/tag-type/index.md
                                                 - management-platform/assets-and-tags/tag/tag-type/system-tag.md
+                                                - management-platform/assets-and-tags/tag/tag-type/remote-tag.md
                                       - 创建变量:
                                                 - management-platform/assets-and-tags/tag/creating-tags/index.md
                                                 - management-platform/assets-and-tags/tag/creating-tags/io-tag-binding-data-source.md
