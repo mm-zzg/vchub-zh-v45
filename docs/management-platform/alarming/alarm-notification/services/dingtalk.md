@@ -71,61 +71,61 @@
 
 在钉钉群内，点击右上角的群设置按钮，在群设置弹窗中，点击某个群机器人，即可查看该机器人的Webhook地址和密钥信息。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/AHu6gP6k/resources/EHHIkH_xpBJ3AVUO5xdPTdGr9_T2r72w32DcjKBMo3E.png?token=W.QiQnwWOW0Twj1virUrNlNGKuWzb38d5mFkjRv4nxP0gKVJnIHukmn3ywaA9Tqv4)
+![alt text](55.png)
 
-| **说明：**仅支持在桌面端查看群机器人Webhook地址和密钥，手机端不支持。 |
-|--------------------------------------------------------------------|
+**说明**：仅支持在桌面端查看群机器人Webhook地址和密钥，手机端不支持。 
+
 
 #### 如何创建应用
 
-1. 登录钉钉管理后台 ( [https://open-dev.dingtalk.com](https://open-dev.dingtalk.com/) )，在“应⽤开发“页面点击**创建应用**
+1. 登录钉钉管理后台 ( [https://open-dev.dingtalk.com](https://open-dev.dingtalk.com/) )，在“应⽤开发”页面点击**创建应用**
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/AHu6gP6k/resources/thahsn2OLAfPoCBGzIB6Od9Dwtrl69sdxXUSfTFF_Gk.png?token=W.QiQnwWOW0Twj1virUrNlNGKuWzb38d5mFkjRv4nxP0gKVJnIHukmn3ywaA9Tqv4)
+    !![alt text](56.png)
 
 2. 填写应⽤信息并保存
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/AHu6gP6k/resources/bV4_MQ-4MBiKP1jzF464TethkwhK_LJG823muvy2tQU.png?token=W.QiQnwWOW0Twj1virUrNlNGKuWzb38d5mFkjRv4nxP0gKVJnIHukmn3ywaA9Tqv4)
+    ![alt text](57.png)
 
 3. 保存后，会跳转至如下页面，点击页面上方的” 查看版本详情“进入详情页面
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/AHu6gP6k/resources/pyU6P2--hw9joeBVQsT5kGUUO4D1hMNGfK7Tl9IBcw0.png?token=W.QiQnwWOW0Twj1virUrNlNGKuWzb38d5mFkjRv4nxP0gKVJnIHukmn3ywaA9Tqv4)
+    ![alt text](58.png)
 
 4. 点击编辑按钮
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/AHu6gP6k/resources/0Qd90CeCcEXD6YRUm9-Yih4FFwQrZ5y5JW_ScYxEfSU.png?token=W.QiQnwWOW0Twj1virUrNlNGKuWzb38d5mFkjRv4nxP0gKVJnIHukmn3ywaA9Tqv4)
+    ![alt text](59.png)
 
 5. 编辑完成，点击保存
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/AHu6gP6k/resources/zA64AdAMLrWtqhKA1S_HU6zWU1lo0DDdX2f4LAhvTk4.png?token=W.QiQnwWOW0Twj1virUrNlNGKuWzb38d5mFkjRv4nxP0gKVJnIHukmn3ywaA9Tqv4)
+    ![alt text](60.png)
 
 6. 点击直接发布，发布应用
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/AHu6gP6k/resources/JGcth_h_VgzAUpE41Ar0AnRvVhNmWc-cBhaOBmdk-go.png?token=W.QiQnwWOW0Twj1virUrNlNGKuWzb38d5mFkjRv4nxP0gKVJnIHukmn3ywaA9Tqv4)
+    ![alt text](61.png)
 
 7. 在"应用开发"页面，可以查看到已经创建的应用
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/AHu6gP6k/resources/bLt7CrOVX9KszTcmKI8FprDrOFNH93sWaTntcgS02TE.png?token=W.QiQnwWOW0Twj1virUrNlNGKuWzb38d5mFkjRv4nxP0gKVJnIHukmn3ywaA9Tqv4)
+    ![alt text](62.png)
 
 8. 在"应用开发"页面，点击应用的”应用详情“按钮，进入添加应用能力页面
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/AHu6gP6k/resources/ymMzQfmotyJHCsPndX8r9sA8-u-y6xX0zuTVyNzLXb4.png?token=W.QiQnwWOW0Twj1virUrNlNGKuWzb38d5mFkjRv4nxP0gKVJnIHukmn3ywaA9Tqv4)
+    ![alt text](63.png)
 
 9. 点击”机器人“
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/AHu6gP6k/resources/7-CPAYGM7cAfmd4-8msfXRqXvJ2btC1ihGPAY2xKzC0.png?token=W.QiQnwWOW0Twj1virUrNlNGKuWzb38d5mFkjRv4nxP0gKVJnIHukmn3ywaA9Tqv4)
+    ![alt text](64.png)
 
 10. 开启机器⼈配置，配置完成点击页面底部的”发布“按钮进行发布
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/AHu6gP6k/resources/2y4CM_K0jYr6L6Xualof72cFOnJ15tCL6WbEOeAi4nw.png?token=W.QiQnwWOW0Twj1virUrNlNGKuWzb38d5mFkjRv4nxP0gKVJnIHukmn3ywaA9Tqv4)
+    ![alt text](65.png)
 
 11. 配置完成
 
-#### 通知服务应用
+## 通知服务应用
 
-在报警的**通知规则**中将选择通知服务。
+在报警的通知规则中将选择通知服务。
 
 1. 点击“**报警**”->"**报警通知**"->"**通知规则**"，进入通知规则列表页面。
-2. 点击列表右上角的“新增“按钮。
+2. 点击列表右上角的“**新增**”按钮。
 3. 在新增弹窗中点击通知的'**+钉钉**'按钮，新增一条Email通知规则，在通知服务中选择已创建的通知服务。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/AHu6gP6k/resources/Ch-vF3A_L6ebsXevsCQjrNrx7GjksXodHzmY4n18O2w.png?token=W.QiQnwWOW0Twj1virUrNlNGKuWzb38d5mFkjRv4nxP0gKVJnIHukmn3ywaA9Tqv4)
+![alt text](66.png)
