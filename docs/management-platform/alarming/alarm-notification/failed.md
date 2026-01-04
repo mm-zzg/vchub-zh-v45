@@ -2,19 +2,19 @@
 
 在WAGO VC Hub中，当通知规则执行失败时，会在执行异常列表中记录一条信息。默认情况下，显示最近7天内的所有异常数据，用户可以查询的时间跨度最长为1年。如果列表中存在异常信息，菜单右上角将显示一个提示图标；只有当列表中没有任何异常信息时，该图标才会消失。此外，用户可以对这些异常信息进行重发或删除操作，以便更好地管理和解决系统中的异常情况。
 
-#### 查看
+## 查看
 
 点击“**报警**”->"**报警通知**"->"**执行异常**"，进入执行异常列表页面，可以查看执行异常的报警规则。
 
 ![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/WgrNAo8Y/resources/mxucK0cL9ENhqFo8wWXS8XTyN6BX1nw6zdiohcQAoC8.png?token=W.EtZK4SxJvbtHbD3DyPMwuiGwUkZ4t8RaldJxRPkqQN0sLC2hXRYMMlo0lC6dbMg)
 
-#### 重发
+## 重发
 
 在列表中勾选需要重发的报警规则，然后点击右上角的”重发“按钮，会重新执行该报警规则。
 
 ![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/WgrNAo8Y/resources/gaG00QWLfkHwOBee8ospxZZldoG_O2U7lilMSrBIqgs.png?token=W.EtZK4SxJvbtHbD3DyPMwuiGwUkZ4t8RaldJxRPkqQN0sLC2hXRYMMlo0lC6dbMg)
 
-#### 删除
+## 删除
 
 在列表中勾选需要删除发的报警规则，然后点击右上角的”删除“按钮，可以删除这些异常信息。
 
