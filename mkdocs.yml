@@ -290,7 +290,7 @@ nav:
                                       - management-platform/alarming/alarm-notification/rules.md
                                       - management-platform/alarming/alarm-notification/failed.md
                                       - management-platform/alarming/alarm-notification/acknowledge-alarm.md
-                  - Scripts:
+                  - 脚本:
                             - management-platform/scripts/index.md
                             - management-platform/scripts/service-script.md
                             - management-platform/scripts/custom-function.md
