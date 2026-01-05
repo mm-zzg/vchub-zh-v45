@@ -10,8 +10,11 @@
 
 **说明**：  
 1. 自定义函数有且仅有一个export function，export function的名称即自定义函数的名称。
+
 2. 对于自定义函数，函数间的名称必须唯一。
+
 3. 如有需要也可以定义非export函数，但是其无法被外部脚本调用。 
+
 4. 列表中显示的名称为export函数的名称。 
 
 在”**脚本**“->”**自定义函数**“页面，点击列表右上角的“**新增**”按钮进行创建。
@@ -22,21 +25,21 @@
 
 1. 创建一个自定义函数，名称为：getTagValue。脚本如下：
 
-```typescript
-export async function getTagValue() {
-  const data = await System.Tag.read('@设备:温度')
-  console.log(data)
-  console.log(data.value)
-}
-```
+    ```typescript
+    export async function getTagValue() {
+    const data = await System.Tag.read('@设备:温度')
+    console.log(data)
+    console.log(data.value)
+    }
+    ```
  
 2. 在画面上绘制一个按钮控件，在控件的鼠标按下动作中，编写如下脚本：
 
-```typescript
-userDefined.getTagValue()
-```
+    ```typescript
+    userDefined.getTagValue()
+    ```
  
 3. 点击画面的”预览“按钮，在运行画面按下按钮时就会执行这段脚本，然后在控制台打印出查找变量的value。
 
-![alt text](2.gif)
+    ![alt text](2.gif)
 
