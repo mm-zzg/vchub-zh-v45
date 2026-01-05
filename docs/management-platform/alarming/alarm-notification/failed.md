@@ -6,17 +6,17 @@
 
 点击“**报警**”->"**报警通知**"->"**执行异常**"，进入执行异常列表页面，可以查看执行异常的报警规则。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/WgrNAo8Y/resources/mxucK0cL9ENhqFo8wWXS8XTyN6BX1nw6zdiohcQAoC8.png?token=W.EtZK4SxJvbtHbD3DyPMwuiGwUkZ4t8RaldJxRPkqQN0sLC2hXRYMMlo0lC6dbMg)
+![alt text](16.png)
 
 ## 重发
 
 在列表中勾选需要重发的报警规则，然后点击右上角的”重发“按钮，会重新执行该报警规则。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/WgrNAo8Y/resources/gaG00QWLfkHwOBee8ospxZZldoG_O2U7lilMSrBIqgs.png?token=W.EtZK4SxJvbtHbD3DyPMwuiGwUkZ4t8RaldJxRPkqQN0sLC2hXRYMMlo0lC6dbMg)
+![alt text](17.png)
 
 ## 删除
 
 在列表中勾选需要删除发的报警规则，然后点击右上角的”删除“按钮，可以删除这些异常信息。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/WgrNAo8Y/resources/z-lHVqI03VB3XMKifh4jJDj6SLYxhYdRIvyER1iVKns.png?token=W.EtZK4SxJvbtHbD3DyPMwuiGwUkZ4t8RaldJxRPkqQN0sLC2hXRYMMlo0lC6dbMg)
+![alt text](18.png)
 
