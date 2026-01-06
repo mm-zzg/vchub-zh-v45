@@ -36,14 +36,14 @@ WAGO VC Hub中的WAGO Protocol驱动支持与WAGO PLC的基本连接。系统自
 2. 配置Cloud Connectivity
 
       - 使用网络浏览器打开您WAGO设备的WBM（Web-based Management，基于Web的管理工具）。
-      - 输入 **Username** 和 **Password**，以便在PFC上进行身份验证。点击   **Submit**。
-      - 在 **Configuration** 下选择 **Cloud Connectivity** 菜单项，点击**Connection1**。
+      - 输入 **Username** 和 **Password**，以便在PFC上进行身份验证。点击 **Submit**。
+      - 在 **Configuration** 下选择 **Cloud Connectivity** 菜单项，点击 **Connection1**。
       - 在右侧的配置中，勾选 **Enabled**，启用当前连接。
       - 从 **Cloud platform** 下拉列表中选择 MQTT AnyCloud。
       - 在 **Hostname** 字段中输入您的 WAGO VC Hub 程序发布的IP地址。
       - 在 **Port** 字段中输入 1884。
       - 在 **Client ID** 中输入设备标识，**需和上述WAGO Protocol设备列表中新增的设备名称保持一致**，用于在 MQTT Server 上标识您的连接。
-      - 勾选**Clean session**，启用清除会话。
+      - 勾选 **Clean session**，启用清除会话。
       - 在 **User** 中输入连接MQTT Server的用户名，**使用上述WAGO Protocol设备列表中新增的设备信息中的用户名**。
       - 在 **Password** 输入输入连接MQTT Server的密码，**使用上述WAGO Protocol设备列表中新增的设备信息中的密码**。
       - 在 **Data protocol** 下拉列表中选择WAGO Protocol 1.5。
