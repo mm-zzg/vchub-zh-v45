@@ -322,13 +322,13 @@ nav:
                                                 - management-platform/databases/database-table-reference/tag-table-reference/relational-database-table-schema.md
                                                 - management-platform/databases/database-table-reference/tag-table-reference/influxDB-table-schema.md
 
-                  - Redundancy:
+                  - 冗余:
                             - management-platform/redundancy/index.md
                             - management-platform/redundancy/configuration.md
                             - management-platform/redundancy/synchronization.md
                             - management-platform/redundancy/switch.md
 
-                  - Security:
+                  - 权限:
                             - management-platform/security/index.md
                             - management-platform/security/roles-and-users.md
                             - management-platform/security/user-group.md
