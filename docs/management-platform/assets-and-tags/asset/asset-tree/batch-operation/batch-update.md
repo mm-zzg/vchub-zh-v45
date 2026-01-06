@@ -42,7 +42,7 @@
 
 **举个例子**：
 
-需要在一列中同时配置**Name，Age，Address**三个字段的值时，则只需要在单元格填入*Name=Tom,Age=18,Address=Unknow*即可。
+需要在一列中同时配置 **Name，Age，Address** 三个字段的值时，则只需要在单元格填入 *Name=Tom,Age=18,Address=Unknow* 即可。
 
 复杂对象为集合的情况，则只需要将多个对象字符串以”;“分隔即可，如：
 
