@@ -12,7 +12,7 @@
 
 **Server**：安装了WAGO VC Hub的设备。
 
-**Client**目录包含UserName和Role。只读，不可编辑。
+**Client** 目录包含UserName和Role。**只读**，不可编辑。
 
 ![alt text](10.png)
 
