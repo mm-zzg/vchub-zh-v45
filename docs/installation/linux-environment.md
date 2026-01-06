@@ -37,12 +37,12 @@ WAGO VC Hub提供Linux环境安装包，文件名wagovc_hub-x.x.x-linux-x64-inst
 
 9. 完成后默认访问WAGO VC Hub站点：“http://localhost:8066”，安装完成后，将进入配置引导界面。
 
-#### **注意事项**:
+### **注意事项**:
 
 1. 程序由Linux系统自带的systemd服务管理器监管和守护，请确保服务器的systemd运行正常。
 2. 安装脚本包含创建脚本等操作，请确保有足够的权限。
 
-#### **如何解决 libice6 / libsm6 安装失败的问题**
+### **如何解决 libice6 / libsm6 安装失败的问题**
 
 如果您在安装过程中看到提示：“**Failed to install libice6/libsm6. Please try installing it yourself.**”，可以按照以下步骤手动安装这些软件包：
 
@@ -72,7 +72,7 @@ WAGO VC Hub提供Linux环境安装包，文件名wagovc_hub-x.x.x-linux-x64-inst
     sudo apt install libice6 libsm6
     ```
 
-#### 配置步骤
+### 配置步骤
 
 1. 阅读许可协议 
 
@@ -92,9 +92,9 @@ WAGO VC Hub提供Linux环境安装包，文件名wagovc_hub-x.x.x-linux-x64-inst
 
 **说明**：如果升级安装会默认创建一个新的空的工程，要想回到原工程，需要登录新工程后，在工程列表中手动打开原工程。 
 
-#### **安全配置（可选）**
+### 安全配置（可选）
 
-为进一步提升系统安全性，建议在配置完成后执行以下步骤，对**服务目录**及**应用程序数据目录**进行权限设置，只有特定的用户才能对其进行操作，以确保敏感数据受到有效保护并避免潜在风险。
+为进一步提升系统安全性，建议在配置完成后执行以下步骤，对 **服务目录及应用程序数据目录** 进行权限设置，只有特定的用户才能对其进行操作，以确保敏感数据受到有效保护并避免潜在风险。
 
 1. 创建专用服务账号  
 
@@ -119,7 +119,7 @@ WAGO VC Hub提供Linux环境安装包，文件名wagovc_hub-x.x.x-linux-x64-inst
     sudo chmod -R 750 /usr/local/bin/wagovisualizationandcontrolhub-x.x.x-linux-x64
     ```
  
-     **注意**：必须在修改服务运行账号之前完成此步骤，否则服务可能缺少访问权限。
+     **说明**：必须在修改服务运行账号之前完成此步骤，否则服务可能缺少访问权限。
 
 3. 修改服务运行账号
 
