@@ -1,6 +1,7 @@
 # 关系型数据库表结构说明
 
-SQLite、SQLServer、PostgreSQL、MySQL这4种传统关系型数据库共享同一套表结构定义   
+VC Hub 系统为 **SQLite、SQL Server、PostgreSQL、MySQL** 这四款传统关系型数据库，采用了统一的表结构定义。这种标准化的数据库架构可确保数据管理的一致性，并简化在不同数据库平台间的集成流程。
+通过采用这一通用结构，用户能够在所有受支持的关系型数据库之间无缝切换，而无需对其历史数据或事件数据的相关配置进行任何调整。  
 
 ## 边历史库
 
@@ -68,7 +69,7 @@ SQLite、SQLServer、PostgreSQL、MySQL这4种传统关系型数据库共享同�
 
 ## ScadaTagPreProcessed_{ProvideId}_ {WindowSize}_{DateKey}
 
-当历史库开启预处理时，会对原始数据表**ScadaTagHistory** Or **ScadaTagHistory_{ProvideId}_ {PartitonSize}_{DateKey}** 的原始数据进行预处理
+当历史库开启预处理时，会对原始数据表 **ScadaTagHistory** Or **ScadaTagHistory_{ProvideId}_ {PartitonSize}_{DateKey}** 的原始数据进行预处理
 
 根据预处理配置的时间窗口和时间，以及历史数据来源，创建对应的预处理表:
 **ScadaTagPreProcessed_{provideId}_ {WindowSize}_{DateKey}**   
@@ -79,8 +80,8 @@ SQLite、SQLServer、PostgreSQL、MySQL这4种传统关系型数据库共享同�
 | Category         | Int      | **采样类型** <br>1: Min <br>2: Max <br>3: Avg <br>- **IntegerVal** 列存储数据点的 **数量**，代表某一指定时间窗口或采样周期内的有效记录总数。<br>- **DoubleVal** 列存储根据上述数据点计算得出的 **平均值**（`Avg`）。 <br>4: Last <br>5: First <br>7: Count <br>11: CountOn And CountOff <br>- **IntegerVal** 列存储 **CountOn** 值，表示在定义的时间窗口内标签或信号切换到“开启”状态的次数。<br>- **DoubleVal** 列存储 **CountOff** 值，表示在同一时间段内切换到“关闭”状态的次数。  <br>12: DurationOn And DurationOff <br>- **IntegerVal** 列存储 DurationOn 值，表示标签或信号在指定时间窗口内保持“开启”状态的总时间（以秒为单位）。<br>- **DoubleVal** 列存储 DurationOff 值，表示标签在同一时间段内保持“关闭”状态的总时间（以秒为单位）。|
 | Timestamp        | BigInt   |当预处理时间窗口设置为 **2 分钟** 时，系统将通过以下公式计算每个标签值对应的时间戳： <br>`Timestamp = floor(TagTime / (2 × 60 × 2000)) × (2 × 60 × 2000)`  <br>该公式的作用是，将标签的原始时间对齐至其所属 2 分钟时间窗口的起始时刻。例如,若某标签值的时间落在 `2028-08-01 01:00:00  ~ 2028-08-01 01:02:00` 这个时间范围内，系统会为该预处理记录分配统一的时间戳 `2028-08-01 01:00:00`。|
 | Quality          | Int      | 质量位 |
-| IntegerVal       | BigInt   | - 如果变量的数据类型是 `1` (Integer)，则保存变量的值，否则为 `Null` <br>- 当采样类型为`Avg`时，此列存储的时这个采样区间该变量 **原始数据的数量**  <br>- 当采样类型为`Count`时，此列存储的时这个采样区间该变量 **原始数据的数量**  <br>- 当采样类型为`CountOn And CountOff`时，此列存储的是 **CountOn** 的值,表示标签进入“开启”状态的次数。  <br>- 当采样类型为`DurationOn And DurationOf`时，此列存储的是**DurationOn** 的值,表示标签处于“开启”状态的总时间。 |
-| DoubleVal        | Double   | - 如果变量的数据类型是 `3` (Double)，则保存变量的值，否则为`Null`  <br>- 当采样类型为 `Avg` 时，此列存储的时这个采样区间该变量原始数据的 **平均值**  <br>- 当采样类型为`CountOn And CountOff`时，此列存储的是**CountOff** 的值,表示标签进入“关闭”状态的次数。  <br>- 当采样类型为`DurationOn And DurationOff`时，此列存储的是 **DurationOff** 的值,表示标签处于“关闭”状态的总时间。|
+| IntegerVal       | BigInt   | - 如果变量的数据类型是 `1` (Integer)，则保存变量的值，否则为 `Null` <br>- 当采样类型为`Avg`时，此列存储的时这个采样区间该变量 **原始数据的数量**  <br>- 当采样类型为`Count`时，此列存储的时这个采样区间该变量 **原始数据的数量**  <br>- 当采样类型为`CountOn And CountOff`时，此列存储的是 **CountOn** 的值,表示标签进入“开启”状态的次数。  <br>- 当采样类型为`DurationOn And DurationOf`时，此列存储的是 **DurationOn** 的值,表示标签处于“开启”状态的总时间。 |
+| DoubleVal        | Double   | - 如果变量的数据类型是 `3` (Double)，则保存变量的值，否则为`Null`  <br>- 当采样类型为 `Avg` 时，此列存储的时这个采样区间该变量原始数据的 **平均值**  <br>- 当采样类型为`CountOn And CountOff`时，此列存储的是 **CountOff** 的值,表示标签进入“关闭”状态的次数。  <br>- 当采样类型为`DurationOn And DurationOff`时，此列存储的是 **DurationOff** 的值,表示标签处于“关闭”状态的总时间。|
 | BoolVal          | Boolean  | 如果变量的数据类型是`4` (Boolean)，则保存变量的值，否则为`Null` |
 | StringVal        | String   | 如果变量的数据类型是`2` (String)，则保存变量的值，否则为`Null`   |
 | DateTimeVal      | DateTime | 如果变量的数据类型是`5` (DateTime)，则保存变量的值，否则为`Null` |
