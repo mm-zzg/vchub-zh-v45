@@ -1,54 +1,53 @@
-# Database Table Reference
+# 数据库表结构参考
 
-VC Hub integrates multiple built-in systems that automatically query data without requiring manual construction of query logic or table structures. These systems autonomously create necessary tables in the database, insert relevant data, and provide appropriate querying methods.
+VC Hub内置了许多系统，可以自动查询数据，而无需您手动构建查询和表结构。这些系统会自动在数据库中创建必要的表，插入相关数据，并提供相关查询方法。由于历史数据都存储在数据库表中，因此可以手动访问并查询数据，以自定义您查看数据的方式。
 
-Since historical data is stored within database tables, users have the option to manually access and query the data, enabling customized data views as needed.
+由于历史数据存储在数据库表中，用户可选择手动访问和查询这些数据，从而能够根据需求生成定制化的数据视图。
 
-**Important Note**
-These tables follow specific structural definitions. Unintended modifications to table structures may lead to unpredictable issues. It is strongly advised not to alter or delete existing table structures.
+**注意事项**
 
-Although direct manual querying of table data is technically possible, we recommend performing a full database backup prior to making any changes or executing operations. Please note that any risks resulting from modifications to data or table structure will be the responsibility of the user.
+这些数据表遵循特定的结构定义。对表结构进行非预期的修改可能会导致不可预测的问题，强烈建议不要更改或删除现有的表结构。
 
-VC Hub supports both traditional relational databases and the time-series database InfluxDB. As a result, table structure definitions vary depending on the type of database in use.
+尽管从技术层面而言，直接手动查询表数据是可行的，但我们建议在执行任何修改或操作之前，先对数据库进行完整备份。请注意，因修改数据或表结构而产生的任何风险，均由用户自行承担。
 
-- Relational databases share a unified set of table definitions.
-- InfluxDB employs a separate and distinct schema structure.
+VC Hub 同时支持传统的关系型数据库和时间序列数据库 InfluxDB。因此，数据表结构定义会根据所使用的数据库类型而有所不同：
 
-## Introduce
+- 所有关系型数据库采用统一的数据表定义规范。
+- InfluxDB 采用独立且不同的模式结构。
 
-Before introducing the table structures, it is essential to understand the relevant foundational configurations. These preliminary settings serve as the groundwork for proper database operation and ensure seamless integration with VC Hub’s data management systems.
+## 介绍
 
-## Node 
+在介绍表结构之前，我们需要先了解相关基础配置。
 
-VC Hub includes a node configuration feature, where the node name is by default set to the server’s hostname. Users may modify this name to suit their operational needs.
+## 节点
 
-The node primarily serves as a unique identifier, enabling other VC Hub instances within the network to easily recognize and communicate with it. When historical data is stored, the system also records the name of the node responsible for the data storage process.
+在 VC Hub 程序中，有个节点配置功能，节点名称默认采用服务器主机名，用户可以更改为其他名称。节点主要是起唯一标识作用，方便组网中的其他 VC Hub 程序识别。历史库存储数据时也会记录当前存储数据节点名称。
 
 ![alt text](1.png)
 
+## 资产
 
-
-## Asset
-
-Within the **Asset** page, users can configure the repository for **Tag History**. When a tag associated with the asset is enabled for historical recording, the system will write data to the designated historical database either upon changes to the database or at predefined intervals.
+在 "变量->资产" 页面，我们可以配置变量的历史存储库，当该变量开启历史记录时，会将变量的历史数据存入对应的历史库中。
 
 ![alt text](2.png)
 
 
 
-## History Database
+## 历史库
 
-Within the **History Database** page, users can configure both the **storage medium** and **storage format** for tag history. This flexibility allows tailored data archiving solutions that align with system requirements and performance preferences.
+在 "数据库->历史库"页面，我们可以配置变量历史的存储介质和存储形式。
 
 ![alt text](3.png)
 
 
 
-## Database Connection
+## 数据库连接
 
-The VC Hub system currently supports five types of databases: **MySQL**, **SQL Server**, **PostgreSQL**, **SQLite**, and **InfluxDB**.
+目前 VC Hub 系统支持 **MySQL**、**SQLServer**、**PostgreSQL**、**SQLite**、**InfluxDB** 共 5 种数据库类型。
 
-Users can configure the database connection by specifying the appropriate **connection URL**, **username**, and other relevant credentials. These configured databases are then utilized for storing **alarm history** and **tag history** data.
+用户可通过指定对应的连接 URL、用户名及其他相关认证信息，完成数据库连接的配置。这些已配置的数据库将被用于存储报警历史记录与标签历史数据。
 
 ![alt text](4.png)
+
+
 
