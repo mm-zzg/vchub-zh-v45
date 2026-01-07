@@ -527,40 +527,40 @@ Response Body: NA
 开关报警模型定义(BooleanAlarmModel)
 
 | 名称             | 类型    | 描述                                                                        |
-|:------------------|:---------|-----------------------------------------------------------------------------|
-| enabled          | Boolean | 启用                                                                        |
-| type             | String  | 类型                                                                        |
-| name             | String  | 名称                                                                        |
-| priority         | String  | 级别(Low,Medium,High,Critical)                                              |
+|:------------------|:---------|:-----------------------------------------------------------------------------|
+| enabled          | Boolean | 启用           |
+| type             | String  | 类型    |
+| name             | String  | 名称    |
+| priority         | String  | 级别(Low,Medium,High,Critical)        |
 | ackMode          | String  | 确认模式(Automatic,Manual (No Confirmation),Manual (Requires Confirmation)) |
-| notificationRule | String  | 通知规则                                                                    |
-| description      | String  | 描述                                                                        |
+| notificationRule | String  | 通知规则 |
+| description      | String  | 描述    |
 
 历史记录配置模型定义(HistoricalConfigurationModel)
 
-| 名称                 | 类型    | 描述                                                |
-|----------------------|---------|-----------------------------------------------------|
-| mode                 | String  | 模式(On Change,Periodic)                            |
-| storagePeriod        | Integer | 存储周期                                            |
+| 名称                 | 类型    | 描述   |
+|:----------------------|:---------|:-----------------------------------------------------|
+| mode                 | String  | 模式(On Change,Periodic) |
+| storagePeriod        | Integer | 存储周期  |
 | storagePeriodUnit    | String  | 储存周期单位(Msec,Sec,Min,Hour,Day,Week,Month,Year) |
 | compressionMode      | String  | 压缩模式(Off,Delta Compression,Slope Compression)   |
-| compressionType      | String  | 压缩类型(Absolute,Percent)                          |
-| value                | Double  | 值                                                  |
-| timeoutFallback      | Boolean | 超时补值                                            |
-| fallbackInterval     | Integer | 补值间隔                                            |
+| compressionType      | String  | 压缩类型(Absolute,Percent)  |
+| value                | Double  | 值       |
+| timeoutFallback      | Boolean | 超时补值  |
+| fallbackInterval     | Integer | 补值间隔    |
 | fallbackIntervalUnit | String  | 补值间隔单位(Msec,Sec,Min,Hour,Day,Week,Month,Year) |
 
 采集死区配置模型定义(DeadbandConfigurationModel)
 
 | 名称          | 类型    | 描述                   |
-|---------------|---------|------------------------|
+|:---------------|:---------|:------------------------|
 | mode          | String  | 模式(Absolute,Percent) |
 | deadbandValue | Integer | 死区值                 |
 
 量程转换配置模型定义(ScaleConfigurationModel)
 
 | 名称     | 类型   | 描述                        |
-|----------|--------|-----------------------------|
+|:----------|:--------|:-----------------------------|
 | mode     | String | 模式(Linear,Square,Reverse) |
 | rawMin   | Double | 最小原始值                  |
 | rawMax   | Double | 最大原始值                  |
@@ -570,34 +570,34 @@ Response Body: NA
 事件配置模型定义(EventConfigurationModel)
 
 | 名称                | 类型    | 描述       |
-|---------------------|---------|------------|
+|:---------------------|:---------|:------------|
 | setValueEnabled     | Boolean | 变量写值   |
 | setValue            | String  | 值         |
 | valueChangedEnabled | Double  | 布尔值跳变 |
 
 模拟配置模型定义(SimulationConfigurationModel)
 
-| 名称            | 类型    | 描述                                                             |
-|-----------------|---------|------------------------------------------------------------------|
+| 名称            | 类型    | 描述     |
+|:-----------------|:---------|:------------------------------------------------------------------|
 | type            | String  | 类型(Fixed,Random,Increment,Decrement,Reverse,Cycle,CurrentTime) |
-| initialValue    | Dynamic | 初始值                                                           |
-| simulationValue | String  | 模拟值                                                           |
-| value           | Dynamic | 值                                                               |
-| minValue        | Double  | 最小值                                                           |
-| maxValue        | Double  | 最大值                                                           |
-| decimals        | Integer | 小数位                                                           |
-| changeFrequency | Integer | 变化频率                                                         |
-| changeAmplitude | Double  | 变化幅度                                                         |
+| initialValue    | Dynamic | 初始值                      |
+| simulationValue | String  | 模拟值     |
+| value           | Dynamic | 值     |
+| minValue        | Double  | 最小值  |
+| maxValue        | Double  | 最大值     |
+| decimals        | Integer | 小数位     |
+| changeFrequency | Integer | 变化频率  |
+| changeAmplitude | Double  | 变化幅度   |
 
 自定义属性配置模型定义(CustomConfigurationModel)
 
 | 名称    | 类型          | 描述           |
-|---------|---------------|----------------|
+|:---------|:---------------|:----------------|
 | customs | CustomModel[] | 自定义属性列表 |
 
 自定义属性模型定义(CustomModel)
 
 | 名称  | 类型    | 描述 |
-|-------|---------|------|
+|:-------|:---------|:------|
 | name  | String  | 名称 |
 | value | Dynamic | 值   |
