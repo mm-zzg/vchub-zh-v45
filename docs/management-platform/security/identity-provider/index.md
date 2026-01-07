@@ -31,7 +31,7 @@ WAGO VC Hub安装成功后，在 **Identity Provider列表** 中会显示内置�
 
     ![alt text](28.png)
 
-#### 新增OpenID Connect类型的Identity Provider
+## 新增OpenID Connect类型的Identity Provider
 
 允许创建多个OpenID Connect类型的Identity Provider。
 
