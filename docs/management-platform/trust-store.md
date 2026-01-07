@@ -1,54 +1,49 @@
 # Trust Store
 
-The **Trust Store** is used to display and manage digital certificates in the system. It supports operations such as viewing certificate details, importing new certificates, and deleting existing ones.
+**Trust Store** 用于展示和管理系统中的数字证书，包括查看证书信息、导入新证书、删除证书等操作。
 
-Certificates uploaded to the Trust Store are trusted root or intermediate certificates containing public keys. These are used to verify the authenticity of remote certificates.
+Trust Store 中上传的是包含公钥的受信任根证书或中间证书，用于验证远端证书的可信性。
 
-When establishing a connection (such as during redundancy or networking), the system checks whether the remote certificate's chain can be validated against any certificate in the Trust Store.
+在建立连接（如组网）时，系统会检查远端证书的证书链是否可以通过 Trusted Store 中的任一证书进行验证。
 
-If the remote certificate itself or any certificate in its chain exists in the Trust Store and a valid trust chain can be established, the remote certificate is considered trusted.
+如果远端证书本身，或其证书链中的任意上级证书已存在于 Trusted Store 中并可建立有效的信任链，则该远端证书将被视为可信。
 
-Click **“Node” → “Trust Store”** to display the certificate list.
+点击 **“节点”->“Trust Store”**，显示证书列表。
 
 ![alt text](18.png)
 
-
-If a certificate is due to expire within 30 days, the **Expiration Time** will be shown in red to alert the user to update it in time.
+距离证书过期时间<=30天时，列表中“**过期时间**”会显示为红色，提醒用户证书即将过期，需要及时更新证书。
 
 ![alt text](19.png)
 
-
-If a certificate is already expired, an **“Expired”** label will appear next to its expiration date.
+当证书过期后，会在过期时间后面显示“**过期**”提示。
 
 ![alt text](20.png)
 
+## 导入证书
 
-## Import Certificate
+点击“**导入**”按钮，在弹出的文件选择窗口中选择证书文件。导入成功后列表中自动显示新证书。
 
-Click the **“Import”** button to select and upload a certificate file. Upon successful import, the new certificate will be listed automatically.
-
-Supported certificate formats:
+支持的证书格式：
 
 1. `.der`
 2. `.cer`
 3. `.pem`
 4. `.crt`
 
-## View Certificate
+## 查看证书详情
 
-Click the **“View”** button on a certificate row to open a detailed view of the certificate’s information and properties.
+点击证书的“**查看**”按钮，弹出证书详细信息窗口，查看证书的详细内容和属性。
 
 ![alt text](21.png)
 
+## 删除证书
 
-## Delete Certificate
-
-Click the **“Delete”** button next to a certificate to remove it. A confirmation dialog will appear before deletion.
+在证书列表对应证书的“**删除**”按钮，弹出确认对话框，确认删除后，证书将从系统中移除。
 
 ![alt text](22.png)
 
+#### 注意事项
 
-**Notes**
-
-- Expired certificates may pose security risks. Please update them promptly.
-- Before deleting a certificate, ensure that doing so will not affect system functionality.
+- 证书过期后可能会导致系统安全风险，请及时更新。
+- 删除证书前请确保不影响系统正常运行。

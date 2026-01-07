@@ -1,30 +1,29 @@
 # MQTT Broker
 
-The MQTT Broker is a core component of the MQTT protocol, responsible for forwarding messages between publishers and subscribers.
+MQTT Broker 是 MQTT 协议中的核心组件，负责在 发布者（Publisher） 和 订阅者（Subscriber） 之间转发消息。
 
-You can configure its parameters by clicking **“Node” -> “MQTT Broker”**.
+您可以点击 **“节点”->“MQTT Broker”**, 对其进行参数配置。
 
 ![alt text](17.png)
 
-**Parameters:**
+**参数：**
 
-| **Name**                     | **Description**  |
-|------------------------------|--------------------------------|
-| Enable TCP                   | Enable the tcp port.|
-| TCP Port                     | Specifies the port used for non-secure MQTT connections. Default is 1883.|
-| Enable TLS                   | Enable this option to use secure communication over TLS.  Before enabling, you must configure the MQTT Broker certificate. If the certificate is not configured, the interface will prompt “Please configure the MQTT Broker certificate first” and disable the option from being enabled. |
-| TLS Port                     | Specifies the port used for secure MQTT connections. Default is 8883. |
-| Auto Reconnect Delay Time(s) | The delay time (in seconds) before the client automatically attempts to reconnect after a disconnection. Default is 30.|
-| Keep Alive Period Time(s)    | The interval (in seconds) at which heartbeat (keep-alive) packets are sent to maintain the connection. Default is 60.|
-| Enable|Enable the rate limiting. Default diasbled.Rate Limiting is used to impose upper limits on the message rate and data volume for each client.|
-| Statistics period(min)|Unit is minutes. The statistical period of rate limiting.|
-| Maximum Messages|The maximum number of sent messages by the client within a statistical period.|
-| Maximum Data Size(MB)|The maximum size of sent messages by the client within a statistical period.|
+| **名称**               | **描述** |
+|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| 启用TCP                | 勾选此选项以启用TCP。 |
+| TCP Port               | MQTT Broker 的 TCP 监听端口。默认端口为1884。|
+| 启用 TLS               | 勾选此选项以启用 TLS 加密通信。  启用前，必须先配置 MQTT Broker 的证书。若未配置证书，界面将提示 “请先配置 MQTT Broker 证书”，并禁止开启该选项。 |
+| TLS Port               | 当启用 TLS 时，系统将通过此端口进行安全连接。默认值为 3883。|
+| 自动重连延迟时间 (s)   | 当连接断开时，客户端重新尝试连接的等待时间，单位为秒。默认值为 30 秒。|
+| 心跳包发送间隔时间 (s) | MQTT 客户端发送 PING 消息的间隔，用于保持连接活性。默认值为 60 秒|
+|启用 |启用速率限制。默认情况下禁用。速率限制用于限制每个客户端的消息速率和数据量上限。|
+|统计周期（分钟）|单位为分钟。速率限制的统计周期。|
+|最大消息数|客户端在一个统计周期内发送的最大消息数。|
+|最大数据量（MB）|客户端在一个统计周期内发送的最大数据大小。|
 
+## 启用 TLS 前的注意事项
 
-## Precautions Before Enabling TLS
+在启用 TLS 之前，必须先前往 [证书管理](certificate-management.md) 页面配置 MQTT Broker 所使用的 TLS 证书。
 
-Before enabling TLS, you must first go to the **"Node->Certificate Management"** page to configure the TLS certificate used by the MQTT Broker.
-
-You can choose to upload an existing TLS certificate or use a self-signed certificate provided by the system. Once configured, return to this page to enable the TLS feature.
+用户可以选择上传已有的 TLS 证书，或使用系统提供的自签名证书。配置完成后即可返回此页面启用 TLS 功能。
 
