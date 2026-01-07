@@ -297,7 +297,7 @@ nav:
                             - management-platform/scripts/schedule.md
                             - management-platform/scripts/log-configuration.md
                   - 组网:
-                            - management-platform/networking/index.md
+                                - management-platform/networking/index.md
                   - 数据库:
                             - management-platform/databases/index.md
                             - 数据库连接:
