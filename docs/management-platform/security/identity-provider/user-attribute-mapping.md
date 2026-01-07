@@ -1,65 +1,72 @@
-# User Attribute Mapping
+# 用户属性映射
 
-User attribute mapping allows you to map information from the Identity Provider response document to easily understandable attributes. For this to work, VC Hub must already have a valid Identity Provider configuration that returns a response document when attempting to log in.
+用户属性映射允许您将Identity Provider响应文档中的信息映射到易于理解的属性。要正常工作，这要求WAGO VC Hub已经具有有效的Identity Provider配置，该配置在尝试登录时返回响应文档。
 
-## Configuring User Attribute Mapping
+## 配置用户属性映射
 
-1. Click the **"Security" → "Identity Provider"** menu.<br>
-   ![alt text](../1.png)
-2. In the Identity Provider list, click the "User Attribute Mapping" for a specific entry in the action column.
+1. 点击“**Security**”->“**Identity Provider**”菜单。
+
    ![alt text](33.png)
-3. In the pop-up window, set the source and mapping path. The system provides the following 5 properties that can be used for mapping:
+
+2. 在Identity Provider列表的操作栏中，点击某一条数据的“用户属性映射”。
+
    ![alt text](34.png)
 
-**Properties**
+3. 在弹窗中设置映射来源和路径。系统内置了如下5个可用于映射的属性。
 
-| **Name**     | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Username     | Mapping for username.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Role         | Mapping for role.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Name         | Mapping for name.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Email        | Mapping for email.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Phone        | Mapping for phone.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Source       | The mapping includes the following:  <br>- **ID Token Claims**: These are the claims in the ID token used to represent the user's identity information. They typically include attributes like, `name`, `email`, etc. <br>- **Token Endpoint Response**: This is the response from the token endpoint, which typically includes the Access Token, ID Token, and Refresh Token. These tokens are used to authenticate and authorize the user. <br>- **User Info Claims**: These claims contain detailed user attributes such as name, email, profile picture, and other personal information. These are usually returned by the Identity Provider when querying the UserInfo Endpoint. |
-| Mapping Path | It is typically used to map the user information returned by the **Identity Provider** to the local system's user model, ensuring that the application can correctly identify and authorize the user.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+   ![alt text](35.png)
 
-4.Click the **"OK"** button to complete the setup.
+**属性**
 
-**Example**
+| **名称** | **描述**|
+|:----------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 用户     | 用于用户名的映射|
+| 角色     | 用于角色的映射|
+| 姓名     | 用于姓名的映射|
+| 邮箱     | 用于邮箱的映射 |
+| 电话     | 用于电话的映射|
+| 来源     | 该映射包含以下内容：  <br>- **ID Token Claims**：ID 令牌声明，用于表示用户的身份信息。 <br>- **Token Endpoint Response**：令牌端点响应。通常包含 Access Token、ID Token 和 Refresh Token,这些令牌用于对用户进行身份验证与权限授权。 <br>- **User Info Claims**：用户信息声明。包含用户的详细属性（如姓名、邮箱、头像等）,这些信息通常由身份提供方在查询用户信息端点时返回。 |
+| 映射路径 | 通常用于将Identity Provider返回的用户信息映射到本地系统的用户模型，确保应用程序能够正确识别和授权用户。|
 
-1. Assume the **ID Token** returned by the **Identity Provider** contains the following information:
+4. 点击“**确认**”按钮，完成设置。
+
+**示例**
+
+1. 假定 **Identity Provider** 返回的 **ID Token** 包含如下信息：
 
 {
 
   "username": "alex",
 
-  "email": "alex@example.com",
+  "email": `alex@example.com`,
 
   "user_roles": "admin"
 
-  "name": "Alex Zhang"
+  "name": "张三"
 
 }
 
-2.The mapping paths can be set as follows:
+2. 映射路径可以设置为：
 
-  ![alt text](35.png)
+ ![alt text](36.png)
 
-   - `username` → The local username（username）
-   - `email` → The local email（email）
-   - `user_roles` → The local role（role）
-   - `name` → The local name（name）
+ - `username` → 本地用户名（username）
+ - `email` → 本地用户邮箱（email）
+ - `user_roles` → 本地用户角色（role）
+ - `name` → 本地用户姓名（name）
 
-3.In **VC Hub**, the end-user information is mapped as follows:
+
+
+3. 在WAGO VC Hub中，最终用户信息被映射为：
 
 {
 
-   "username": "alex",
+  "username": "alex",
 
-   "email": "alex@example.com",
+  "email": `alex@example.com`,
 
-   "role": "admin"
+  "role": "admin"
 
-   "name": "Alex Zhang"
+  "name": "张三"
 
 }
