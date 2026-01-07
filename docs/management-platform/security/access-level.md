@@ -28,8 +28,10 @@ Access Level在系统中以树状结构展示。默认预留了五个级别。
 
 支持用户根据需要对Access Level进行新增修改删除操作。
 
-**注意：**  
+**注意：** 
+
 1. 点击保存按钮后，Access Level才会真正保存。 
+
 2. 点击取消按钮，将恢复至上一次的保存内容。
 
 ## 新增Access Level
@@ -49,6 +51,7 @@ Access Level在系统中以树状结构展示。默认预留了五个级别。
 5. 点击页面的“保存”按钮，保存修改的内容。
 
 **注意：**  
+
 1. 新增Access Level时，如果同一级别已存在同名的Access Level(不区分大小写)，新增操作将会失败。 
 
 2. 不同级别可以同名。 
@@ -72,7 +75,9 @@ Access Level在系统中以树状结构展示。默认预留了五个级别。
 3. 点击页面的保存按钮，Access Level将会被保存。
 
 **注意：**  
+
 1. 仅“Authenticated/Roles”支持刷新。 
+
 2. 刷新后，如果同级别下存在同名角色，则会保留已存在的角色。
 
 ## 修改Access Level
@@ -105,7 +110,9 @@ Access Level在系统中以树状结构展示。默认预留了五个级别。
 2. 点击“删除”按钮，进行删除。
 
 **注意：**  
+
 1. “Authenticated”和“Authenticated/Roles”不支持删除。 
+
 2. 删除后，当前级别及其所有子级别，将一同被删除。
 
 ## 复制Access Level
@@ -121,7 +128,9 @@ Access Level在系统中以树状结构展示。默认预留了五个级别。
 4. 点击页面的“保存”按钮，Access Level将被保存。
 
 **注意：**  
+
 1. “Authenticated”和“Authenticated/Roles”不支持复制 
+
 2. “Authenticated/Roles”仅支持一级子级别，所以“Authenticated/Roles”下的子级别不支持粘贴操作。
 
 ## 剪切Access Level
@@ -140,7 +149,9 @@ Access Level在系统中以树状结构展示。默认预留了五个级别。
 4. 点击页面的“保存”按钮，Access Level将被保存。
 
 **注意：**  
+
 1. “Authenticated”和“Authenticated/Roles”不支持剪切。 
+
 2. “Authenticated/Roles”仅支持一级子级别，所以“Authenticated/Roles”下的子级别不支持粘贴操作。
 
 ## 快捷复制
