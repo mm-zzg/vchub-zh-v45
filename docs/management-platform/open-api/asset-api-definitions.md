@@ -11,7 +11,7 @@
 响应负载(JsonArray):
 
 | 名称        | 类型   | 描述       |
-|-------------|--------|------------|
+|:-------------|:--------|:------------|
 | id          | String | 资产树编号 |
 | name        | String | 资产树名称 |
 | description | String | 资产树描述 |
@@ -25,7 +25,7 @@
 请求负载(JsonObject):
 
 | 名称        | 类型   | 描述       |
-|-------------|--------|------------|
+|:-------------|:--------|:------------|
 | name        | String | 资产树名称 |
 | description | String | 资产树描述 |
 
@@ -42,7 +42,7 @@
 请求负载(JsonObject):
 
 | 名称        | 类型   | 描述       |
-|-------------|--------|------------|
+|:-------------|:--------|:------------|
 | name        | String | 资产树名称 |
 | description | String | 资产树描述 |
 
@@ -50,7 +50,7 @@ Response Body: NA
 
 
 
-#### DELETE /api/v1/assets/{id}
+## DELETE /api/v1/assets/{id}
 
 删除资产树
 
@@ -59,7 +59,7 @@ Response Body: NA
  请求负载(JsonObject):
 
 | 名称        | 类型   | 描述       |
-|-------------|--------|------------|
+|:-------------|:--------|:------------|
 | name        | String | 资产树名称 |
 | description | String | 资产树描述 |
 
@@ -67,7 +67,7 @@ Response Body: NA
 
 
 
-#### GET /api/v1/assetModels
+## GET /api/v1/assetModels
 
 读取所有资产模型
 
@@ -76,13 +76,13 @@ Response Body: NA
 请求负载(QueryString):
 
 | 名称       | 类型   | 描述   |
-|------------|--------|--------|
+|:------------|:--------|:--------|
 | parentPath | String | 父路径 |
 
 响应负载(JsonArray)
 
 | 名称       | 类型   | 描述                         |
-|------------|--------|------------------------------|
+|:------------|:--------|:------------------------------|
 | treeName   | String | 资产树名称                   |
 | parentPath | String | 模型父路径                   |
 | name       | String | 模型名称                     |
@@ -91,7 +91,7 @@ Response Body: NA
 
 
 
-#### POST /api/assetModels
+## POST /api/assetModels
 
 创建资产模型
 
@@ -100,7 +100,7 @@ Response Body: NA
 请求负载(QueryString):
 
 | 名称       | 类型   | 描述           |
-|------------|--------|----------------|
+|:------------|:--------|----------------|
 | parentPath | String | 资产模型父路径 |
 | name       | String | 资产模型名称   |
 
@@ -108,7 +108,7 @@ Response Body: NA
 
 
 
-#### PUT /api/assetModels/{modelPath}
+## PUT /api/assetModels/{modelPath}
 
 更新资产树模型
 
@@ -117,7 +117,7 @@ Response Body: NA
 请求负载(QueryString):
 
 | 名称       | 类型   | 描述           |
-|------------|--------|----------------|
+|:------------|:--------|:----------------|
 | parentPath | String | 资产模型父路径 |
 | name       | String | 资产模型名称   |
 
@@ -125,7 +125,7 @@ Response Body: NA
 
 
 
-#### DELETE /api/v1/assetModels/{modelPath}
+## DELETE /api/v1/assetModels/{modelPath}
 
 删除资产树模型
 
@@ -137,7 +137,7 @@ Response Body: NA
 
 
 
-#### GET /api/v1/assetModels/{modelPath}/properties
+## GET /api/v1/assetModels/{modelPath}/properties
 
 通过资产树模型路径读取模型属性列表，这里的属性是指模型的子元素 
 
@@ -147,22 +147,22 @@ Response Body: NA
 
 响应负载(JsonArray):
 
-| 名称        | 类型                 | 描述                                                                                       |
-|-------------|----------------------|--------------------------------------------------------------------------------------------|
-| treeName    | String               | 资产树名称                                                                                 |
-| parentPath  | String               | 模型父路径                                                                                 |
-| name        | String               | 模型属性名称                                                                               |
-| path        | String               | 模型路径                                                                                   |
+| 名称        | 类型                 | 描述|
+|:-------------|:----------------------|:--------------------------------------------------------------------------------------------|
+| treeName    | String               | 资产树名称 |
+| parentPath  | String               | 模型父路径 |
+| name        | String               | 模型属性名称|
+| path        | String               | 模型路径 |
 | modelPath   | String               | 模型实例的模型路径，只有当前属性的类型是模型实例的时候不为空                                |
 | type        | String               | 资产类型 (Instance,Tag)                                                                    |
 | tagType     | String               | 变量类型 (IO,Memory,Expression,System), 只有当前属性的类型是变量时不为空                   |
 | valueType   | String               | 变量值类型 (Unknown,Integer,String,Double,Bool,DateTime), 只有当前属性的类型是变量时不为空 |
-| description | String               | 模型属性描述                                                                               |
-| properties  | AssetModelProperty[] | 当前模型实例的属性列表                                                                     |
+| description | String               | 模型属性描述|
+| properties  | AssetModelProperty[] | 当前模型实例的属性列表  |
 
 
 
-#### POST /api/v1/assetModels/{modelPath}/properties
+## POST /api/v1/assetModels/{modelPath}/properties
 
 创建资产模型属性
 
@@ -170,20 +170,20 @@ Response Body: NA
 
 请求负载(JsonObject):
 
-| 名称        | 类型   | 描述                                                                                       |
-|-------------|--------|--------------------------------------------------------------------------------------------|
-| name        | String | 资产模型属性名称                                                                           |
-| type        | String | 资产类型 (Instance,Tag)                                                                    |
-| modelPath   | String | 模型实例的模型路径，只有当前属性的类型是模型实例的时候不为空                                |
+| 名称        | 类型   | 描述|
+|:-------------|:--------|:--------------------------------------------------------------------------------------------|
+| name        | String | 资产模型属性名称 |
+| type        | String | 资产类型 (Instance,Tag)|
+| modelPath   | String | 模型实例的模型路径，只有当前属性的类型是模型实例的时候不为空  |
 | tagType     | String | 变量类型 (IO,Memory,Expression,System), 只有当前属性的类型是变量时不为空                   |
 | valueType   | String | 变量值类型 (Unknown,Integer,String,Double,Bool,DateTime), 只有当前属性的类型是变量时不为空 |
-| description | String | 模型属性描述                                                                               |
+| description | String | 模型属性描述 |
 
 响应负载: NA
 
 
 
-#### POST /api/v1/assetModels/{modelPath}/properties/batch
+## POST /api/v1/assetModels/{modelPath}/properties/batch
 
 批量创建资产模型属性
 
@@ -191,18 +191,18 @@ Response Body: NA
 
 请求负载(JsonArray):
 
-| 名称        | 类型   | 描述                                                                                       |
-|-------------|--------|--------------------------------------------------------------------------------------------|
-| name        | String | 资产模型属性名称                                                                           |
-| type        | String | 资产类型 (Instance,Tag)                                                                    |
+| 名称        | 类型   | 描述 |
+|:-------------|:--------|:--------------------------------------------------------------------------------------------|
+| name        | String | 资产模型属性名称  |
+| type        | String | 资产类型 (Instance,Tag)   |
 | modelPath   | String | 模型实例的模型路径，只有当前属性的类型是模型实例的时候不为空                                |
 | tagType     | String | 变量类型 (IO,Memory,Expression,System), 只有当前属性的类型是变量时不为空                   |
 | valueType   | String | 变量值类型 (Unknown,Integer,String,Double,Bool,DateTime), 只有当前属性的类型是变量时不为空 |
-| description | String | 模型属性描述                                                                               |
+| description | String | 模型属性描述|
 
 响应负载: NA
 
-#### PUT /api/v1/assetModels/{modelPath}/properties/{name}
+## PUT /api/v1/assetModels/{modelPath}/properties/{name}
 
 更新资产模型属性
 
@@ -211,7 +211,7 @@ Response Body: NA
 请求负载(JsonObject):
 
 | 名称        | 类型   | 描述             |
-|-------------|--------|------------------|
+|:-------------|:--------|:------------------|
 | name        | String | 资产模型属性名称 |
 | description | String | 资产模型属性描述 |
 
@@ -219,7 +219,7 @@ Response Body: NA
 
 
 
-#### DELETE /api/v1/assetModels/{modelPath}/properties/{name}
+## DELETE /api/v1/assetModels/{modelPath}/properties/{name}
 
 删除模型属性
 
@@ -231,7 +231,7 @@ Response Body: NA
 
 
 
-#### GET /api/v1/assetInstances
+## GET /api/v1/assetInstances
 
 读取资产实例
 
@@ -240,13 +240,13 @@ Response Body: NA
 请求负载(QueryString):
 
 | 名称       | 类型   | 描述       |
-|------------|--------|------------|
+|:------------|:--------|:------------|
 | parentPath | String | 实例父路径 |
 
 响应负载:
 
 | 名称       | 类型   | 描述                       |
-|------------|--------|----------------------------|
+|:------------|:--------|:----------------------------|
 | treeName   | String | 资产树名称                 |
 | parentPath | String | 资产实例父路径             |
 | name       | String | 资产实例名称               |
@@ -255,7 +255,7 @@ Response Body: NA
 
 
 
-#### POST /api/v1/assetInstances
+## POST /api/v1/assetInstances
 
 创建资产实例
 
@@ -264,14 +264,14 @@ Response Body: NA
 请求负载:(JsonObject)
 
 | 名称       | 类型   | 描述             |
-|------------|--------|------------------|
+|:------------|:--------|:------------------|
 | parentPath | String | 资产实例父路径   |
 | name       | String | 资产实例名称     |
 | modelPath  | String | 资产实例模型路径 |
 
 
 
-#### PUT /api/v1/assetInstances/{path}
+## PUT /api/v1/assetInstances/{path}
 
 更新资产实例 
 
@@ -280,13 +280,13 @@ Response Body: NA
 请求负载:(JsonObject)
 
 | 名称       | 类型   | 描述           |
-|------------|--------|----------------|
+|:------------|:--------|:----------------|
 | parentPath | String | 资产实例父路径 |
 | name       | String | 资产实例名称   |
 
 响应负载: NA
 
-#### DELETE /api/v1/assetInstances/{path}
+## DELETE /api/v1/assetInstances/{path}
 
 删除资产实例
 
@@ -298,7 +298,7 @@ Response Body: NA
 
 
 
-#### GET /api/v1/assetInstances/{path}/properties
+## GET /api/v1/assetInstances/{path}/properties
 
 读取资产实例属性列表
 
@@ -308,22 +308,22 @@ Response Body: NA
 
 响应负载:
 
-| 名称        | 类型               | 描述                                                                                       |
-|-------------|--------------------|--------------------------------------------------------------------------------------------|
-| treeName    | String             | 资产树名称                                                                                 |
+| 名称        | 类型               | 描述 |
+|:-------------|:--------------------|:--------------------------------------------------------------------------------------------|
+| treeName    | String             | 资产树名称  |
 | parentPath  | String             | 资产模型实例属性父路径                                                                     |
-| name        | String             | 资产实例名称                                                                               |
-| path        | String             | 资产实例路径                                                                               |
+| name        | String             | 资产实例名称|
+| path        | String             | 资产实例路径 |
 | modelPath   | String             | 资产实例的模型路径                                                                         |
 | type        | String             | 资产类型 (Instance,Tag)                                                                    |
 | tagType     | String             | 变量类型 (IO,Memory,Expression,System), 只有当前属性的类型是变量时不为空                   |
 | valueType   | String             | 变量值类型 (Unknown,Integer,String,Double,Bool,DateTime), 只有当前属性的类型是变量时不为空 |
-| description | String             | 变量描述                                                                                   |
-| properties  | AssetModelProperty | 实例子属性列表                                                                             |
+| description | String             | 变量描述 |
+| properties  | AssetModelProperty | 实例子属性列表 |
 
 
 
-#### GET /api/v1/tags
+## GET /api/v1/tags
 
 读取变量列表
 
@@ -332,26 +332,26 @@ Response Body: NA
 请求负载(QueryString):
 
 | 名称       | 类型   | 描述       |
-|------------|--------|------------|
+|:------------|:--------|:------------|
 | parentPath | String | 变量父路径 |
 
 响应负载(JsonArray):
 
-| 名称        | 类型   | 描述                                                                                       |
-|-------------|--------|--------------------------------------------------------------------------------------------|
-| treeName    | String | 资产树名称                                                                                 |
-| parentPath  | String | 父路径                                                                                     |
-| name        | String | 变量名称                                                                                   |
-| path        | String | 变量路径                                                                                   |
+| 名称        | 类型   | 描述  |
+|:-------------|:--------|:--------------------------------------------------------------------------------------------|
+| treeName    | String | 资产树名称 |
+| parentPath  | String | 父路径   |
+| name        | String | 变量名称  |
+| path        | String | 变量路径  |
 | modelPath   | String | 模型实例的模型路径，只有当前元素的资产类型是资产模型实例时不为空                            |
 | type        | String | 资产类型 (Folder,Instance,Tag)                                                             |
 | tagType     | String | 变量类型 (IO,Memory,Expression,System), 只有当前属性的类型是变量时不为空                   |
 | valueType   | String | 变量值类型 (Unknown,Integer,String,Double,Bool,DateTime), 只有当前属性的类型是变量时不为空 |
-| description | String | 变量描述                                                                                   |
+| description | String | 变量描述 |
 
 
 
-#### POST  /api/v1/tags
+## POST  /api/v1/tags
 
 创建变量
 
@@ -359,18 +359,16 @@ Response Body: NA
 
 请求负载(JsonObject):
 
-| 名称        | 类型   | 描述                                                                                       |
-|-------------|--------|--------------------------------------------------------------------------------------------|
-| parentPath  | String | 变量父路径                                                                                 |
-| name        | String | 变量名称                                                                                   |
+| 名称        | 类型   | 描述  |
+|:-------------|:--------|:--------------------------------------------------------------------------------------------|
+| parentPath  | String | 变量父路径 |
+| name        | String | 变量名称 |
 | type        | String | 资产类型 (Folder,Instance,Tag)                                                             |
 | tagType     | String | 变量类型 (IO,Memory,Expression,System)                                                     |
 | valueType   | String | 变量值类型 (Unknown,Integer,String,Double,Bool,DateTime), 只有当前属性的类型是变量时不为空 |
-| description | String | 变量描述                                                                                   |
+| description | String | 变量描述 |
 
-
-
-#### PUT /api/v1/tags/{path}
+## PUT /api/v1/tags/{path}
 
 更新变量
 
@@ -379,12 +377,12 @@ Response Body: NA
 请求负载(JsonObject):
 
 | 名称        | 类型   | 描述       |
-|-------------|--------|------------|
+|:-------------|:--------|:------------|
 | parentPath  | String | 变量父路径 |
 | name        | String | 变量名称   |
 | description | String | 变量描述   |
 
-#### DELETE /api/v1/tags/{path}
+## DELETE /api/v1/tags/{path}
 
 删除变量
 
@@ -396,7 +394,7 @@ Response Body: NA
 
 
 
-#### GET /api/v1/tags/{path}/configuration
+## GET /api/v1/tags/{path}/configuration
 
 读取变量配置
 
@@ -407,7 +405,7 @@ Response Body: NA
 响应负载(JsonObject):
 
 | 名称        | 类型                         | 描述           |
-|-------------|------------------------------|----------------|
+|:-------------|:------------------------------|:----------------|
 | name        | String                       | 变量名称       |
 | tagGroup    | String                       | 变量组         |
 | description | String                       | 描述           |
@@ -422,8 +420,8 @@ Response Body: NA
 
 值配置模型定义(ValueConfigurationModel)
 
-| 名称                 | 类型    | 描述                                          |
-|----------------------|---------|-----------------------------------------------|
+| 名称                 | 类型    | 描述  |
+|:----------------------|:---------|:-----------------------------------------------|
 | valueType            | String  | 数据类型(Integer,String,Double,Bool,DateTime) |
 | initialValue         | Dynamic | 初始值                                        |
 | engineeringLowLimit  | Double  | 工程下限                                      |
@@ -438,7 +436,7 @@ Response Body: NA
 报警配置模型定义(AlarmConfigurationModel)
 
 | 名称              | 类型                                | 描述           |
-|-------------------|-------------------------------------|----------------|
+|:-------------------|:-------------------------------------|:----------------|
 | limitAlarm        | LimitAlarmConfigurationModel        | 限值报警配置   |
 | rateOfChangeAlarm | RateOfChangeAlarmConfigurationModel | 变化率报警配置 |
 | equivalentAlarm   | EquivalentAlarmConfigurationModel   | 等值报警配置   |
@@ -447,7 +445,7 @@ Response Body: NA
 限值报警配置模型定义(LimitAlarmConfigurationModel)
 
 | 名称               | 类型              | 描述         |
-|--------------------|-------------------|--------------|
+|:--------------------|:-------------------|:--------------|
 | activeDelayEnabled | Boolean           | 启用激活延迟 |
 | activeDelay        | Integer           | 激活延时     |
 | resumeDelayEnabled | Boolean           | 启用恢复延时 |
@@ -458,22 +456,22 @@ Response Body: NA
 限值报警模型定义(LimitAlarmModel)
 
 | 名称             | 类型    | 描述                                                                        |
-|------------------|---------|-----------------------------------------------------------------------------|
-| enabled          | Boolean | 启用                                                                        |
-| type             | String  | 类型(H ,H2 , H3,H4,L,L2,L3,L4)                                              |
-| name             | String  | 名称                                                                        |
-| priority         | String  | 级别(Low,Medium,High,Critical)                                              |
-| limit            | Double  | 限值                                                                        |
-| deadband         | Double  | 死区值                                                                      |
-| deadbandMode     | String  | 死区模式                                                                    |
+|:------------------|:---------|:-----------------------------------------------------------------------------|
+| enabled          | Boolean | 启用          |
+| type             | String  | 类型(H ,H2 , H3,H4,L,L2,L3,L4)       |
+| name             | String  | 名称                  |
+| priority         | String  | 级别(Low,Medium,High,Critical)          |
+| limit            | Double  | 限值          |
+| deadband         | Double  | 死区值              |
+| deadbandMode     | String  | 死区模式             |
 | ackMode          | String  | 确认模式(Automatic,Manual (No Confirmation),Manual (Requires Confirmation)) |
-| notificationRule | String  | 通知规则                                                                    |
-| description      | String  | 描述                                                                        |
+| notificationRule | String  | 通知规则          |
+| description      | String  | 描述         |
 
 变化率报警配置模型定义(RateOfChangeAlarmConfigurationModel)
 
 | 名称               | 类型                     | 描述           |
-|--------------------|--------------------------|----------------|
+|:--------------------|:--------------------------|:----------------|
 | activeDelayEnabled | Boolean                  | 启用激活延迟   |
 | activeDelay        | Integer                  | 激活延时       |
 | resumeDelayEnabled | Boolean                  | 启用恢复延时   |
@@ -483,21 +481,21 @@ Response Body: NA
 变化率报警模型定义(RateOfChangeAlarmModel)
 
 | 名称             | 类型    | 描述                                                                        |
-|------------------|---------|-----------------------------------------------------------------------------|
-| enabled          | Boolean | 启用                                                                        |
-| name             | String  | 名称                                                                        |
-| priority         | String  | 级别(Low,Medium,High,Critical)                                              |
-| changeRate       | Double  | 变化率(%)                                                                   |
-| cycle            | Double  | 周期                                                                        |
+|:------------------|:---------|:-----------------------------------------------------------------------------|
+| enabled          | Boolean | 启用          |
+| name             | String  | 名称        |
+| priority         | String  | 级别(Low,Medium,High,Critical)     |
+| changeRate       | Double  | 变化率(%)   |
+| cycle            | Double  | 周期   |
 | cycleUnit        | String  | 周期单位(Msec,Sec,Min,Hour,Day,Week,Month,Year)                             |
 | ackMode          | String  | 确认模式(Automatic,Manual (No Confirmation),Manual (Requires Confirmation)) |
-| notificationRule | String  | 通知规则                                                                    |
-| description      | String  | 描述                                                                        |
+| notificationRule | String  | 通知规则     |
+| description      | String  | 描述  |
 
 等值报警配置模型定义(EquivalentAlarmConfigurationModel)
 
 | 名称               | 类型                   | 描述         |
-|--------------------|------------------------|--------------|
+|:--------------------|:------------------------|--------------|
 | activeDelayEnabled | Boolean                | 启用激活延迟 |
 | activeDelay        | Integer                | 激活延时     |
 | resumeDelayEnabled | Boolean                | 启用恢复延时 |
@@ -507,19 +505,19 @@ Response Body: NA
 等值报警模型定义(EquivalentAlarmModel)
 
 | 名称             | 类型    | 描述                                                                        |
-|------------------|---------|-----------------------------------------------------------------------------|
-| enabled          | Boolean | 启用                                                                        |
-| name             | String  | 名称                                                                        |
-| priority         | String  | 级别(Low,Medium,High,Critical)                                              |
-| Value            | Dynamic | 值                                                                          |
+|:------------------|:---------|:-----------------------------------------------------------------------------|
+| enabled          | Boolean | 启用          |
+| name             | String  | 名称      |
+| priority         | String  | 级别(Low,Medium,High,Critical) |
+| Value            | Dynamic | 值     |
 | ackMode          | String  | 确认模式(Automatic,Manual (No Confirmation),Manual (Requires Confirmation)) |
-| notificationRule | String  | 通知规则                                                                    |
-| description      | String  | 描述                                                                        |
+| notificationRule | String  | 通知规则 |
+| description      | String  | 描述       |
 
 开关报警配置模型定义(BooleanAlarmConfigurationModel)
 
 | 名称               | 类型                | 描述         |
-|--------------------|---------------------|--------------|
+|:--------------------|:---------------------|:--------------|
 | activeDelayEnabled | Boolean             | 启用激活延迟 |
 | activeDelay        | Integer             | 激活延时     |
 | resumeDelayEnabled | Boolean             | 启用恢复延时 |
@@ -529,7 +527,7 @@ Response Body: NA
 开关报警模型定义(BooleanAlarmModel)
 
 | 名称             | 类型    | 描述                                                                        |
-|------------------|---------|-----------------------------------------------------------------------------|
+|:------------------|:---------|-----------------------------------------------------------------------------|
 | enabled          | Boolean | 启用                                                                        |
 | type             | String  | 类型                                                                        |
 | name             | String  | 名称                                                                        |
