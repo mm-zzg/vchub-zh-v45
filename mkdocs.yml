@@ -367,8 +367,8 @@ nav:
                                       - management-platform/open-api/test-with-postman/get-access-token.md
                                       - management-platform/open-api/test-with-postman/invoke.md
                                       - management-platform/open-api/test-with-postman/subscribe.md 
-
-                  - management-platform/diagnostics.md
+                  - 诊断:
+                            - management-platform/diagnostics/index.md
         - 2D Visualization:
                   - 2d-visualization/index.md
                   - 2d-visualization/editor-introduction.md
