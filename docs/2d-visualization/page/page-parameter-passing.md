@@ -29,34 +29,34 @@
 1. 新建一个画面：电机。
 2. 在画面上绘制2个按钮，电机1和电机2。
 
-    ![alt text](22.png)
+    ![alt text](21.png)
 
 3. 在电机1的 [动作](PFfnemrqK3dS3Nv9SQNuYxcCA43TCK0elVHs1mqngmI.gif) 中设置按下脚本。当点击该按钮时，打开 “电机详情” 弹窗，弹窗居中显示，并且将“电机详情”弹窗上的自定义属性“编号”的值设置为1。
 
-```typescript
-System.UI.openPopup("电机详情", {
-    position: {
-        type: 'center',
-    },
-    pageProperties: {
-        'custom.编号': '1'
-    }
-});
-```
+    ```typescript
+    System.UI.openPopup("电机详情", {
+        position: {
+            type: 'center',
+        },
+        pageProperties: {
+            'custom.编号': '1'
+        }
+    });
+    ```
  
 4. 点击“电机2”按钮，在 [动作](PFfnemrqK3dS3Nv9SQNuYxcCA43TCK0elVHs1mqngmI.gif) 中设置相同的脚本，将传入的参数值从**1** 变为 **2**。
 
-```typescript
-System.UI.openPopup("电机详情", {
-    position: {
-        type: 'center',
-    },
-    pageProperties: {
-        'custom.编号': '2'
-    }
-});
-```
+    ```typescript
+    System.UI.openPopup("电机详情", {
+        position: {
+            type: 'center',
+        },
+        pageProperties: {
+            'custom.编号': '2'
+        }
+    });
+    ```
  
 5. 点击画面的预览按钮进行预览。在预览页面，点击按钮 “电机1”，打开弹窗，弹窗中文本内容显示为 “电机1”；点击按钮 “电机2”，打开弹窗，弹窗中文本内容显示为 “电机2”。
 
-![alt text](1.gif)
+    ![alt text](1.gif)
