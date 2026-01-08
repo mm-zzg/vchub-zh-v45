@@ -1,49 +1,47 @@
-# Subscribe to real-time data via WebSocket API
+# 订阅实时数据
 
-Open API offers WebSocket API for real-time data access. Using the WebSocket API, you can subscribe to real-time data, including tag values, tag properties, and tag alarms.
+Open API 提供了用于实时数据访问的 WebSocket API。
 
-1. Open the postman home page, click the **+** icon, then click the **View more templates** link.
+通过使用 WebSocket API，您可以订阅实时数据，包括变量值、变量属性和报警。
+
+1. 打开postman主页，点击按钮 **+**, 然后点击 **View more templates**。
 
     ![alt text](13.png)
 
-
-
-2. Click the **API protocol 101** menu, then select the **WebSocket basics** option.
+2. 点击左侧 **API protoco 101**,然后在右侧选择 **WebSocket basics**。
 
     ![alt text](14.png)
 
-3. Create a new folder under **WebSocket basics** Open the menu by clicking the dropdown menu of the new folder, as shown in  below screenshot, then click the **WebSocket** option.
+3. 在 **WebSocket基础** 下创建一个新文件夹。点击新文件夹的下拉菜单以打开菜单，如下图所示，然后点击 **WebSocket** 选项。
 
     ![alt text](15.png)
 
-4. Enter ther URL wss://localhost:8043/ws/v1/realtimeData
+4. 在地址栏中输入地址 wss://localhost:8043/ws/v1/realtimeData
 
     ![alt text](16.png)
 
-
-
-5. Open the **Params** tab and enter the access_token. 
+5. 在 **Params** 中输入 access_token, 注意 websocket 的 access_token 前面不需要添加   Brear
 
     ![alt text](17.png)
 
-6. Click the **Connect** button, and Postman will indicate the Websocket connection has been established.
+6. 点击 **Connect** 按钮，Postman 将显示 WebSocket 连接已建立。
 
     ![alt text](18.png)
 
+7. 成功连接后，在Message Tab下发送以下的报文, 注意报文结尾处的特殊字符![alt text](22.png)不能遗漏，第三行报文中的 `[["Default:m1","Default:m2","Default:m3"]]` 需要替换成工程中实际上存在的变量
 
-7. Once connected, open the **Message** tab and send payload with the format like the below example. Note that the special charactar **** must not be ignored. The part `[["Default:m1","Default:m2","Default:m3"]]` in third line should be replaced the tags actually exist in the system.
+    {"protocol":"json","version":1}![alt text](22.png)
 
-    {"protocol":"json","version":1}
+    {"type":6}![alt text](22.png)
 
-    {"type":6}
-
-    {"arguments":`[["Default:m1","Default:m2","Default:m3"]]`,"invocationId":"0","target":"TagValues","type":4}
+    {"arguments":[["Default:m1","Default:m2","Default:m3"]],"invocationId":"0","target":"TagValues","type":4}![alt text](22.png)
 
     ![alt text](19.png)
 
-8.After the payload is sent, postman will continuously receive the real-time tag values.
+8. 成功发送上述的三个报文之后会接收到变量的推送
+
     ![alt text](20.png)
 
-9.The above example demonatrates how to subscribe the tag values. For the other Websocket APIs, refer to chapter **Open API-> Realtime Data API Definitions**. The **target** field in the payload in the example below represents the method name of Reamtime Data API.  You can invoke the other WebSocket APIs by replacing **target** value with the method name specified in the **Realtime Data API Definitions** document. 
-    ![alt text](21.png)
+9. 上述示例演示了标签值的订阅方法。对于其他 WebSocket API，请参考 [实时数据接口定义](../realtime-data-api-definitions.md) 章节。下述示例请求体中的 target 字段，对应实时数据 API 的方法名。只需将 target 字段的值替换为 **实时数据接口定义** 文档中指定的方法名，即可调用其他 WebSocket API。
 
+    ![alt text](21.png)
