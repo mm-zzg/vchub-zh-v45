@@ -373,7 +373,7 @@ nav:
                   - 2d-visualization/index.md
                   - 编辑器介绍:
                             - 2d-visualization/editor-introduction/index.md
-                  - Page:
+                  - 画面:
                             - 2d-visualization/page/index.md
                             - 2d-visualization/page/page-type.md
                             - 2d-visualization/page/page-parameter-passing.md
