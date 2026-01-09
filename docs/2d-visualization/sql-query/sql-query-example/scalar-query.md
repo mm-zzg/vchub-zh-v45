@@ -8,9 +8,9 @@
 
 #### 创建数据库连接
 
-在”数据库“->"数据库连接"页面，新建一个数据库连接，名称为**TestSQLQuery**。具体步骤请参考 [数据库连接](../../../management-platform/databases/database-connection/index.md)。
+在”数据库“->"数据库连接"页面，新建一个数据库连接，名称为 **TestSQLQuery**。具体步骤请参考 [数据库连接](../../../management-platform/databases/database-connection/index.md)。
 
-![alt text](image.png)
+![alt text](1.png)
 
 数据库中存在表 `person_management`，该表用于记录 `人员` 的信息，其结构如下。
 
@@ -27,11 +27,11 @@
 1. 创建项目，在操作栏点击项目的 **设计** 按钮，进入设计页面创建并打开画面。
 2. 在 “项目” 窗口的 SQL Query 节点上，单击鼠标右键，选择新增。
 
-    ![alt text](14.png)
+    ![alt text](13.png)
 
 3. 在此示例中，我们将该 SQL Query 的名称设置为 **ScalarQuery**。
 
-    ![alt text](15.png)
+    ![alt text](14.png)
 
     - **数据库连接：** 选择一条在 “数据库”->“数据库连接” 列表中状态为 “已连接” 的数据。在此我们选择步骤1中已经创建的 **TestSQLQuery**。
 
@@ -47,21 +47,21 @@
  
 4. 点击 “测试” 按钮，查看结果。
 
-    ![alt text](16.png)
+    ![alt text](15.png)
 
 ## 使用Scalar Query
 
 1. 在设计页面的 **工具** 窗口中找到 **文本标签** 和 **按钮** 控件，拖动到画面中。
 
-    ![alt text](17.png)
+    ![alt text](16.png)
 
 2. 选中按钮控件，点击箭头指的图标，打开动作的配置页面。
 
-    ![alt text](18.png)
+    ![alt text](17.png)
 
 3. 为按钮配置 **鼠标按下** 事件，每次点击按钮时查询总人数，并将结果显示在文本标签控件中。
 
-    ![alt text](19.png)
+    ![alt text](18.png)
 
     ```typescript
     // 查询总人数
