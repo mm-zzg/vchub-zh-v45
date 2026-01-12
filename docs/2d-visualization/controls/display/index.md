@@ -1,12 +1,14 @@
-# Display
-Used to display data.
-Containsthe following controls:
+# 显示
 
-- [Label](display/label.md) 
-- [Value Display](display/value-display.md)
-- [LED Display](display/led-display.md) 
-- [IFrame](display/iframe.md) 
-- [Rich Text](display/rich-text.md) 
-- [Page Container](display/page-container.md) 
-- [3D Viewer](display/3d-viewer.md)
-- [Ruler](display/ruler.md) 
+用于显示数据。
+
+包含以下控件：
+
+- [文本标签](label.md)
+- [值显示](value-display.md)
+- [数码管](led-display.md) 
+- [IFrame](iframe.md) 
+- [富文本](rich-text.md) 
+- [画面容器](page-container.md) 
+- [3D 查看器](3d-viewer.md)
+- [刻度尺](ruler.md) 
