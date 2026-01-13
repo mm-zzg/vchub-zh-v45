@@ -1,41 +1,44 @@
-# Custom Curve
+# 自定义曲线
 
-A custom curve refers to a curve form created or defined based on actual conditions or specific needs. Custom curves do not have fixed mathematical expressions or forms, but are customized based on the characteristics and relationships of the data.
+自定义曲线是指根据实际情况或特定需求而创建或定义的一种曲线形式。自定义曲线并没有固定的数学表达式或形式，而是根据数据的特点和关系进行定制。
 
 ![alt text](42.png)
 
-**Properties**
+**属性**
 
-| **Name** | **Description** |
-|----------|---------------------|
-| Name     | The name of this control.  |
-| X        | The distance between the left side of the control and the left side of the canvas, in pixels.  |
-| Y        | The distance between the top of the control and the top of the canvas, in pixels.   |
-| W        | The width of the control, in pixels.   |
-| H        | The height of the control, in pixels.  |
-| Data     | Set the dataset and cell binding for the custom curve.    Click the ![alt text](43.png) button to set the dataset for the curve.  <br>![alt text](44.png)  <br>The default setting is for 2 rows and 8 columns of data, with the row data labeled as "Series1" and "Series2", and the column data being Name and the names of the seven days of the week. Each row of data corresponds to a day of the week, showing the values for both series.  <br>Click the ![alt text](45.png) button to set the cell binding for the dataset.  <br>![alt text](46.png) | Delete Binding    | Delete the selected cell binding.  <br> Set the style of the custom curve.  <br>- **Line Color**: The color of the curve.<br>- **Line Width**: The width of the curve.<br>- **Area**: Set the background color of the area between the curve and the axis.                        <br>- **Line Style**: Set the number of decimal places displayed for dimension values.                        <br>- **Line Type**: Set the font, font size, bold, italics, and font color of the legend.                        <br>- **Symbol Color**: Set the style of the symbol, including round dots, triangles, squares, and the default circle.    <br>- **Symbol Style**: Set the style of the symbol. <br>- **Symbol Size**: Set the size of the symbol.<br>- ** Decimals**: Set the number of decimal places displayed for the value corresponding to each point on the curve. |
-| Color    | Set the color effect of the control.  | Background | The overall background color of the control. | |------------|----------------------------------------------| | Grid       | The line color of the grid.                  | | X Axis     | The axis color of the X-axis.                | | Y Axis     | The axis color of the Y-axis.                |   |
-| Margin   | Set the spacing between the control and its selection box. Ensure that the chart is displayed clearly and sufficient space is reserved for chart elements, such as legend.  |
-| X Axis   | Set the style of the text displayed on the X-axis, including font, font size, bold, italic, and font color.  |
-| Y Axis   | Set the style of the Y-axis. <br>- **Show Grid**: Control the display and hiding of the grid. Default Display. <br>- **Grid(s)**: Set the number of dividing lines inserted on the Y-axis.   <br>- **Range**: Set the display and hiding of Y-axis range. Selected by default.  When this item is selected, the upper and lower limits of the YY-axis need to be set.  <br>- **Auto Range**: Automatically display scale values  The range of the Y-axis changes dynamically according to the range of bound values. If checked, the value range for the Y-axis will be automatically determined. If unchecked, the specified upper and lower bounds will be used.  **Note:** You can only choose 1 from 2 for display range and automatic display scale value. <br>- **Decimals**: Set the number of decimal places displayed on the Y-axis tick values.    <br>- **Font**: Set the font, font size, bold, italics, and font color of the text displayed on the Y-axis.  |
-| Legend   | Set the style of the control's legend.  <br>- **Show**: Control the display and hiding of the legend. Default is to display.  <br>- **Position**: Set the display position of the legend. The default is at the bottom. <br>- **Font**: Set the legend's font, font size, bold, italic, and font color.       | 
+| **名称** | **描述** |
+|:----------|:------------------------|
+| 名字     | 此控件的名称。  |
+| X        | 控件左侧距画布左侧的距离，单位px。  |
+| Y        | 控件顶部距画布顶部的距离，单位px。 |
+| W        | 控件的宽度，单位px。 |
+| H        | 控件的高度，单位px。 |
+| 数据     | 数据：设置自定义曲线的数据集和单元格绑定。![alt text](43.png) 点击该按钮可以设置曲线的数据集。  ![alt text](44.png)  <br>默认设置2行8列数据，行数据分别标记为 "Series1" 和 "Series2"，列数据分别是Name和一周七天的名称，每行数据对应着一周中的每一天，显示了两个系列的数值。<br>单击![alt text](45.png)按钮设置数据集的单元格绑定。![alt text](46.png)  |
+| 颜色     | 设置控件的颜色效果。  | 
+| 边距     | 设置控件与其选中框之间的间距。确保图表能清晰显示，并为图表元素（如图例）预留足够的空间。|
+| X轴      | 设置X轴显示的文字的样式，包括字体、字体大小、粗体、斜体、字体颜色。  |
+| Y轴      | 设置Y轴的样式。<br>- **显示栅格**：控制栅格的显示、隐藏。默认显示。<br>- **分度数**：设置在Y轴上插入的分割线数量。<br>- **显示范围**：设置Y轴量程的显示、隐藏。默认选中。  该项处于选中状态时，需设置Y轴的上限和下限。 <br>- **自动显示刻度值**：Y轴的量程根据值的范围动态变化。如果选中，则将自动确定Y轴的值范围。如果未选中，则将使用指定的上限和下限。  <br>**说明**：显示范围和自动显示刻度值，只能2选1。<br>- **小数位**：设置Y轴的刻度值上显示的小数位数。<br>- **字体**：设置Y轴显示的文字的字体、字体大小、粗体、斜体、字体颜色。|
+| 图例     | 设置控件的图例的样式。<br>- **显示**：控制图例的显示、隐藏。默认显示。<br>- **位置**：设置图例的显示位置。默认选择下。<br>- **字体**：设置图例的字体、字体大小、粗体、斜体、字体颜色。 | |
 
-**Event**
+**动作**
 
-Allows you to perform specific events based on certain conditions. See the full description of each event on the **2D Visualization-> Event** page.
+允许您基于某种条件执行特定的动作。请参阅“[动作](../../event/index.md)”页上各种动作的完整描述。
 
-**Example**
+**示例**
 
-Use custom curves to display equipment failure rates.
+使用自定义曲线来显示设备的故障率。
 
-1. Insert a custom curve on the page.
-2. Set the properties of the custom curve.
+1. 在画面上插入一个自定义曲线。
+2. 设置自定义曲线的属性。
 
-| **Property** | **Value**   |
-|--------------|---------------------|
-| Y Axis       | The display range is set to 1~60.    |
-| Line Style   | Set the dataset and cell binding for the curve.  <br>![alt text](47.png)  <br>Set the style of the curve.  <br>![alt text](48.png)  <br>- **Line Color**: #00bfbf   <br>- **Line Width**: 1   <br>- **Area**: False     <br>- **Line Style**: Solid Line <br>- **Line Type**:Line       <br>- **Symbol Color**: #00bf35    <br>- **Symbol Style**: Dot        <br>- **Symbol Size**: 6          <br>- **Decimals**:1    |
+    | **属性** | **值** |
+    |:----------|:------------------|
+    | Y轴      | 显示范围设置为1~60。|
+    | 数据     | 设置曲线数据集和单元格绑定。  <br>![alt text](47.png)   <br>设置曲线的样式。  ![alt text](48.png) <br>- **线条颜色**：#00bfbf <br>- **线宽**：1  <br>- **区域填充**：未启用 <br>- **线条样式**：实线  <br>- **线条类型**：折线  <br>- **标记颜色**：#00bf35<br>- **标记样式**：圆点 <br>- **标记大小**：6     <br>- **小数位**：1 |
 
-3.Click the Preview button to preview.
+3. 点击预览按钮进行预览。
+
     ![alt text](49.png)
+
+
 
