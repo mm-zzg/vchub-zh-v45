@@ -144,7 +144,7 @@
 
 1. 创建一个SQL Query。
 
-    ![alt text](8.png)!
+    ![alt text](8.png)
 
 2. 在设计页面的 **工具** 窗口中找到 ‘**表格**’ 控件，拖动到画面中。
 
@@ -172,7 +172,7 @@
 
     若需隐藏 **id** 列，可在转换功能中编写以下脚本：
 
-    ```
+    ```typescript
     function transform(data: Table){
         data.forEach(res=>{
             delete res.id
@@ -208,7 +208,7 @@
 
     ![alt text](18.png)
 
-4. 在属性栏中点击“表格”的绑定按钮，对**转速**进行 [动态单元格](../../property-binding/dynamic-cell.md) 绑定。
+4. 在属性栏中点击“表格”的绑定按钮，对转速进行 [动态单元格](../../property-binding/dynamic-cell.md) 绑定。
 
     ![alt text](19.png)
 
