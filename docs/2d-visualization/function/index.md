@@ -1,6 +1,6 @@
-# Function
+# 函数
 
-There are two types of functions: expression functions and page functions. They are independent and cannot call each other.
+函数包含表达式函数和页面函数两种类型，它们之间相互独立，不可以相互调用。
 
-- ​Expression Function​ 
-- ​Page Function​ 
+- [表达式函数](expression-function.md)
+- [页面函数](page-function.md)
