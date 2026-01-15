@@ -1,68 +1,70 @@
-# Event
+# 动作
 
-In VC Hub, when a model has event properties, the 'Event' column will be displayed in the right-hand property panel. Clicking the settings button allows for event configuration.
+VC Hub中，当模型具有动作属性时，在右侧的属性栏中会显示“动作”一列，点击设置按钮可以进行动作设置。
 
 ![alt text](3d_Event1.png)
 
-## **How to trigger an event**
+## **如何触发动作**
 
-Specific events can be triggered by the following events.
+可以通过以下操作触发特定的动作。
 
-#### **Mouse Event**
+#### **鼠标事件**
 
-Mouse events refer to triggering specific events when the user uses the mouse to operate the page or controls. Include:
+鼠标事件是指当用户使用鼠标对画面或者控件进行操作时，触发特定的动作。包含：
 
-- Pressed
-- Released
-- Entered
-- Exited
+- 鼠标按下
+- 鼠标抬起
+- 鼠标进入
+- 鼠标离开
 
-## **Event type**
+## **动作类型**
 
-#### **Navigation**
+#### **导航**
 
-Simply select a page from the page list. When the trigger condition for the event is met, the selected page will open. Different opening positions can be set for pages of different types.
+只需从画面列表中选择一个画面，当满足动作的触发条件时，即可打开该画面。当画面类型不同时，可以设置不同的画面打开位置。
 
 ![alt text](3d_Event2.png)
 
-**Example**
+**示例**
 
-Add a cube model to the page in the scene editor. When the mouse is clicked on the model, a pop-up window will open to introduce the detailed information of the model.
+在场景编辑器中给场景添加一个立方体模型，当鼠标点击该模型按下后就打开一个弹窗来介绍模型的详细信息。
 
 ![3d_Event3](../assets/images/3d_Event3.gif)
 
-#### **Set Value**
+#### **变量赋值**
 
-Assign a new value to the tag.
+给变量赋新的值。
 
 ![alt text](3d_Event4.png)
 
-**Example**
+**示例**
 
-When the mouse is clicked and the model is lifted, the value of tag 1 will be modified to 10.
+当鼠标点击该模型抬起后就会修改变量1的值为10。
 
 ![3d_Event5](../assets/images/3d_Event5.gif)
 
-#### **Script**
+#### **脚本**
 
-Allows you to write custom scripts for more flexible configuration.
+允许您编写自定义脚本实现更灵活的配置方式。
 
 ![alt text](3d_Event6.png)
-**Example**
 
-When the mouse enters the model range, a script will be executed.
+**示例**
+
+当鼠标进入该模型范围后就会执行一段脚本。
+
 ![3d_Event7](../assets/images/3d_Event7.gif)
 
-#### **Security Group**
+#### **安全组**
 
-To set the required security group, click the Security Group drop-down button and select one or more roles in the expanded list. After selecting characters, they will be displayed in the selection box.
+若要设置所需的安全组，点击安全组的下拉按钮，在展开的列表中选择一个或多个角色。选择角色后，它们将被显示在选择框内。
 
 ![alt text](3d_Event8.png)
 
-Once a security group is set for an action, when the action is triggered by running the page, a login window will pop up, requiring the user to authenticate. Only users who belong to the role of the set security group have permission to perform this event.
+一旦为某一动作设置了安全组，则在运行页面触发该动作时，会弹出登录窗口，要求用户进行身份验证。只有属于所设安全组的角色下的用户才有权限执行该动作。
 
 ![alt text](3d_Event9.png)
 
 
 
-> **Note:** The security group is only effective when authentication is performed using a Local-type Identity Provider.
+> **Note:** 安全组功能仅在使用 Local 类型的 Identity Provider 进行身份验证时生效。

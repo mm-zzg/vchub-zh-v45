@@ -1,35 +1,37 @@
-# Convert 3D Models to GLB Format
+# 如何将3D模型转换为glb格式
 
-3D models can be converted to glb format by third party tools.
+可以使用第三方工具，将非glb格式的3D模型文件，转换为glb格式。
 
-## Tool 1: blender
+## 工具1：blender
 
-Installation address: ***[blender.org- Home of the Blender project - Free and Open 3D Creation Software](https://www.blender.org/)***
+可以使用 **blender** 软件进行GLB格式转换。
+
+**blender** 软件安装地址：***[blender.org- Home of the Blender project - Free and Open 3D Creation Software](https://www.blender.org/)***
 
 ![alt text](3d_Format1.png)
 
-**Steps：**
+**转换步骤：**
 
-1.  Use other  software to export file formats that blender can open.
-2.  The most common and stable formats are **FBX** ,**OBJ** .
-3.  After the export file is finished, import blender software as shown in the picture.
+1. 导出 blender 软件可以打开的文件格式。
+2. 最常见和最稳定的格式为**FBX**、**OBJ** ，建议使用这两种格式。
+3.  文件导出后用**blender** 软件打开，操作步骤如下。
     ![alt text](3d_Format2.png)
-4.  Select the  imported model and perform the following operations to export the GLB file.
+4.  选择导入的模型，导出**GLB**格式文件。
     ![alt text](3d_Format3.png)
 
-## Tool 2: online three.js editor
+## 工具2：three.js 在线编辑器
 
-**FBX**  and **OBJ** files are recommended.
+使用**three.js** 编辑器转换格式。(推荐使用**FBX**和**OBJ**格式)
 
-three.js editor address: ***[three.js editor (threejs.org)](https://threejs.org/editor/)***
+**three.js** 编辑器地址： ***[three.js editor (threejs.org)](https://threejs.org/editor/)***
 
-**Steps：**
+**转换步骤：**
 
-1.Import the file into **three.js.**
+1.将3D文件导入**three.js** 中。
 
 ![alt text](3d_Format4.png)
   
-2.Select Export **GLB** format.
+2.选择 **GLB** 格式导出。
 
 ![alt text](3d_Format5.png)
 

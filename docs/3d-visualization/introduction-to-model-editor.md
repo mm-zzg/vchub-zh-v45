@@ -1,18 +1,19 @@
-# Introduction to Model Editor
+# 模型编辑器
 
-Models uploaded to the model library can be modified in the model editor. The operations of the model editor and the scene editor are the same. The scene editor is mainly responsible for operating the scene and modifying multiple models at the same time. However, the modification of the model will only take effect in the current scene, while the model modified by the model editor will not It will take effect on all models referenced by the scene. It is worth noting that if the model is modified in the editor, the modification of the model configuration in the scene editor will take precedence over the configuration in the model editor.
+上传到模型库的模型可以在模型编辑器中进行修改。模型编辑器和场景编辑器操作是一样的，场景编辑器主要负责对场景进行操作，同时对多个模型修改，但对模型的修改只会在当前场景中生效，而模型编辑器修改的模型则会对场景引用的模型全部生效，值得注意的是，如果模型在编辑器中进行了修改，场景编辑器中对模型配置的修改将优先于模型编辑器中的配置。
 
-In the model editor, you can right-click the model through the model library in the property bar on the right side of the scene editor. Click modify to enter the model editor.
+模型编辑器可以通过场景编辑器右侧属性栏模型库来对模型右击进行操作，点击修改即可进入模型编辑器。
 
 ![alt text](3d_MEditor1.png)
 
 ![alt text](3d_MEditor2.png)
-#### **Edit model**
 
-The model is displayed in the red box area in the figure below.
+#### **编辑模型**
+
+在下图红框区域显示模型。
 
 ![alt text](3d_MEditor3.png)
 
-The position, rotation, scaling and color of the selected model node can be edited. After editing and saving, the added models in the scene will be updated with the new configuration.
+可以对选中的模型节点进行位置、旋转、缩放和颜色及显示模式的编辑。编辑保存后，场景中已添加的模型将更新为新的配置。
 
 ![alt text](3d_MEditor4.png)

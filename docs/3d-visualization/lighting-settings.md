@@ -1,61 +1,60 @@
-# Lighting Settings
+# 光源设置
 
-When creating a new 3D scene, the system includes a default ambient light and a parallel light. However, the default settings may not effectively highlight model details, resulting in a generally dark appearance with limited contrast.
+在新建 3D 查看器时，系统默认包含一个环境光和一个平行光，但默认设置可能无法很好地突出模型细节，导致整体显示偏暗，缺乏明暗对比。
 
-To achieve better visual effects, you can optimize lighting by adding and adjusting multiple light sources.
+为获得更理想的视觉效果，可以通过添加并调整多个光源来优化照明。
 
-## Adjusting Default Lights
+## 调整默认光源
 
-After creating a new scene, it is recommended to first adjust the default parallel light:
+新建场景后，建议首先调整默认的平行光：
 
-1. **Position**: Place it directly above the model with `X = 0`, `Z = 0`, and increase `Y` appropriately based on the model's height.
-2. **Light Intensity**: Set to **2** to enhance the top-down lighting effect.
+1. **位置**：设置在模型正上方，X=0，Z=0，Y根据模型高度适当上移。
+2. **光照强度**：设置为 2，增强顶部照明效果。
 
-## Adding Custom Lights
+## 添加自定义灯光
 
-**Scene Example**: By adding multiple parallel lights, you can simulate a more realistic lighting environment, thereby enhancing contrast and the sense of depth in the model.
+**场景举例**：通过添加多个平行光模拟真实照明环境，从而提升模型的明暗对比与立体感。
 
-**Steps:**
+**添加步骤：**
 
-1. After adjusting the default directional light, add **three additional parallel lights**: **Parallel Light 2**, **Parallel Light 3**, and **Parallel Light 4**.
+1. 调整完默认的平行光设置后，再添加3个平行光：平行光2，平行光3，平行光4
 
-2. Parallel Light 2 – *Key Light (Main Light Source)*
+2. 平行光2作为主光源（关键光）
 
-     a. **Position**: Lower right side of the scene, slightly centered.
+     a. 位置：场景右下方偏中间。
 
-     b. **Intensity**: Recommended to set **4 or higher** (example: **7**).
+     b. 强度：建议设置为4或更高（以下示例为7）。
    
-     c. **Purpose**: Provides the main lighting direction, creating a clear light–dark contrast.
+     c. 作用：提供主要照明方向，形成清晰的明暗关系。
 
-3. Parallel Light 3 – *Fill Light (Secondary Light Source)*
+3. 平行光3作为辅光源(补光)
 
-     a. **Position**: Diagonally opposite the key light, slightly lower in height.
+     a. 位置：与主光源形成对角，高度略低于主光源。
    
-     b. **Intensity**: Recommended to set **below 1** (example: **0.5**).
+     b. 强度：建议设为 1以内（以下示例为0.5）。
    
-     c. **Purpose**: Softens the model’s shadowed areas, creating smoother light transitions.
+     c. 作用：柔化模型暗面，使明暗面过度更加自然。
      
-4. Parallel Light 4 – *Balance Light*
+4. 平行光4作为辅光源(平衡光)
 
-     a. **Position**: Upper left side, slightly lower than the key light.
+     a. 位置：左上方，高度略低于主光源。
 
-     b. **Intensity**: Can remain at the default value (e.g., **1**).
+     b. 强度：可保持默认（如1）。
 
-     c. **Purpose**: Further balances overall lighting, preventing excessive darkness in some areas.
-
-
+     c. 作用：进一步平衡整体照明，避免局部过暗。
 
 
-| **Before adding lights**                                                                                                                    | **After adding lights**                                                                                                                     |
-|---------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+
+
+| **添加灯光前**                                                                                                                    | **添加灯光后**                                                                                                                     |
+|:---------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
 | ![alt text](3d_LSettings1.png) | ![alt text](3d_LSettings2.png) |
 
-## Usage Recommendations and Notes
+## 使用建议与注意事项
 
-- **Number of Lights**: It is recommended to keep the total number of light sources **≤ 50** to avoid performance issues or scene lag.
-- **Direction and Intensity Adjustments** ：After adding lights, you must manually adjust their direction and intensity to achieve the desired effect.
-- **Skybox Influence**: Enabling a skybox may affect the overall lighting ambiance. You should adjust the light intensity accordingly based on the actual visual effect.
+- **光源数量：** 建议总数≤ 50，避免造成系统性能下降或场景卡顿。
+- **方向、强度调整：** 添加光源后，需手动调整所需角度及光照强度。
+- **天空盒影响：** 启用天空盒可能会改变整体光照氛围，需结合实际效果调整灯光强度。
 
-By configuring lighting properly, you can significantly enhance the visual appearance of models in the 3D scene—achieving a more natural balance of light and shadow as well as spatial depth.
 
-Users are encouraged to flexibly adjust the type, position, and intensity of light sources based on their specific scene requirements to achieve the best visual outcome.
+通过合理布光，可以有效提升模型在3D查看器中的视觉表现，使其拥有更自然的明暗关系与空间感。用户可根据实际场景灵活调整光源类型、位置与强度，以达到最佳效果。
