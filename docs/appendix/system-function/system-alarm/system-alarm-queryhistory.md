@@ -7,51 +7,51 @@
 ## 语法
 
 **System.Alarm.queryHistory(historyStorage:string): Promise`<any>`**
-**System.Alarm.queryHistory(historyStorage:string,params:{**
-**startTime?: Date | string,**
-**endTime?: Date | string,**
-**priority?: AssetAlarmPriority | AssetAlarmPriority[],**
-**state?: AssetAlarmState | AssetAlarmState[],**
-**path?: string | string[],**
-**type?: AssetAlarmType | AssetAlarmType[],**
-**asset?: string | string[],**
-**expression?: string}): Promise`<any>`**
--参数
-historyStorage - 历史存储名称
-params  - 查询条件对象，可选参数
-{
-startTime? - 开始时间，默认为当前时间前8小时
-endTime? - 结束时间，默认为当前时间
-priority? -  单个或多个等级，可选值为“Low”，“Medium”，“High”，“Critical”
-state? - 单个或多个状态，可选值为“Active”，“Unacked”，“Acked”，“Cleared”
-path? - 单个或多个报警路径
-type? - 单个或多个类型，可选值为"H"，"H2"，"H3"，"H4"，"L"，"L2"，"L3"，"L4"，"RateOfChange"，"Equivalent"，"TrueToFalse"，"FalseToTrue"
-asset? - 单个或多个资产
-expression? - 表达式，例1：priority == "Low"，例2：path.Contains("Device")，例3：state.HasFlag("Active") && stae.HasFlag("“Unacked")
+<br>**System.Alarm.queryHistory(historyStorage:string,params:{**
+<br>**startTime?: Date | string,**
+<br>**endTime?: Date | string,**
+<br>**priority?: AssetAlarmPriority | AssetAlarmPriority[],**
+<br>**state?: AssetAlarmState | AssetAlarmState[],**
+<br>**path?: string | string[],**
+<br>**type?: AssetAlarmType | AssetAlarmType[],**
+<br>**asset?: string | string[],**
+<br>**expression?: string}): Promise`<any>`**
+<br>-参数
+<br>historyStorage - 历史存储名称
+<br>params  - 查询条件对象，可选参数
+<br>{
+<br>startTime? - 开始时间，默认为当前时间前8小时
+<br>endTime? - 结束时间，默认为当前时间
+<br>priority? -  单个或多个等级，可选值为“Low”，“Medium”，“High”，“Critical”
+<br>state? - 单个或多个状态，可选值为“Active”，“Unacked”，“Acked”，“Cleared”
+<br>path? - 单个或多个报警路径
+<br>type? - 单个或多个类型，可选值为"H"，"H2"，"H3"，"H4"，"L"，"L2"，"L3"，"L4"，<br>"RateOfChange"，"Equivalent"，"TrueToFalse"，"FalseToTrue"
+<br>asset? - 单个或多个资产
+<br>expression? - 表达式，例1：priority == "Low"，例2：path.Contains("Device")，例<br>3：state.HasFlag("Active") && stae.HasFlag("“Unacked")
 
-}
--返回
-[
-{
-path: string //报警路径
-name: string //报警名称
-type: string //类型
-priority: string //等级
-eventId: string //状态变更Id
-eventTime: string //状态变更时间
-state: string //状态
-operator: string //确认人
-valueType: string //值类型
-value: string //报警值
-ackTime: string  //确认时间
-ackNotes: string //确认信息
-ackMode: string //确认模式
-nodeName: string //节点名称
-storageName: string //历史存储名称
-description: string //描述
-},
-...
-]  
+<br>}
+<br>-返回
+<br>[
+<br>{
+<br>path: string //报警路径
+<br>name: string //报警名称
+<br>type: string //类型
+<br>priority: string //等级
+<br>eventId: string //状态变更Id
+<br>eventTime: string //状态变更时间
+<br>state: string //状态
+<br>operator: string //确认人
+<br>valueType: string //值类型
+<br>value: string //报警值
+<br>ackTime: string  //确认时间
+<br>ackNotes: string //确认信息
+<br>ackMode: string //确认模式
+<br>nodeName: string //节点名称
+<br>storageName: string //历史存储名称
+<br>description: string //描述
+<br>},
+<br>...
+<br>]  
 
 ## 代码示例 
 
