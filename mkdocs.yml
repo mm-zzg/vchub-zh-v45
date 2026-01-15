@@ -630,9 +630,9 @@ nav:
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/text-annotation/fontsize.md
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/text-annotation/height.md
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/text-annotation/text.md
-        - Appendix:
+        - 附录:
                   - appendix/index.md
-                  - System Function:
+                  - 系统函数:
                             - appendix/system-function/index.md
                             - System.Alarm:
                                       - appendix/system-function/system-alarm/index.md
