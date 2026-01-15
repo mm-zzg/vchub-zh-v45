@@ -1,61 +1,61 @@
-# Introduction to Scene Editor
+# 场景编辑器
 
-You can add models, set model properties, set animations, events, etc. for the model in the scene editor.
+您可以在场景编辑器内添加模型，设置模型属性，为模型设置动画、动作等。
 
-## Add scene
+## 添加场景
 
-In the  " **3D Scenes** " window, click the ➕ button in the upper right corner to add a scene.
+在" **3D Scenes** " 窗口中，点击右上角的➕按钮，添加场景。
 
-Right-click the scene to modify, rename, export, and delete it.
+在场景上点击鼠标右键，可以进行修改、重命名、导出、删除操作。
 
 ![alt text](3d_SEditor1.png)
 
 
-Double-click the scene or click "Edit" in the right-click pop-up window to enter the scene editor.
+双击场景或者在右键弹窗中点击“修改“，进入场景编辑器。
 
 ![alt text](3d_SEditor2.png)
 
-## Toolbar
+## 工具栏
 
-There is a toolbar at the top of the editor. When the mouse is placed on any button of the toolbar, a message box will appear to indicate the function of this button.
+编辑器顶部有一个工具栏，当鼠标放在工具栏的任一按钮上时，会出现一个提示信息框标明此按钮的功能。
 
 ![alt text](3d_SEditor3.png)
 
 
 
-## Window menu
+## 窗口菜单
 
-The editor comes with many windows. You can confirm the window you want to open as needed, or adjust the display position and size of the window based on your usage habits.
+编辑器带有许多窗口。您可以根据需要确认要打开的窗口，也可以根据使用习惯，调整窗口的显示位置和大小。
 
 
 ![alt text](3d_SEditor4.png)
 
-The window display mode shows:
+窗口显示形式示意：
 
-Form 1:
+形式一：
 
 ![alt text](3d_SEditor5.png)
 
-Form two:
+形式二：
 
 ![alt text](3d_SEditor6.png)
 
-| **Window** | **Description**                                                                                                                                                                                                 |
+| **窗口** | **描述**                                                                                                                                                                                                 |
 |:------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Libraries  | Used to display and manage model materials.                                                                                                                                                                     |
-| Structure  | The model in the currently opened scene is displayed in a tree structure, and the status of the model (locked, hidden, animated, and action set) is displayed to facilitate users to quickly operate the model. |
-| Properties | Displays the property configuration interface to facilitate model settings.                                                                                                                                     |
+| 模型库  | 用于显示和管理模型素材。                                                                                                                                                                     |
+| 结构  | 以树形结构显示当前所打开的场景中的模型，并显示模型的状态（锁定、隐藏、设置了动画、设置了动作），便于用户快速对模型进行操作。 |
+| 属性 | 显示属性配置界面，便于对模型进行设置。                                                                                                                                     |
 
-## Scene editor
+## 场景编辑器
 
-Display and operate the model in this area.
+在该区域显示、操作模型。
 
 ![alt text](3d_SEditor7.png)
 
 
-## Preview scene
+## 预览场景
 
-Click the "Preview" button to enter preview mode to ensure that the scene is displayed as expected.
+点击”预览“按钮进入预览模式，确保场景是按照预期结果展示的。
 ![alt text](3d_SEditor8.png)
 
 

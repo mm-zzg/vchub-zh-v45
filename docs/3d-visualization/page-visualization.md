@@ -1,94 +1,99 @@
-# Page Visualization
+# 画面组态
 
-When entering the scene editor, you can see the current scene page visualization.
+当进入到场景编辑器中就能看到当前场景画面组态
 
 ![alt text](3d_PVisualization1.png)
 
-There are model libraries, structures, and properties in the scene visualization.
+在场景组态中有模型库、结构、属性
 
-## **Model library**
+## **模型库**
 
-The model library is divided into system model and local model library
+模型库分为系统模型和本地模型库
 
-#### **System model**
+#### **系统模型**
 
-The system model library is always on top of the local model library. The built-in basic models of cube, sphere, cylinder, Torus and Plane are included.
+系统模型库始终在本地模型库上边，内置的有立方体、球、圆柱体、圆环、平面基础模型
 
 
 
 ![alt text](3d_PVisualization2.png)
 
 
-Double-click the system model to add the model to the scene. The system model does not support editing and modification operations. It can only be added to the scene. It is added to the default position x:0, y:0,z:0 in the scene.
+双击系统模型可以给模型添加到场景中，系统模型不支持编辑修改操作，只能添加到场景中，添加到场景中默认位置x:0,y:0,z:0
 
-#### **Local model library**
+#### **本地模型库**
 
-You can add models according to your preferences and actual needs. After clicking "Add" in the library window, a local model library will be automatically created, and the library name will be in editing state.
+您可以根据自己的喜好和实际需求添加模型。在图库窗口点击”新增“后，会自动创建一个本地模型库，且库名处于编辑状态。
 
 ![alt text](3d_PVisualization3.png)
 
-You can modify the name of the model library (you can double-click the name of the model library to modify the name again later). After the modification is completed, click the Add button in the model library.
+您可以修改模型库名称(后续可双击模型库名称来再次修改名称)，修改完成后，单击模型库内的添加按钮。
 
 
 ![alt text](3d_PVisualization4.png)
 
-The Open dialog window will appear. Just find the model you need to upload on the local system, you can select multiple, and then click the "Open" button in the dialog box to upload the selected model.
+将出现“打开”对话框窗口。只需在本地系统上找到您的需要上传的模型，可以多选，然后单击对话框的”打开”按钮即可上传所选模型。
 
 ![alt text](3d_PVisualization5.png)
 
-## **Use model**
+## **使用模型**
 
 ![alt text](3d_PVisualization6.png)
 
-1. Upload the model to the model library.
-2. Right-click the model from the model library to add it to the scene or double-click the model
-
-    After adding the model to the scene, a pop-up window will appear to select the scaling ratio.
-
-    ![alt text](3d_PVisualization7.png)
+1. 将模型上传到模型库中。
+2. 从模型库中对模型右击添加到场景中或者双击模型
 
 
-| **Name**          | **Description**                                                                                  |
-|:-------------------|:--------------------------------------------------------------------------------------------------|
-| No scaling        | The model will be added to the scene according to its original size                              |
-| Scale to fit grid | The model will be scaled to the size of the scene's corresponding grid.                          |
-| Scale to units    | There are many units in the grid and the model will be scaled to the size of the number of units |
+将模型添加到场景中会出现一个弹窗选择缩放比例
 
-    After adding it to the scene, you can perform appearance, animation , and action operations.
+![alt text](3d_PVisualization7.png)
 
-    ![alt text](3d_PVisualization8.png)
 
-    You can also modify the model, and the model modification operation will enter the model editor.
+| 属性                 | 作用                                              |
+|:----------------------|:---------------------------------------------------|
+| 不缩放               | 模型会按照原本大小来添加入场景中                  |
+| 缩放至网格大小       | 会将模型缩放至场景对应网格的大小                  |
+| 缩放指定数量的单元格 | 网格中有许多单元格，会将模型缩放至单元格数量的大小 |
 
-    ![alt text](3d_PVisualization9.png)
 
-    You can also delete and rename the model name. If the model is being edited in the model editor, renaming, deletion, and re-uploading are not allowed. Only by closing the corresponding model editor can the model be renamed, deleted, or re-uploaded.
 
-## **Structure**
+添加进场景中后就可以对进行外观、动画、动作操作 。
 
-Each model has a  structure tree
+![alt text](3d_PVisualization8.png)
+
+也可以对模型进行修改操作对模型修改操作会进入到模型编辑器中。
+
+![alt text](3d_PVisualization9.png)
+
+也可以对模型删除和重命名模型名称，模型如果在模型编辑器中正在编辑是不允许重命名、删除、重新上传的，只有关闭掉对应的模型编辑器才能重命名、删除、重新上传。
+
+    
+## **结构**
+
+每个模型都有一个树形结构
 
 
 ![alt text](3d_PVisualization10.png)
 
-After selecting the model, the structure will have a lock and hide icon. After the model is locked, the model will be prohibited from editing. After hiding, the model will not be visible at any time.
+选中模型后结构会有个锁定和隐藏图标，锁定模型后模型将禁止编辑，隐藏后模型会在任何时候不可见
 
-##  **Appearance**
+##  **外观**
 
-The appearance shows the basic information of the currently selected model, and the basic information can be edited.
+外观展示了当前选中模型基础信息，可以对基础信息进行编辑。
 
 ![alt text](3d_PVisualization11.png)
 
-## **Run**
+## **运行场景**
 
-After the model is added to the scene, you can go to the 2D screen and add the "3D Viewer" control to run the scene.
+这里模型添加进场景中后就可以去2D画面添加”3D查看器”控件来运行场景了。
 
 ![alt text](3d_PVisualization12.png)
 
-After adding the 3D viewer control, you need to select the scene
+添加完3D查看器控件后要选择场景
+
 ![alt text](3d_PVisualization13.png)
 
-Now you can run the screen and see your scene.
+此时再去运行画面就能看到自己的场景了
 
 ![alt text](3d_PVisualization14.png)
 
