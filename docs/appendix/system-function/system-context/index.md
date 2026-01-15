@@ -1,6 +1,6 @@
 # System.Context
 
-The following function can retrieve the event triggered at that time:
+以下函数可以获取当时触发的事件。
 
 - [System.Context.Alarm](system-context-alarm/index.md)
 
