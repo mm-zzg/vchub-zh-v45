@@ -15,7 +15,7 @@
 **group?: string | string[],**  
 **expression?: string}): Promise`<any>`**  
 -参数        
-params** ** - 查询条件对象，可选参数        
+params - 查询条件对象，可选参数        
 {             
 priority? -  单个或多个等级，可选值为“Low”，“Medium”，“High”，“Critical”             state? - 单个或多个状态，可选值为“Active”，“Unacked”，“Acked”，“Cleared”             path? - 单个或多个报警路径             
 type? - 单个或多个类型，可选值为
