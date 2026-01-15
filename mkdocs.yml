@@ -471,11 +471,11 @@ nav:
                             - 2d-visualization/report/create-data-source.md
                             - 2d-visualization/report/view-report.md
                             - 2d-visualization/report/export-and-import-reports.md
-                  - Function:
+                  - 函数:
                             - 2d-visualization/function/index.md
                             - 2d-visualization/function/expression-function.md
                             - 2d-visualization/function/page-function.md
-                  - Property Binding:
+                  - 属性绑定:
                             - 2d-visualization/property-binding/index.md
                             - 2d-visualization/property-binding/tag.md
                             - 2d-visualization/property-binding/property.md
@@ -484,15 +484,16 @@ nav:
                             - 2d-visualization/property-binding/dynamic-cell.md
                             - 2d-visualization/property-binding/sql-query.md
                             - 2d-visualization/property-binding/bidirectional-bindings.md 
-                  - 2d-visualization/animation.md
-                  - Event:
+                  - 动画:
+                            - 2d-visualization/animation/index.md
+                  - 动作:
                             - 2d-visualization/event/index.md
                             - 2d-visualization/event/navigation.md
                             - 2d-visualization/event/set-value.md
                             - 2d-visualization/event/set-property.md
                             - 2d-visualization/event/script.md
                             - 2d-visualization/event/security-group.md
-                  - Project Properties:
+                  - 项目属性:
                             - 2d-visualization/project-properties/index.md
                             - 2d-visualization/project-properties/customize-login-page.md
         - 3D Visualization:
