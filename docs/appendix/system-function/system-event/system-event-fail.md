@@ -8,7 +8,7 @@
 
 ## 语法
 
-**System.Event.fail(message:string,...args: any): Promise<void>**
+**System.Event.fail(message:string,...args: any): Promise`<void>`**
 
 - 参数
 
