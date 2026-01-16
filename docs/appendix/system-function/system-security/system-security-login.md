@@ -7,13 +7,13 @@
 使用该函数可直接登录系统，以避免使用系统自带的登录页面。
 
 ## 语法
-**System.Security.login(username: string, password: string): Promise<boolean>**
+**System.Security.login(username: string, password: string): Promise`<boolean>`**
 
 - 参数
 
-    username 用户名
+     username 用户名
 
-    password 密码
+     password 密码
 
 - 返回
 
