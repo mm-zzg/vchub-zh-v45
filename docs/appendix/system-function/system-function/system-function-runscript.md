@@ -10,11 +10,11 @@
 **System.Function.runScript(name: string, args?: Array`<any>`): Promise`<any>`**
 
 - 参数
-名称-自定义函数
-args-函数参数
+    名称-自定义函数
+    args-函数参数
 
 - 返回值
-函数结果
+    函数结果
 
 ## 代码示例     
 

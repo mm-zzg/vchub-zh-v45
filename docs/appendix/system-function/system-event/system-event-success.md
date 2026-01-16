@@ -9,13 +9,10 @@
 **System.Event.success(message:string,...args: any): Promise<void>**
 
 - P参数 
-
    message - 成功事件的描述 
-
    args - 成功的事件的详情 
 
 - 返回
-
    无
 
 ## 代码示例
