@@ -8,7 +8,7 @@
 
 ## 语法
 
-**System.Tag.queryPropertyValues(tagParentPath:string,property:string): Promise<Array<{ path: string; property: string; value: any }>>**
+**System.Tag.queryPropertyValues(tagParentPath:string,property:string): Promise`<Array<{ path: string; property: string; value: any }>>`**
 
 - 参数
 

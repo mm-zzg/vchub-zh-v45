@@ -10,9 +10,11 @@
 **System.UI.close(data?: any): void**
 
 - 参数
-   data - 关闭弹框页面时可用，作为 System.UI.openPopup 函数的返回值
+
+    data - 关闭弹框页面时可用，作为 System.UI.openPopup 函数的返回值
+
 - 返回
-   无
+    无
 
 ## 代码示例
 
