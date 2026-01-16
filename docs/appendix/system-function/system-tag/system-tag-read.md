@@ -1,36 +1,34 @@
 # System.Tag.read
 
 
-## Description
+## 描述
 
-Get value, path, quality and timestamp of tag(s).
-## Grammar
-System.Tag.read(path: string): Promise<{ path: string; value: any; time: string; quality: string; }>
+获取单个或多个变量的值、路径、质量位、时间。
 
-System.Tag.read(paths: Array<string>): Promise<Array<{ path: string; value: any; time: string; quality: string; }>>
+## 语法
+**System.Tag.read(path: string): Promise<{ path: string; value: any; time: string; quality: string; }>**
 
-     - Parameter
+**System.Tag.read(paths: Array<string>): Promise<Array<{ path: string; value: any; time: string; quality: string; }>>**
 
-        path - Tag path(s) 
+- 参数
 
-     - Return
+   path - 单个或多个变量的路径
 
-        Value, path, quality and timestamp of tag(s)
+- 返回
 
-## Code Example 
+   单个或多个变量的值、路径、质量位、时间
 
-Get the value, path, quality and timestamp of the tag "Device:Temperature".
+## 代码示例
+
+获取变量"设备:温度"的值、路径、质量位、时间。
 
 ```typescript 
-const tag = await System.Tag.read('@Device:Temperature');
+const tag = await System.Tag.read('@设备:温度');
 console.log(tag.value);
-
-
 ```   
-Get the value, path, quality and timestamp of tags 'Device:Temperature ' and 'Device:Power '.
+获取变量"设备:温度"和"设备:功率"的值、路径、质量位、时间。
 
 ```typescript 
-
-const tags = await System.Tag.read(['@Device:Temperature', '@Device:Power']);
+const tags = await System.Tag.read(['@设备:温度', '@设备:功率']);
 console.log(tags);
 ```   
