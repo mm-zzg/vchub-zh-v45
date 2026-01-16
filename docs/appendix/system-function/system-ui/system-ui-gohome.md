@@ -1,25 +1,22 @@
 # System.UI.goHome
 
 
-## Description
-Executing the script will bring you back to the startup page for the current project.
+## 描述
 
-## Grammar
-System.UI.goHome(): void
+执行脚本会回到当前项目的启动画面。
 
-     - Parameter
+## 语法
+**System.UI.goHome(): void**
 
-        Nothing
+- 参数
+   无
+- 返回
+   无
 
-     - Return
+## 代码示例
 
-        Nothing
-
-## Code Example
-
-Returns the startup page for the current project.
+返回当前项目的启动画面
 
 ```typescript 
 System.UI.goHome();
-
 ```   

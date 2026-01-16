@@ -12,17 +12,17 @@
 
 - 参数
 
-   tagParentPath - 父级路径
+    tagParentPath - 父级路径
 
-   property  - 属性名称
+    property  - 属性名称
 
 - 返回
 
-   直接子节点的路径、属性名称、属性值
+    直接子节点的路径、属性名称、属性值
 
 ## 代码示例
 
-获取路径"设备:设备1"下所有直接子节点的路径，以及子节点的Name属性的值。
+获取路径"设备:设备1"下所有直接子节点的路径，以及子节点的 Name 属性的值。
 
 ```typescript 
 const tagProperties = await System.Tag.queryPropertyValues('@设备:设备1','Name');

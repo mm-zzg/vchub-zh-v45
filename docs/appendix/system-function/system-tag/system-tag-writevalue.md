@@ -9,15 +9,19 @@
 
 ## G语法
 
-**System.Tag.writeValue(path: string, newValue: any): Promise<void>**
+**System.Tag.writeValue(path: string, newValue: any): Promise`<void>`**
 
-**System.Tag.writeValue(path: string[], newValue: Array<any>): Promise<void>**
+**System.Tag.writeValue(path: string[], newValue: Array`<any>`): Promise`<void>`**
 
 - 参数
-   path - 单个或多个变量路径
-   newValue - 单个或多个变量的新值
+
+    path - 单个或多个变量路径
+
+    newValue - 单个或多个变量的新值
+
 - 返回
-   无
+
+    无
 
 ## 代码示例 
 

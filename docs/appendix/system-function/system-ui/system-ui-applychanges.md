@@ -1,36 +1,31 @@
 # System.UI.applyChanges
 
 
-## Description
-Batch apply control changes.
+## 描述
 
-## Grammar
-System.UI.applyChanges(controls: Array<IControl>, triggerLoadedEvent?: boolean): void
+批量应用控件属性的修改。
 
-    - Parameter
+## 语法
+**System.UI.applyChanges(controls: Array<IControl>, triggerLoadedEvent?: boolean): void**
 
-        controls - Controls that need to apply changes
+- 参数
+    controls - 需要使修改过属性生效的控件
+    triggerLoadedEvent - 是否触发加载事件，可不填默认 false
+- 返回
+    无
 
-        triggerLoadedEvent - Whether to trigger the loaded event, This field is optional and defaults to false.
+## 代码示例
 
-    - Return
-
-        Nothing
-
-## Code Example 
-
-When the boiler temperature is too high, display the alarm message on label1 and show the cooling message on label2.
+当锅炉温度过高时，将报警信息显示到label1上，将降温信息显示到label2上。
 
 ```typescript 
-
 const label1 = await System.UI.findControl('Label1');
-label1.text = 'Boiler temperature is too high.';
+label1.text = '锅炉温度过高';
 label1.backgroundColor = 'red';
 label1.fontColor = 'white';
 
 const label2 = await System.UI.findControl('Label2');
-label2.text = 'Cooling down...';
+label2.text = '降温中...';
 
 System.UI.applyChanges([label1, label2], false);
-
 ```   

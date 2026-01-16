@@ -7,17 +7,15 @@
 设置当前画面自定义属性或控件属性的值。
 
 ## 语法
-System.Page.setPropertyValue(path: string,value: any): void 
 
-     - Parameter 
+**System.Page.setPropertyValue(path: string,value: any): void**
 
-        path - Path of the page's custom property or control property 
-
-        value - New value 
-
-     - Return 
-
-        Nothing
+- 参数
+   path - 画面自定义属性或控件属性的路径
+   value - 属性新值
+   
+- 返回
+   无
 
 ## 代码示例
 

@@ -9,15 +9,15 @@
 
 ## 语法
 
-**System.Security.logout(): Promise<void>** 
+**System.Security.logout(): Promise`<void>`** 
 
 - 参数
 
-   无
+    无
 
 - 返回
 
-   无
+    无
 
 ## 代码示例
 

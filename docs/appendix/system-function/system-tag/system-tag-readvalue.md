@@ -7,14 +7,17 @@
 获取单个或多个变量的值。
 
 ## 语法
-**System.Tag.readValue(path: string): Promise<any>**
+**System.Tag.readValue(path: string): Promise`<any>`**
 
-**System.Tag.readValue(path: Array<string>): Promise<{path: string; value: any}>**
+**System.Tag.readValue(path: Array`<string>`): Promise<{path: string; value: any}>**
 
 - 参数
-   path - 单个或多个变量路径
+
+    path - 单个或多个变量路径
+
 - 返回
-   单个变量的值或多个变量的值和路径
+
+    单个变量的值或多个变量的值和路径
 
 ## 代码示例 
 

@@ -8,29 +8,23 @@
 
 ## 语法
 
-**System.Tag.subscribe(paths: Array<string>, callback: (value: {**
-  
-**Time: string;**
-  
-**Path: string;**
-    
-**Value: any;**
-    
-**Quality: number;**
+**System.Tag.subscribe(paths: Array`<string>`, callback: (value: {Time: string;Path: string;**
 
-**}=>void): () => void**
+**Value: any;**
+
+**Quality: number;}=>void): () => void**
 
 - 参数
 
-    paths - 变量路径数组
+     paths - 变量路径数组
 
-    callback - 回调函数，用于处理变量数值变化时的通知
+     callback - 回调函数，用于处理变量数值变化时的通知
 
 - 返回
 
-    取消订阅函数
+     取消订阅函数
 
-## Code Example 
+## 代码示例
 
 首先创建一个变量组，并将变量组的刷新类型选择为“数值变化”。
 

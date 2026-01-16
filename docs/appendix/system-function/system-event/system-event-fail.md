@@ -8,17 +8,17 @@
 
 ## 语法
 
-**System.Event.fail(message:string,...args: any): Promise<void>**
+**System.Event.fail(message:string,...args: any): Promise`<void>`**
 
 - 参数
 
-   message - 失败事件的描述 
+    message - 失败事件的描述 
 
-   args - 失败事件的详情 
+    args - 失败事件的详情 
 
 - 返回 
 
-   无
+    无
 
 Nothing
 

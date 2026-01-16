@@ -2,32 +2,29 @@
 # System.UI.open
 
 
-## Description
-Open a new page by replacing the window.
+## 描述
 
-## Grammar
-System.UI.open(page: string, pageProperties?: any): void
+用替换窗口的方式打开新的画面。
 
-     - Parameter
+## 语法
 
-        page - The name of the page that needs to be opened.
+**System.UI.open(page: string, pageProperties?: any): void**
 
-        pageProperties - Properties of page.
+- 参数
+    page - 需要打开的画面名称
+    pageProperties - 画面属性
+- 返回
+    无
 
-     - Return
+## 代码示例
 
-        Nothing
-
-## Code Example
-
-Open page A.
+打开画面A。
 
 ```typescript 
 System.UI.open('A');
-
 ```
 
-Open page A and set its page property ID to 'A0003'.
+打开画面 A，并将 A 的画面属性 id 设置为"A0003"。
 
 ```typescript 
 System.UI.open('A', {
@@ -35,6 +32,4 @@ System.UI.open('A', {
         id: "A0003"
     }
 });
-
-
 ```  
