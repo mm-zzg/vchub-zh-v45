@@ -8,13 +8,10 @@
 **System.Security.changePassword(oldPassword:string,newPassword:string): Promise<boolean>**
 
 - 参数
-
    oldPassword  旧密码 
-
    newPassword  新密码
 
 - 返回
-
    是否修改成功
 
 ## 代码示例
