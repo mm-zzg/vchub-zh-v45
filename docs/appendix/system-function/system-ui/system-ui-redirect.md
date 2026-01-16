@@ -6,13 +6,18 @@
 将页面跳转到新的URL。
 
 ## 语法
+
 **System.UI.redirect(url:string, newTab?: boolean)**
 
 - 参数
-   url - 需要打开的url路径
-   newTab - 是否以新tab的方式打开，默认 true 可不填
+
+    url - 需要打开的url路径
+
+    newTab - 是否以新tab的方式打开，默认 true 可不填
+
 - 返回
-   无
+
+    无
 
 ## 代码示例
 

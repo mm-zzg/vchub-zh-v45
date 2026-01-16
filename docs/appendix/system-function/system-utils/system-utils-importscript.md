@@ -3,16 +3,19 @@
 
 ## 描述
 
-导入一份js文件。
+导入一份 js 文件。
 
 ## 语法
 
 **System.Utils.importScript(scriptFileUrl: string): Promise<void>** 
 
 - 参数
-  scriptFileUrl - 脚本文件路径
+
+   scriptFileUrl - 脚本文件路径
+
 - 返回
-  无
+
+   无
 
 ## 代码示例
 
