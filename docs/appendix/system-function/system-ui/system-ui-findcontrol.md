@@ -1,30 +1,27 @@
 # System.UI.findControl
 
 
-## Description
+## 描述
 
-Find the control instance in the page.
-## Grammar
-System.UI.findControl(name: string): any
+查找画面中的控件实例。
 
-     - Parameter
+## 语法
+**System.UI.findControl(name: string): any**
 
-        name - The name of thecontrol to be queried, and the control type can be inferred directly from thecontrol name.
+- 参数
+   name - 要查询控件的名称，可直接通过控件名称推断控件类型
+- 返回
+   控件实例
 
-     - Return
+## 代码示例
 
-        Control instance
-
-## Code Example
-
-When the boiler temperature is too high, display the alarm message on label1.
+当锅炉温度过高时，将报警信息更新到label1上。
 
 ```typescript 
 
 const label1 = await System.UI.findControl('Label1');
-label1.text = 'Boiler temperature is too high.';
+label1.text = '锅炉温度过高';
 label1.backgroundColor = 'red';
 label1.fontColor = 'white';
 label1.applyChanges();
-
 ```   

@@ -1,29 +1,28 @@
 # System.UI.close
 
 
-## Description
-Close the current page.
+## 描述
 
-## Grammar
-System.UI.close(data?: any): void
+关闭当前打开的画面。
 
-     - Parameter
+## 语法
 
-        data - available when closing the pop-up page, returned as the value of the System.UI.openPopup function.
+**System.UI.close(data?: any): void**
 
-     - Return
+- 参数
+   data - 关闭弹框页面时可用，作为 System.UI.openPopup 函数的返回值
+- 返回
+   无
 
-        Nothing
+## 代码示例
 
-## Code Example
-
-Close the current page.
+关闭当前画面
 
 ```typescript 
 System.UI.close();
 
 ```
-Close the current popup page.
+关闭当前弹框画面
 
 ```typescript 
 System.UI.close('Successfully added');
