@@ -682,6 +682,9 @@ nav:
                                       - appendix/system-function/system-event/index.md
                                       - appendix/system-function/system-event/system-event-fail.md
                                       - appendix/system-function/system-event/system-event-success.md
+                            - System.Function:
+                                      - appendix/system-function/system-function/index.md
+                                      - appendix/system-function/system-function/system-function-runscript.md
                             - System.Page:
                                       - appendix/system-function/system-page/index.md
                                       - appendix/system-function/system-page/system-page-getpropertyvalue.md
