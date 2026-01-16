@@ -20,3 +20,5 @@ chariot.forEach((ele)=>scene.remove(ele));//遍历数组做全部删除操作
 3D场景模型：
 
 ![alt text](3d_lowcode_SOperation_remove2.png)
+
+![alt text](3d_lowcode_SOperation_remove3.png)
