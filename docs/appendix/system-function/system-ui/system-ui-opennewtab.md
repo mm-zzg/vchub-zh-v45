@@ -8,13 +8,18 @@
 在新的浏览器tab打开画面。
 
 ## 语法
+
 **System.UI.openNewTab(page: string, pageProperties?: any): void**
 
 - 参数
-    page - 需要打开的画面名称。
-    pageProperties - 画面属性
+
+     page - 需要打开的画面名称。
+
+     pageProperties - 画面属性
+
 - 返回
-    无
+
+     无
 
 ## 代码示例
 

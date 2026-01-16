@@ -11,10 +11,14 @@
 **System.UI.open(page: string, pageProperties?: any): void**
 
 - 参数
-    page - 需要打开的画面名称
-    pageProperties - 画面属性
+
+     page - 需要打开的画面名称
+
+     pageProperties - 画面属性
+
 - 返回
-    无
+
+     无
 
 ## 代码示例
 

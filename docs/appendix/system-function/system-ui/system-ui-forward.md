@@ -2,15 +2,18 @@
 
 ## 描述
 
-使用System.UI.back()后可用此函数返回之前页面。
+使用 System.UI.back() 后可用此函数返回之前页面。
 
 ## 语法
 **System.UI.forward(): void**
 
 - 参数
-   无
+
+    无
+
 - 返回
-   无
+
+    无
 
 ## 代码示例 
 
