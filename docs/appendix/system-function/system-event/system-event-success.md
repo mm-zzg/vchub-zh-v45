@@ -6,7 +6,8 @@
 给系统事件加个成功的操作事件，可在实时事件控件或历史事件控件中查询。
 
 ## 语法
-**System.Event.success(message:string,...args: any): Promise<void>**
+
+**System.Event.success(message:string,...args: any): Promise`<void>`**
 
 - P参数 
 
