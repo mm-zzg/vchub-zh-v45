@@ -8,13 +8,14 @@
 ## 语法
 
 **System.Tag.getPropertyValues(path: string): Promise<{ path: string; property: string; value: any }>System.Tag.getPropertyValues(path: Array`<string>`): Promise`<Array<{ path: string; property: string; value: any }>>`**
+
 - 参数
 
-   path - 单个或多个节点属性的路径
+    path - 单个或多个节点属性的路径
 
 - 返回
 
-   单个或多个节点路径、属性名称、属性值
+    单个或多个节点路径、属性名称、属性值
 
 ## 代码示例        
 
