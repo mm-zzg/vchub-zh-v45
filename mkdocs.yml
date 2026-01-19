@@ -587,8 +587,8 @@ nav:
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/custom-annotations/element.md
                                       - 内嵌页面:
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/embedded-page/index.md                                                
-                                                - 3d-visualization/3d-low-code-example/object-models-in-the-scene/embedded-page/title.md
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/embedded-page/src.md
+                                                - 3d-visualization/3d-low-code-example/object-models-in-the-scene/embedded-page/title.md
                                       - 网格模型:
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/grid-model/index.md
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/grid-model/addoutline.md
@@ -622,8 +622,8 @@ nav:
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/lines-with-textures/repeaty.md
                                       - 面:
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/surface/index.md                                                
-                                                - 3d-visualization/3d-low-code-example/object-models-in-the-scene/surface/image.md
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/surface/doubleside.md
+                                                - 3d-visualization/3d-low-code-example/object-models-in-the-scene/surface/image.md
                                       - 文字标注:
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/text-annotation/index.md
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/text-annotation/fontcolor.md
