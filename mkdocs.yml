@@ -621,9 +621,9 @@ nav:
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/lines-with-textures/repeatx.md
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/lines-with-textures/repeaty.md
                                       - 面:
-                                                - 3d-visualization/3d-low-code-example/object-models-in-the-scene/surface/index.md
-                                                - 3d-visualization/3d-low-code-example/object-models-in-the-scene/surface/doubleside.md
+                                                - 3d-visualization/3d-low-code-example/object-models-in-the-scene/surface/index.md                                                
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/surface/image.md
+                                                - 3d-visualization/3d-low-code-example/object-models-in-the-scene/surface/doubleside.md
                                       - 文字标注:
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/text-annotation/index.md
                                                 - 3d-visualization/3d-low-code-example/object-models-in-the-scene/text-annotation/fontcolor.md

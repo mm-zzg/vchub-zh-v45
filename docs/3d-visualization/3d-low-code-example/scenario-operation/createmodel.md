@@ -19,7 +19,6 @@ scene.createModel({
 在按钮上编写上述代码，点击按钮，可以模型库中的模型进入场景中
 
 
+![3d_lowcode_SOperation_createmodel2](../../../assets/images/3d_lowcode_SOperation_createmodel2.gif)
 
 ![alt text](3d_lowcode_SOperation_createmodel1.png)
-
-![3d_lowcode_SOperation_createmodel2](../../../assets/images/3d_lowcode_SOperation_createmodel2.gif)
