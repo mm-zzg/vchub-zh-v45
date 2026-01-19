@@ -29,7 +29,7 @@
 
 **转换步骤：**
 
-1.将3D文件导入**three.js** 中。
+1.将3D文件导入 **three.js** 中。
 
 ![alt text](3d_Format4.png)
   
