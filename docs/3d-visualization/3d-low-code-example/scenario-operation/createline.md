@@ -1,6 +1,6 @@
 # createLine
 
-**描述：** 创建线 进入场景中
+**描述：** 创建线进入场景中
 
 ```typescript
 const view = await System.UI.findControl('3D查看器1'); // 获取画面中名为“3D查看器1”的3D查看器控件

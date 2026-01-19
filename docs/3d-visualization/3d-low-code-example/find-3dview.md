@@ -1,6 +1,6 @@
 # find 3DView
 
-**Description:** Obtain a 3D viewer from the page
+**描述：** 获取画面中的3D查看器
 
 ```typescript
 const view = await System.UI.findControl('3D查看器1');  // 获取画面中名为“3D查看器1”的3D查看器控件
