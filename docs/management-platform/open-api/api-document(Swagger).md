@@ -1,12 +1,12 @@
 # API 文档(Swagger)
 
-在浏览器中输入 WAGO VC Hub 主机地址并加上后缀 "swagger"（例如：https://example.com/swagger, http://localhost:8066/swagger），将会导航到 Open API 文档页面。该页面列出了所有WAGO VC Hub的Open API 定义。
+在浏览器中输入 WAGO VC Hub 主机地址并加上后缀 "swagger"（例如：`https://example.com/swagger, http://localhost:8066/swagger`），将会导航到 Open API 文档页面。该页面列出了所有WAGO VC Hub的Open API 定义。
 
 ![alt text](2.png)
 
 我们可以通过Swagger 调用和测试这些Open API
 
-1. 点击“授权”按钮以输入访问令牌。有关访问令牌的信息，请参考[known-link]部分。请注意，输入访问令牌时，访问令牌应格式化为“Bearer {access_token}”。
+1. 点击“授权”按钮以输入访问令牌。有关访问令牌的信息，请参考 [Open Id Connect](open-id-connect.md) 部分。请注意，输入访问令牌时，访问令牌应格式化为“Bearer {access_token}”。
 
     ![alt text](3.png)
 

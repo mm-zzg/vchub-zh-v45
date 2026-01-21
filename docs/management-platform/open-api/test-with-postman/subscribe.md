@@ -34,7 +34,7 @@ Open API 提供了用于实时数据访问的 WebSocket API。
 
     {"type":6}![alt text](22.png)
 
-    {"arguments":[["Default:m1","Default:m2","Default:m3"]],"invocationId":"0","target":"TagValues","type":4}![alt text](22.png)
+    {"arguments":`[[Default:m1","Default:m2","Default:m3]]`,"invocationId":"0","target":"TagValues","type":4}![alt text](22.png)
 
     ![alt text](19.png)
 

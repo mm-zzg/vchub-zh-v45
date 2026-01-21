@@ -32,7 +32,7 @@
 
 云端的WAGO VC Hub节点，支持通过MQTT协议与设备站点进行数据通讯，如图中Station2，建立MQTT通讯的前提，需要用户开启Azure Virtual Machine的1883端口，云端VC Hub将通过1883端口与设备站点进行通讯，该端口目前暂不支持自定义。
 
-用户可以通过WAGO VC Hub内置的[组网](../management-platform/networking.md)功能，使云端的WAGO VC Hub节点与其它WAGO VC Hub节点建立通讯，如图中的Station2，Station2可以部署在云端或本地，用户需要开启Azure Virtual Machine的8060端口，该端口可在VC Hub网站中自定义修改。
+用户可以通过WAGO VC Hub内置的 [组网](../management-platform/networking/index.md) 功能，使云端的 WAGO VC Hub 节点与其它 WAGO VC Hub 节点建立通讯，如图中的 Station2，Station2 可以部署在云端或本地，用户需要开启 Azure Virtual Machine 的 8060 端口，该端口可在 VC Hub 网站中自定义修改。
 
 ![alt text](10.png)
 
