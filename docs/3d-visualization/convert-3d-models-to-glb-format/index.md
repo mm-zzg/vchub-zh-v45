@@ -17,6 +17,7 @@
 3. 文件导出后用 **blender** 软件打开，操作步骤如下。
 
     ![alt text](3d_Format2.png)
+    
 4. 选择导入的模型，导出 **GLB** 格式文件。
 
     ![alt text](3d_Format3.png)
