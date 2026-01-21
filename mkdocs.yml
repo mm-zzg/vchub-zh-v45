@@ -498,7 +498,8 @@ nav:
                             - 2d-visualization/project-properties/customize-login-page.md
         - 3D 组态:
                   - 3d-visualization/index.md
-                  - 3d-visualization/introduction-to-scene-editor.md
+                  - 场景编辑器:
+                            - 3d-visualization/introduction-to-scene-editor/index.md
                   - 3d-visualization/introduction-to-model-editor.md
                   - 3d-visualization/page-visualization.md
                   - 3d-visualization/animation.md
