@@ -35,7 +35,7 @@ WAGO VC Hub提供Linux环境安装包，文件名wagovc_hub-x.x.x-linux-x64-inst
 
     ![alt text](24.png)
 
-9. 完成后默认访问WAGO VC Hub站点：“http://localhost:8066”，安装完成后，将进入配置引导界面。
+9. 完成后默认访问WAGO VC Hub站点：`http://localhost:8066`，安装完成后，将进入配置引导界面。
 
 ### **注意事项**:
 
