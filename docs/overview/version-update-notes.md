@@ -8,16 +8,10 @@ WAGO VC Hub一直在不断地发展和更新中，每一个版本都会出现一
 
 1. 在管理平台的右下角，您可以找到对应的WAGO VC Hub版本号。
     ![alt text](9.png)
-2. 在组态编辑界面的右上角，有一个感叹号图标，您可以点击此图标获取对应的WAGO VC Hub版本号信息。
+2. 在组态编辑界面的右上角，您可以点击此图标获取对应的WAGO VC Hub版本号信息。
 
     ![alt text](10.png)
 
-- 所见即所得组态编辑器：WAGO VC Hub提供了一个所见即所得[编辑器介绍](../2d-visualization/editor-introduction.md)，方便您实时预览组态效果。
-- 标准化报警：WAGO VC Hub提供标准化[报警](../management-platform/alarming/index.md)功能，包括各类限值报警、变化速率报警以及等值报警等，并且提供相应的实时和历史组态控件。
-- 对象化：WAGO VC Hub支持直接创建变量，也支持对象化方式创建变量，通过[资产](../management-platform/assets-and-tags/asset/index.md)的概念组建您的现场应用。
-- 多数据库：WAGO VC Hub支持配置多种[数据库](../management-platform/databases/index.md)行历史数据存储，比如MySQL、SQL Server等。
-- 组网和冗余：WAGO VC Hub支持大规模组态已经高可用场景，您可以通过多套VC Hub[组网](../management-platform/networking.md)构建您的复杂现场组态项目。
-- 3D数字孪生：WAGO VC Hub支持3D组态，类似于2D组态，您可以构建您的数字孪生场景，同时其提供了大量的[3D低代码示例](../3d-visualization/3d-low-code-example/index.md)供您组态出更高级和复杂的数字孪生应用。
 
 #### 新功能
 
