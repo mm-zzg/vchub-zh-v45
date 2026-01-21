@@ -1,6 +1,6 @@
 # background
 
-**描述：**设置3D场景背景色
+**描述：** 设置3D场景背景色
 
 ```typescript
 const view = await System.UI.findControl('3D查看器1');  // 获取画面中名为“3D查看器1'”的3D查看器控件

@@ -17,7 +17,7 @@ console.log(mash) //输出所有查询到的结果
 
 ![1](../../../assets/images/3d_lowcode_SOperation_findsmoke1.gif)
 
-The queried model can use all its methods and properties:
+查询到的模型可以使用其所有方法和属性：
 
 ![alt text](3d_lowcode_SOperation_findsmoke2.png)
 

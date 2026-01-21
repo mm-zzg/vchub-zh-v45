@@ -26,7 +26,7 @@ scene.createPlane({
 
 ![3d_lowcode_SOperation_createplane1](../../../assets/images/3d_lowcode_SOperation_createplane1.gif)
 
-
+![alt text](3d_lowcode_SOperation_createplane2.png)
 
 
 

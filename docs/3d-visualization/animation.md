@@ -1,8 +1,8 @@
-# 动画
+# **动画**
 
 通过合理应用动画效果，可以为用户带来更高效、直观和愉悦的界面交互体验。
 
-WAGO SCADA中，当模型具有动画属性时，在右侧的属性栏中会显示“动画”一列，点击设置按钮可以进行动画设置。
+VC Hub中，当模型具有动画属性时，在右侧的属性栏中会显示“动画”一列，点击设置按钮可以进行动画设置。
 
 ![alt text](3d_Animation1.png)
 
@@ -40,6 +40,9 @@ VC Hub的3D模型支持以下动画类型：
 **示例**
 
 模型在传送带根据路径来位移。
+
+
+
 ![3d_Animation4](../assets/images/3d_Animation4.gif)
 ![alt text](3d_Animation5.png)
 
@@ -70,7 +73,7 @@ VC Hub的3D模型支持以下动画类型：
 |:--------------|:------------|
 | 旋转启用状态 | 启用          |
 | 值           | 变量：设备:旋转Bool       |
-| 类型         | 值的结果类型。分为数值型和布尔型。 <br>![alt text](3d_Animation8.png)  <br>Bool type:  <br>![alt text](3d_Animation9.png) |
+| 类型         | 值的结果类型。分为数值型和布尔型。 <br>数值型：  <br>![alt text](3d_Animation8.png)  <br>布尔型:  <br>![alt text](3d_Animation9.png) |
 | 最小值       | 类型为数值型时，显示该参数。和“角度“属性组合起来使用。设置动画生效的最小值，以及最小值时模型的旋转角度。  <br>![alt text](3d_Animation10.png)  |
 | 最大值       | 类型为数值型时，显示该参数。和“角度“属性组合起来使用。设置动画生效的最大值，以及最大值时模型的旋转角度。  <br>![alt text](3d_Animation11.png)  |
 | X轴偏移(px)  | 用于设置旋转中心点向X轴偏移的距离。  |
