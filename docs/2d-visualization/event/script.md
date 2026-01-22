@@ -42,7 +42,7 @@
 
 1. 在画面上添加 Label、数码管和按钮控件。Label 控件的内容设置为“运行状态：”。数码管的内容默认为“true”， 按钮的内容设置为“状态切换”，背景色设置为 #6ec800，字体颜色设置为 #ffffff。
 
-2. 在数码管的属性窗口选择文本并绑定路径为 @userManual:status 的布尔值变量。
+2. 在数码管的属性窗口选择文本并绑定路径为 userManual:status 的布尔值变量。
 
     ![alt text](6.png)
 
@@ -76,7 +76,7 @@
 
 2. 新建一个弹窗页面，名称设置为“设备详情”，用于接收脚本传值展示。
 
-3. 两个数码管的文本属性分别绑定到 @userManual:status 和 @userManual:status2 这 2 个布尔变量。
+3. 两个数码管的文本属性分别绑定到 userManual:status 和 userManual:status2 这 2 个布尔变量。
 
     - 数码管1绑定:
 
