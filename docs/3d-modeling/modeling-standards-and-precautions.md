@@ -137,19 +137,19 @@
     <div style="text-align: center;">
       <p>1. 废点示例</p>
       <div style="position: relative; width: 100%; padding-bottom: 60%; overflow: hidden;">
-        <img src="./29.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <img src="../29.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
       </div>
     </div>
     <div style="text-align: center;">
       <p>3. 废面示例</p>
       <div style="position: relative; width: 100%; padding-bottom: 60%; overflow: hidden;">
-        <img src="31.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <img src="../31.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
       </div>
     </div>
     <div style="text-align: center;">
       <p>5. 多边面示例</p>
       <div style="position: relative; width: 100%; padding-bottom: 60%; overflow: hidden;">
-        <img src="33.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <img src="../33.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
       </div>
     </div>
   </div>
@@ -159,19 +159,19 @@
     <div style="text-align: center;">
       <p>2. 废线示例</p>
       <div style="position: relative; width: 100%; padding-bottom: 60%; overflow: hidden;">
-        <img src="30.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <img src="../30.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
       </div>
     </div>
     <div style="text-align: center;">
       <p>4. 漏面漏缝示例</p>
       <div style="position: relative; width: 100%; padding-bottom: 60%; overflow: hidden;">
-        <img src="32.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <img src="../32.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
       </div>
     </div>
     <div style="text-align: center;">
       <p>6. 面反转示例</p>
       <div style="position: relative; width: 100%; padding-bottom: 60%; overflow: hidden;">
-        <img src="34.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <img src="../34.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
       </div>
     </div>
   </div>
