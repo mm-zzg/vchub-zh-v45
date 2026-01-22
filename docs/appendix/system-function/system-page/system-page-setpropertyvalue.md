@@ -11,7 +11,9 @@
 **System.Page.setPropertyValue(path: string,value: any): void**
 
 - 参数
+
    path - 画面自定义属性或控件属性的路径
+   
    value - 属性新值
    
 - 返回

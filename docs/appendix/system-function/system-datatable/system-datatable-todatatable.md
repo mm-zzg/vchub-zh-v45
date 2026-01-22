@@ -7,7 +7,7 @@
 
 ## 语法
 
-**System.Datatable.toDatatable(data: Array<any>, headers?: Array< string>): Datatable**
+**System.Datatable.toDatatable(data: Array`<any>`, headers?: Array`<string>`): Datatable**
 
 - 参数
 

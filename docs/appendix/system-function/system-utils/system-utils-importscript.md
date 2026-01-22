@@ -7,15 +7,15 @@
 
 ## 语法
 
-**System.Utils.importScript(scriptFileUrl: string): Promise<void>** 
+**System.Utils.importScript(scriptFileUrl: string): Promise`<void>`** 
 
 - 参数
 
-   scriptFileUrl - 脚本文件路径
+    scriptFileUrl - 脚本文件路径
 
 - 返回
 
-   无
+    无
 
 ## 代码示例
 

@@ -9,9 +9,9 @@
 
 ## 语法
 
-**System.Db.runSqlQuery(projectName: string, queryName: string, parameters?: Array<{ name: string, value: any}>): Promise<any>**
+**System.Db.runSqlQuery(projectName: string, queryName: string, parameters?: Array<{ name: string, value: any}>): Promise`<any>`**
 
-**System.Db.runSqlQuery(queryName: string, parameters?: Array<{ name: string, value: any}>): Promise<any>**
+**System.Db.runSqlQuery(queryName: string, parameters?: Array<{ name: string, value: any}>): Promise`<any>`**
 
 - 参数 
 
@@ -27,7 +27,7 @@
 
 ## 代码示例     
 
-**Query:** 查询数据库中性别为男的学生并更新Table控件。
+**Query:** 查询数据库中性别为男的学生并更新 Table 控件。
 
 ```typescript 
 

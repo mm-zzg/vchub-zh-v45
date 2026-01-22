@@ -7,15 +7,13 @@
 
 ## 语法
 
-**System.Utils.importStyle(styleFileUrl: string): Promise<void>**
+**System.Utils.importStyle(styleFileUrl: string): Promise`<void>`**
 
 - 参数
-
-   styleFileUrl - 样式文件路径
+        styleFileUrl - 样式文件路径
 
 - 返回
-
-   无
+        无
 
 ## 代码示例
 

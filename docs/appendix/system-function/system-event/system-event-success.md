@@ -9,7 +9,7 @@
 
 **System.Event.success(message:string,...args: any): Promise`<void>`**
 
-- P参数 
+- 参数 
 
     message - 成功事件的描述 
 

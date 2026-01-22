@@ -25,7 +25,7 @@
              
 **position?: 'left' | 'center' | 'right';**
               
-**font?: 'Microsoft YaHei' | 'SimSun' | 'SimHei' | 'Arial' | 'Calibri' | 'Source Han Sans SC' | 'MMType' | 'Georgia' | 'Tahoma' | 'Times New Roman' | 'Trebuchet MS' | 'Verdana' | 'Digital Numbers';**
+**font?: 'Microsoft YaHei' | 'SimSun' | 'SimHei' | 'Arial' | 'Calibri' | 'Source Han Sans SC' | 'Georgia' | 'Tahoma' | 'Times New Roman' | 'Trebuchet MS' | 'Verdana' | 'Digital Numbers';**
               
 **fontSize?: number;**
               
