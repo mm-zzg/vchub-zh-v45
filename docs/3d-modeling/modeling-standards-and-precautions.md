@@ -137,7 +137,7 @@
     <div style="text-align: center;">
       <p>1. 废点示例</p>
       <div style="position: relative; width: 100%; padding-bottom: 60%; overflow: hidden;">
-        <img src="../3d-modeling/29.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <img src="./29.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
       </div>
     </div>
     <div style="text-align: center;">
