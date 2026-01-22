@@ -65,6 +65,4 @@ VC Hub中，当模型具有动作属性时，在右侧的属性栏中会显示�
 
 ![alt text](3d_Event9.png)
 
-
-
-> **说明：** 安全组功能仅在使用 Local 类型的 Identity Provider 进行身份验证时生效。
+**说明：** 安全组功能仅在使用 Local 类型的 Identity Provider 进行身份验证时生效。
