@@ -28,11 +28,11 @@ Multi-State Button 是一种可在两个以上状态之间切换的按钮控件�
 
 **示例**
 
-可通过Multi-State button控件设备的运行状态。
+可通过 Multi-State button 控件设备的运行状态。
 
 1. 在画面上添加一个Multi-State button控件
-2. 当前值绑定到一个数值型变量：@Demo:status。该变量可写。
-3. 控制值也绑定到变量：@Demo:status
+2. 当前值绑定到一个数值型变量：“Demo:status”。该变量可写。
+3. 控制值也绑定到变量：“Demo:status”。
 4. 按钮属性如下：
 
     ![alt text](37.png)

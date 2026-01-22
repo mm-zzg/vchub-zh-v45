@@ -423,7 +423,7 @@ nav:
                                       - 2d-visualization/controls/button/toggle-button.md
                                       - 2d-visualization/controls/button/2-state-button.md
                                       - 2d-visualization/controls/button/multi-state-button.md
-                            - 图标:
+                            - 图表:
                                       - 2d-visualization/controls/chart/index.md
                                       - 2d-visualization/controls/chart/realtime-chart.md
                                       - 2d-visualization/controls/chart/historical-chart.md

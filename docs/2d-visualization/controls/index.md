@@ -11,6 +11,7 @@
 若要使这些控件设置动画效果，例如旋转，请为控件配置动画。若要使控件对用户交互做出反应，请为其配置动作。
 
 **绘图**  
+
 - [填充、描边、阴影和拾色](drawing/fill-stroke.md) 
 
 - [形状](drawing/shape.md) 
@@ -28,6 +29,7 @@
 - [文本输入框](input/text-input.md) 
 
 **显示**  
+
 - [3D 查看器](display/3d-viewer.md) 
 
 - [IFrame](display/iframe.md) 
