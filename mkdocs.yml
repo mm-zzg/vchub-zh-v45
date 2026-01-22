@@ -700,6 +700,10 @@ nav:
                             - System.Function:
                                       - appendix/system-function/system-function/index.md
                                       - appendix/system-function/system-function/system-function-runscript.md
+                            - System.Library:
+                                      - appendix/system-function/system-library/index.md
+                                      - appendix/system-function/system-library/system-library-getlocalimage.md
+                                      - appendix/system-function/system-library/system-library-getsystemimage.md
                             - System.Page:
                                       - appendix/system-function/system-page/index.md
                                       - appendix/system-function/system-page/system-page-getpropertyvalue.md
