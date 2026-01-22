@@ -5,7 +5,7 @@
 获取本地图库的图片。
 
 ## 语法
-**System.Library.getLocalImage(path:string): Promise<string>**
+**System.Library.getLocalImage(path:string): Promise`<string>`**
 
 - 参数
 
@@ -21,6 +21,6 @@
 
 ```typescript 
 
-const base64 = await System.Library.getLocalImage('Scenery.Sun.svg');
+const base64 = await System.Library.getLocalImage('风景.太阳.svg');
 console.log(base64)
 ```   

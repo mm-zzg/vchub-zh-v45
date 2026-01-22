@@ -25,11 +25,11 @@
 
 ```typescript 
 
-System.UI.redirect('https://www.google.com/');
+System.UI.redirect('https://www.baidu.com/');
 ```
 在当前 tab 页面打开百度。
 
 ```typescript 
-System.UI.redirect('https://www.google.com/', false);
+System.UI.redirect('https://www.baidu.com/', false);
 
 ```   
