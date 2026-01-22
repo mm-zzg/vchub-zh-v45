@@ -41,15 +41,9 @@
 3.  如果一张贴图出现多个相同且重复元素，应该把贴图简化为最简单的元素。
 
     例如：以下地砖贴图为连续重复贴图，只用取其中一块使用即可。
-        <div style="display: flex; justify-content: space-between; gap: 20px; align-items: center; flex-wrap: nowrap; width: 100%; min-width: 800px;">
-    <div style="width: 48%; min-width: 380px;">
-        <img src="5.png" style="width: 100%; height: 350px; object-fit: cover; border: 1px solid #eee;">
-    </div>
-    <div style="width: 48%; min-width: 380px;">
-        <img src="6.png" style="width: 100%; height: 350px; object-fit: cover; border: 1px solid #eee;">
-    </div>
-    </div>
 
+    ![alt text](5.png)
+   
 
 
 三、贴图使用规则
