@@ -4,27 +4,27 @@
 
 **第一步：**在项目列表，点击新增按钮，输入项目名称，点击”确认”按钮。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/3mR9KG5E/resources/HcSM-dMNqxfM-EWzI4QesdUjPwwQE0i_rbHMg6zIXM0.png?token=W.j2BJRdQ86dOBFsJxtHg2TBZ4qGPaF57zxHAKJ0U4u-icWMVWBGYfVDJGUxeprt8)
+![alt text](46.png)
 
 **第二步：**新增完成后点击项目的设计按钮。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/3mR9KG5E/resources/9XrAuTuKw5C-zCadhYaizLW_H-RrQDK67F4_z-3NjU4.png?token=W.j2BJRdQ86dOBFsJxtHg2TBZ4qGPaF57zxHAKJ0U4u-icWMVWBGYfVDJGUxeprt8)
+![alt text](47.png)
 
 **第三步：**点击新建画面按钮，选择需要的尺寸，输入项目名称之后确认。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/3mR9KG5E/resources/qCnImR4v-Tch4xNZ4XuPwxKSbHOFktsXB1lLHBfaJc4.png?token=W.j2BJRdQ86dOBFsJxtHg2TBZ4qGPaF57zxHAKJ0U4u-icWMVWBGYfVDJGUxeprt8)
+!![alt text](48.png)
 
 **第四步：**在“3D场景”窗口，点击➕号按钮，添加场景。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/3mR9KG5E/resources/X0Ok7pMSMtVy2CgthingDDNs0G2cdJ8LqVhs8K31d2w.png?token=W.j2BJRdQ86dOBFsJxtHg2TBZ4qGPaF57zxHAKJ0U4u-icWMVWBGYfVDJGUxeprt8)
+![alt text](49.png)
 
 **第五步：**双击新建好的场景。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/3mR9KG5E/resources/HgmFZZ6m0NXH3tujYsNdAsuD4lq3E-viLfezD-_FamY.png?token=W.j2BJRdQ86dOBFsJxtHg2TBZ4qGPaF57zxHAKJ0U4u-icWMVWBGYfVDJGUxeprt8)
+![alt text](50.png)
 
 **第六步：**点击模型库的➕按钮，添加本地模型库。
 
-![img](https://docs.wagoscada.cn/wiki/api/wiki/editor/QHXVK91b/3mR9KG5E/resources/NDgHIOpdxJFO7OggFm8lIT3smMyLDuBbby-R1WxcriU.png?token=W.j2BJRdQ86dOBFsJxtHg2TBZ4qGPaF57zxHAKJ0U4u-icWMVWBGYfVDJGUxeprt8)
+![alt text](51.png)
 
 **第七步：**在模型库内上传模型。
 
