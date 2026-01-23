@@ -2,7 +2,7 @@
 
 Open API通过HTTPS协议提供Web API，默认的HTTPS端口设置为8043。
 
-1. 在Postman中创建针对Open API的HTTP请求之前，请先浏览Swagger文档页面上的API定义。关于如何打开，Swagger 页面可以参考 [API 文档(Swagger)](../api-document(Swagger).md)
+1. 在Postman中创建针对Open API的HTTP请求之前，请先浏览Swagger文档页面上的API定义。关于如何打开，Swagger 页面可以参考 [API 文档(Swagger)](../api-documentSwagger.md)
 
     关于API的定义也可以参考
 

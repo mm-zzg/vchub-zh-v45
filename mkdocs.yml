@@ -356,7 +356,7 @@ nav:
 
                   - Open API:
                             - management-platform/open-api/index.md
-                            - management-platform/open-api/api-document(Swagger).md
+                            - management-platform/open-api/api-documentSwagger.md
                             - management-platform/open-api/open-id-connect.md
                             - management-platform/open-api/asset-api-definitions.md
                             - management-platform/open-api/historical-data-api-definitions.md
