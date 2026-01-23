@@ -1,4 +1,6 @@
-# 登录测试
+# 登录测试与登出测试
+
+## 登录测试
 
 配置完Identity Provider后，可以通过 **登录测试**，测试该Identity Provider下的用户是否可以成功登录系统。
 
