@@ -42,7 +42,7 @@ Google的GMail为了安全，在授权第三方登录时需要使用应用程序
 
 **开启两步验证**
 
-1. 登录Google账号  [https://myaccount.google.com/](https://myaccount.google.com/)
+1. 登录Google账号  [Google Account](https://myaccount.google.com/)
 2. 点击导航面板的 “**安全性**”菜单。
 3. 在安全性页面的 “您的 Google 账号登录选项” 下方，**开启两步验证**。
 4. 按照屏幕提示步骤操作。
@@ -60,7 +60,7 @@ Google的GMail为了安全，在授权第三方登录时需要使用应用程序
 
 ![alt text](5.png)
 
-如果打开应用专用密码创建页面出现以下情况，请参照上文开启**两步验证**后在重新打开该页面
+如果打开应用专用密码创建页面出现以下情况，请参照上文开启 **两步验证** 后在重新打开该页面
 
 ![alt text](6.png)
 
