@@ -37,7 +37,7 @@
               
 **}**
 
-**}): Promise<any>**
+**}): Promise`<any>`**
 
 - 参数
 
