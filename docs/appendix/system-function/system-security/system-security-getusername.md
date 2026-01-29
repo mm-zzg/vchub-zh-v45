@@ -10,7 +10,7 @@
 ## 语法
 **System.Security.getUsername(): string**
 
-- P参数
+- 参数
 
     无
 
