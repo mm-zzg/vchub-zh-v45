@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 # scaleTo
 
 **描述：模型放大缩小动画**
@@ -25,8 +15,5 @@ mesh.scaleTo({
 **示例：**
 
 在按钮上编写上述代码，点击按钮，可以播放模型放大动画。
-
-
-
 
 ![1](../../../../assets/images/3d_lowcode_object_gmodel_scaleto1.gif)
