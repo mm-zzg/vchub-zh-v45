@@ -70,8 +70,7 @@ Parameter
 | end            | Date or string       | 结束时间         |
 | tag            | string or `Array<string>`   | 查询的标签或者标签列表 |
 | queryMode      | QueryMode           |查询类型   |
-| aggregationMode  | AggregationMode or `Array<AggregationMode`> |单个或多个变量聚合模式。
-当查询方式为"FixedPoints"、"Periodic"时需指定 |
+| aggregationMode  | AggregationMode or `Array<AggregationMode`> |单个或多个变量聚合模式。<br>当查询方式为"FixedPoints"、"Periodic"时需指定 |
 | points      | number | 点数，当查询方式为"FixedPoints"时需指定 query modes  |
 | period        | number          | 周期，当查询方式为"Periodic"时需指定  |
 | periodMode    | PeriodMode      | 周期单位，当查询方式为"Periodic"时需指定|
