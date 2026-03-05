@@ -1,6 +1,5 @@
 # System.Context.currentEvent.newValue
 
-
 ## 描述
 
 如果是值变化触发的获取新值。
