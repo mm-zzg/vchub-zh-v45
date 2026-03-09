@@ -4,6 +4,7 @@
 - [网络模型​](grid-model/index.md)
 - [图片标注​](image-overlays/index.md)
 - [线](line/index.md)
-- [带贴图的线​](line-with-textures/index.md)
+- [带贴图的线](lines-with-textures/index.md)
 - [面](surface/index.md)
 - [文字标注​](text-annotation/index.md)
+
