@@ -649,7 +649,7 @@ nav:
                             - 3d-modeling/pre-export-checks/index.md
                   - 导出模型:          
                             - 3d-modeling/export-model/index.md
-                  - 模型导入SCADA:
+                  - 模型导入VC Hub:
                             - 3d-modeling/model-import-into-VC-Hub/index.md
         - 附录:
                   - appendix/index.md
