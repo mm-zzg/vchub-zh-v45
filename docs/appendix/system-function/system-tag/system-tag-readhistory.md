@@ -60,10 +60,6 @@ System.Tag.readHistory(
 Parameter
 
 
-
-
-
-
 |  Name         | Type        | Description    |
 |:---------------|:-----------------|:----------------|
 | start         | Date or string         | 开始时间   |
